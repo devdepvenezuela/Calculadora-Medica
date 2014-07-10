@@ -57,24 +57,26 @@
                                             <div class="form">
                                                  <form action="#">
                                                 <label>TFGe:</label>
-                                                <input type="text" class="form_input radius4" />
+                                                <input id="tfge-n" type="text" class="form_input radius4" />
                                                 <label>Fosforo Serico (P):</label>
-                                                <input type="text" class="form_input radius4" />
+                                                <input id="p-n" type="text" class="form_input radius4" />
                                                 <label>Calcio Sérico (C):</label>
-                                                <input type="text" class="form_input radius4" />
+                                                <input id="c-n" type="text" class="form_input radius4" />
                                                 <label>PTH:</label>
-                                                <input type="text" class="form_input radius4" />
+                                                <input id="pth-n" type="text" class="form_input radius4" />
                                                 <h3>Valores normales del ensayo</h3>
                                                 <label>PTH Mínimo:</label>
-                                                <input type="text" class="form_input radius4" />
+                                                <input id="pthmin-n"  type="text" class="form_input radius4" />
                                                 <label>PTH Máximo:</label>
-                                                <input type="text" class="form_input radius4" />
+                                                <input id="pthmax-n" type="text" class="form_input radius4" />
                                                 <label>Vía de administración:</label>
-                                                <select class="form_input radius4">
-                                                <option  selected="selected">Seleccionar...</option>
+                                                <select id="va-n" class="form_input radius4">
+                                                <option  selected="selected" label="Seleccionar..."></option>
+                                                <option value="O" label="Oral"></option>
+                                                <option value="I" label="Intravenoso"></option>
                                                 </select>
                                                 <br/>
-                                                <input type="button" class="form_submit radius4 red red_borderbottom" value="Calcular" />
+                                                <input  type="button" onclick="nuevo()" class="form_submit radius4 blue blue_borderbottom" value="Calcular" />
                                                 </form>
                                     		</div>
                                    
@@ -82,8 +84,11 @@
                                               <div class="portfolio_item radius8">
                                              <div class="portfolio_image"><a><img src="images/portfolio_thumb21.png" alt="" title="" border="0" /></a></div>
                                                  <div class="portfolio_details">
-                                                 
-                                                 <p>Texto del resultado recomendaciones al medico segun el algoritmo</p>
+                                                     <div id="resultado" class="result"> 
+                                                     
+                                                      <p>Texto del resultado recomendaciones al medico segun el algoritmo</p>
+                                                      </div>
+                                                
                                                  <a rel="gallery-2" href="images/alg1.png" class="swipebox view_details" title="Algoritmo 1">Ver algoritmo</a>
                                                  </div>
                                         </div>       
@@ -111,8 +116,6 @@
                                             <div class="form">
                                             	<form action="#">
                                                 <label>TFGe:</label>
-                                                <input type="text" class="form_input radius4" />
-                                                <label>Edad:</label>
                                                 <input type="text" class="form_input radius4" />
                                                 <label>Fosforo Sérico (P):</label>
                                                 <input type="text" class="form_input radius4" />
@@ -169,24 +172,6 @@
 <script type="text/javascript" src="js/jquery.fitvids.js"></script>
 <script type="text/javascript" src="js/code.js"></script>
 <script type="text/javascript" src="js/load.js"></script>
-<!--Twitter Feed-->
-<script type="text/javascript" src="js/twitter/jquery.tweet.js" charset="utf-8"></script>
-<script type="text/javascript" charset="utf-8">
-var $ = jQuery.noConflict();  
-jQuery(function($){
-$(".tweet").tweet({
-  modpath: 'js/twitter/',
-  join_text: "auto",
-  username: "famousthemes",
-  count: 5,
-  auto_join_text_default: "we said,",
-  auto_join_text_ed: "we",
-  auto_join_text_ing: "we were",
-  auto_join_text_reply: "we replied",
-  auto_join_text_url: "we were checking out",
-  loading_text: "loading tweets..."
-});
-});
-</script>
+<script type="text/javascript" src="js/calculos.js"></script>
 </body>
 </html>

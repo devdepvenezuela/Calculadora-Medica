@@ -26,6 +26,7 @@ Basic Swiper Styles
 	-ms-backface-visibility:hidden;
 	-o-backface-visibility:hidden;
 	backface-visibility:hidden;
+	background-color: #69c;
 	/* Fix of Webkit flickering */
 	z-index:1;
 }

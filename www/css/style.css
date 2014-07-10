@@ -35,7 +35,7 @@ h2.page_title{ font-size:30px;padding:0 0 20px 0;}
 
 /*----------bottom bullets pagination---------------*/
 .pagination {position: absolute;z-index: 20;left:0px;bottom:5px;text-align:center;width:100%;}
-.swiper-pagination-switch {display: inline-block;width:12px;height:3px;background: #222;margin-right: 5px;opacity: 0.5;cursor: pointer;}
+.swiper-pagination-switch {display: inline-block;width:12px;height:3px;background: #06c;margin-right: 5px;opacity: 0.5;cursor: pointer;}
 .swiper-active-switch {background: #fff;}
 /*----------header and footer buttons---------------*/
 .gohome{ width:40px; height:40px; float:left;}
@@ -55,7 +55,7 @@ a.button_11{ width:98%; margin:0 0 10px 1%;padding:10px 0; float:left; display:b
 .green{ background-color:#85af5d;}
 .blue{ background-color:#29aae3;}
 .darkblue{ background-color:#035792;}
-.red{ background-color:#c53238;}
+.red{ background-color:#06c;}
 .purple{ background-color:#8b2767;}
 .pink{ background-color:#f87c68;}
 .orange{ background-color:#f17225;}

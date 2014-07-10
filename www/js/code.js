@@ -39,6 +39,17 @@ scrollbar: {
   draggable: false  
 }
 })
+var result = new Swiper('.result', {
+scrollContainer:true,
+mousewheelControl : true,
+mode:'vertical',
+//Enable Scrollbar
+scrollbar: {
+  container :'.swiper-scrollbar1',
+  hide: true,
+  draggable: false  
+}
+})
 var swiperNested2 = new Swiper('.swiper-nested2', {
 scrollContainer:true,
 mousewheelControl : true,
@@ -140,6 +151,9 @@ scrollbar: {
 })
 $('.scrolltop1').click(function(){
  swiperNested1.swipeTo(0);
+});
+$('.result').click(function(){
+ result.swipeTo(0);
 });
 $('.scrolltop2').click(function(){
  swiperNested2.swipeTo(0);
