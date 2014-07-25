@@ -27,7 +27,7 @@
                    <div class="swiper-wrapper">
                         <div class="swiper-slide">
                                   <div class="slide-inner">
-                                        <div class="logo"><a href="#"><img src="colors/personal/images/logo.png" alt="" title="" border="0" /></a></div>
+                                        <div class="logo"><a href="#"><img src="colors/personal/images/logo.png" alt="" title="" border="0" /></a><br/><br/><br/></div>
                                         <div class="menu">
                                         <ul>
                                        <li><a href="#" onclick="swiperParent.swipeTo(1);"><img src="images/icons/about.png" alt="" title="" /><span>Inicia ASRVD</span></a></li>
@@ -53,27 +53,23 @@
                                         <h3>Parámetros</h3>
                                             <div class="form">
                                                  <form action="#">
-                                                <label>TFGe:</label>
-                                                <input id="tfge-n" type="text" class="form_input radius4" />
-                                                <label>Fosforo Serico (P):</label>
-                                                <input id="p-n" type="text" class="form_input radius4" />
-                                                <label>Calcio Sérico (C):</label>
-                                                <input id="c-n" type="text" class="form_input radius4" />
-                                                <label>PTH:</label>
-                                                <input id="pth-n" type="text" class="form_input radius4" />
-                                                <h3>Valores normales del ensayo</h3>
-                                                <label>PTH Mínimo:</label>
-                                                <input id="pthmin-n"  type="text" class="form_input radius4" />
-                                                <label>PTH Máximo:</label>
-                                                <input id="pthmax-n" type="text" class="form_input radius4" />
-                                                <label>Vía de administración:</label>
-                                                <select id="va-n" class="form_input radius4">
-                                                <option  selected="selected" label="Seleccionar..."></option>
+                                                 <fieldset class="ui-field-contain">
+                                                <input id="tfge-n" placeholder="TFGe:"  type="text" class="form_input radius4" />
+                                                <input id="p-n" placeholder="Fosforo Serico (P):"  type="text" class="form_input radius4" />
+                                                <input id="c-n" placeholder="Calcio Sérico (C):"  type="text" class="form_input radius4" />
+                                                <input id="pth-n" placeholder="PTH:"  type="text" class="form_input radius4" />
+                                                <h3>Valores normales del ensayo de PTH utilizado</h3>
+                                                <input id="pthmin-n" placeholder="PTH Mínimo:"  type="text" class="form_input radius4" />
+                                                <input id="pthmax-n" placeholder="PTH Máximo:" type="text" class="form_input radius4" />
+                                                <select id="va-n" class="form_select" >
+                                                <option  selected="selected" label="Vía de administración:"></option>
                                                 <option value="O" label="Oral"></option>
                                                 <option value="I" label="Intravenoso"></option>
                                                 </select>
                                                 <br/>
+                                                </fieldset>
                                                 <input  type="button" onclick="nuevo()" class="form_submit radius4 blue blue_borderbottom" value="Calcular" />
+                                                <input  type="button" onclick="clear()" class="form_submit radius4 blue blue_borderbottom" value="Limpiar" />
                                                 </form>
                                     		</div>
                                    
@@ -111,29 +107,23 @@
                                         <h3>Parámetros</h3>
                                             <div class="form">
                                             	<form action="#">
-                                                <label>TFGe:</label>
-                                                <input type="text" class="form_input radius4" />
-                                                <label>Fosforo Sérico (P):</label>
-                                                <input type="text" class="form_input radius4" />
-                                                <label>Calcio Sérico (C):</label>
-                                                <input type="text" class="form_input radius4" />
-                                                <label>PTH Inicio del tratamiento:</label>
-                                                <input type="text" class="form_input radius4" />
-                                                <label>PTH Actual:</label>
-                                                <input type="text" class="form_input radius4" />
-                                                <h3>Valores normales del ensayo</h3>
-                                                <label>PTH Mínimo:</label>
-                                                <input type="text" class="form_input radius4" />
-                                                <label>PTH Máximo:</label>
-                                                <input type="text" class="form_input radius4" />
-                                                <label>Dosis ASRVD:</label>
-                                                <input type="text" class="form_input radius4" />
-                                                <label>Vía de administración:</label>
-                                                <select class="form_input radius4">
-                                                <option  selected="selected">Seleccionar...</option>
+                                                <input type="text" placeholder="TFGe:"  class="form_input radius4" />
+                                                <input type="text" placeholder="Fosforo Sérico (P):"  class="form_input radius4" />
+                                                <input type="text" placeholder="Calcio Sérico (C):"  class="form_input radius4" />
+                                                <input type="text" placeholder="PTH Inicio del tratamiento:"  class="form_input radius4" />
+                                                <input type="text" placeholder="PTH Actual:"  class="form_input radius4" />
+                                                <h3>Valores normales del ensayo de PTH utilizado</h3>
+                                                <input type="text" placeholder="PTH Máximo:"  class="form_input radius4" />
+                                                <input type="text" placeholder="PTH Mínimo:"  class="form_input radius4" />
+                                                <input type="text" placeholder="Dosis ASRVD:"  class="form_input radius4" />
+                                                <select  placeholder="Vía de administración:" class="form_select" >
+                                               <option  selected="selected" label="Vía de administración:"></option>
+                                                <option value="O" label="Oral"></option>
+                                                <option value="I" label="Intravenoso"></option>
                                                 </select>
                                                 <br/>
                                                 <input type="button" class="form_submit radius4 red red_borderbottom" value="Calcular" />
+                                                <input  type="button" onclick="clear()" class="form_submit radius4 blue blue_borderbottom" value="Limpiar" />
                                                 </form>
                                                
                                     		</div>

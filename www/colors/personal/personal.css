@@ -14,12 +14,12 @@ h2.page_title{color:#5e5e5e;}
 
 /* Menu style
 /*------------------------------------------*/
-.menu{ width:100%; padding:0px; margin:0px 0 50px 0;}
-.menu ul{ list-style:none; text-align:center ; padding:0px; margin:0px; width:100%;}
-.menu ul li{ list-style:none; margin:3% 0 0 25%; padding:0 0; width:30.5%;height:auto; float:left; display:block; text-align:center;background-color:#198bbd;-webkit-border-radius: 200px;-moz-border-radius: 200px;border-radius: 200px;}
+.menu{ width:100%; padding:0px; margin:0 0 50px 0;}
+.menu ul{ list-style:none; padding:0px; margin:0px; width:100%;}
+.menu ul li{ list-style:none; margin:3% 0 0 3%; padding:13% 0; width:45.5%;height:auto; float:left; display:block; text-align:center;background-color:#198bbd;-webkit-border-radius: 200px;-moz-border-radius: 200px;border-radius: 200px;}
 .menu ul li a{ color:#FFFFFF; text-decoration:none;  text-align: center;} 
-.menu ul li a span{ display:block; text-align:center; font-size:14px; line-height:50px;}
-.menu ul li img{ display:inline-block;max-width:35%;}
+.menu ul li a span{ display:block; text-align:center; font-size:14px; line-height:25px;}
+.menu ul li img{ display:inline-block;max-width:50%;}
 
 .sliderbg_menu{background-color: #69c;}
 .sliderbg{ background-color:#c43e49;}
@@ -92,7 +92,12 @@ li.table_row{background-color:#e6e6e6;}
 
 .form label.error{color:#990000;}
 .form_input, .form_textarea{border:1px #ddd solid;}
-.form_submit{color:#fff;}
+.form_submit{color:#0000;}
+.form_select{width: 100%; height: 35px; padding: 5px 20px 0px 20px; margin: 0 0 20px 0; 
+	background: -moz-linear-gradient(top, #fff 0%, #fff 20%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fff), color-stop(20%,#fff)); /* webkit */
+	border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px;
+	-moz-box-shadow: 0px 1px 0px #f2f2f2;-webkit-box-shadow: 0px 1px 0px #f2f2f2;}
 
 ul.social li{ -webkit-border-radius: 200px;-moz-border-radius: 200px;border-radius: 200px;}
 
