@@ -52,22 +52,23 @@
                                                  <div class="toogle_wrap_blog radius8">
                                                     <div class="trigger_blog"><a href="#">Calcular TFGe</a></div>
                                                         <div class="toggle_container_blog">
-                                                        <label for="tfge-n">Creatinina:</label>
-                                                <input  placeholder="TFGe:"  type="number" class="form_input radius4" /><span class="unidad">mg/dl</span><br/>
-                                                <label for="p-n">Edad:</label>
-                                                <input  placeholder="Fosforo Serico (P):"  type="number" class="form_input radius4" /><span class="unidad">años</span><br/>
-                                                <label for="va-n">Sexo:</label>
-                                                <select class="form_select" >
+                                                        <label for="creat-n">Creatinina:</label>
+                                                <input id="creat-n" placeholder="Creatinina:"  type="number" class="form_input radius4" /><span class="unidad">mg/dl</span><br/>
+                                                <label for="edad-n">Edad:</label>
+                                                <input id="edad-n" placeholder="Edad:"  type="number" class="form_input radius4" /><span class="unidad">años</span><br/>
+                                                <label for="sexo-n">Sexo:</label>
+                                                <select id="sexo-n" class="form_select" >
                                                 <option  selected="selected" value="" label="Sexo:"></option>
                                                 <option value="F" label="Femenino"></option>
                                                 <option value="M" label="Masculino"></option>
                                                 </select><br/>
-                                                <label for="va-n">Raza:</label>
-                                                <select class="form_select" >
+                                                <label for="raza-n">Raza:</label>
+                                                <select id="raza-n" class="form_select" >
                                                 <option  selected="selected" value="0" label="Raza:"></option>
                                                 <option value="N" label="Negra"></option>
                                                 <option value="O" label="Otra"></option>
                                                 </select><br/>
+                                                <input type="button" onclick="tfge('1')" class="form_submit radius4 red red_borderbottom" value="Calcular" />
                                                         </div>
                                                 </div>
                                                  
@@ -131,24 +132,28 @@
                                         <h3>Parámetros</h3>
                                             <div class="form">
                                             	<form action="#">
-                                                 <div class="toggle_container_blog">
-                                                        <label for="tfge-n">Creatinina:</label>
-                                                <input  placeholder="TFGe:"  type="number" class="form_input radius4" value="0"  /><span class="unidad">mg/dl</span><br/>
-                                                <label for="p-n">Edad:</label>
-                                                <input  placeholder="Fosforo Serico (P):"  type="number" class="form_input radius4" value="0"  /><span class="unidad">años</span><br/>
-                                                <label for="va-n">Sexo:</label>
-                                                <select class="form_select" >
-                                                <option  selected="selected" value="0" label="Sexo:"></option>
+                                                <div class="toogle_wrap_blog radius8">
+                                                    <div class="trigger_blog"><a href="#">Calcular TFGe</a></div>
+                                                        <div class="toggle_container_blog">
+                                                        <label for="creat-t">Creatinina:</label>
+                                                <input id="creat-t" placeholder="Creatinina:"  type="number" class="form_input radius4" /><span class="unidad">mg/dl</span><br/>
+                                                <label for="edad-t">Edad:</label>
+                                                <input id="edad-t" placeholder="Edad:"  type="number" class="form_input radius4" /><span class="unidad">años</span><br/>
+                                                <label for="sexo-t">Sexo:</label>
+                                                <select id="sexo-t" class="form_select" >
+                                                <option  selected="selected" value="" label="Sexo:"></option>
                                                 <option value="F" label="Femenino"></option>
                                                 <option value="M" label="Masculino"></option>
                                                 </select><br/>
-                                                <label for="va-n">Raza:</label>
-                                                <select class="form_select" >
+                                                <label for="raza-t">Raza:</label>
+                                                <select id="raza-t" class="form_select" >
                                                 <option  selected="selected" value="0" label="Raza:"></option>
                                                 <option value="N" label="Negra"></option>
                                                 <option value="O" label="Otra"></option>
                                                 </select><br/>
+                                                <input type="button" onclick="tfge('2')" class="form_submit radius4 red red_borderbottom" value="Calcular" />
                                                         </div>
+                                                </div>
                                                         
                                                 <label for="tfge-t">TFGe:</label>
                                                 <input id="tfge-t" type="number" placeholder="TFGe:"  class="form_input radius4" value="0"  /><span class="unidad">ml/min/1.73m2</span><br/>

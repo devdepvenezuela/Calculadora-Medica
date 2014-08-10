@@ -342,8 +342,22 @@ function nuevo(){
 			document.getElementById("c-n").value = "0";
 			document.getElementById("pth-n").value = "0";
 			document.getElementById("pthmin-n").value = "0";
-			document.getElementById("pthmax-n").value = "";
+			document.getElementById("pthmax-n").value = "0";
 			document.getElementById("va-n").value = "0";
 			document.getElementById("resultado").innerHTML = "<p>No se ha realizado ningun calculo.</p>";
 			
 			}
+			
+			function tfge(tipo)
+			{
+				var crk;
+				var etfg;
+				var alfa;
+				var minn;
+				var maxxx;
+				var fact;
+				
+				alert(tipo);
+				
+				
+				}
