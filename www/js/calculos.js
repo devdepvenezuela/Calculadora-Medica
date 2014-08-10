@@ -1,7 +1,6 @@
 // JavaScript Document
 
 function nuevo(){
-	alert('nuevo');
 	var tfge = document.getElementById("tfge-n");
 	var pval = document.getElementById("p-n");
 	var cval = document.getElementById("c-n");
@@ -137,14 +136,13 @@ function nuevo(){
 									}
 						}
 					else
-					{resultado.innerHTML = "<p>PTHi normal para el metodo Observar tendencia</p>";}
+					{resultado.innerHTML = "<p>PTHi normal para el metodo</p><p>Observar tendencia</p>";}
 				}
 	}
 	
 	
 	function tratado()
 	{
-		alert('tratado');
 		var tfge = document.getElementById("tfge-t");
 		var pval = document.getElementById("p-t");
 		var cval = document.getElementById("c-t");
