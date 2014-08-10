@@ -5,14 +5,11 @@ function nuevo(){
 	var tfge = document.getElementById("tfge-n");
 	var pval = document.getElementById("p-n");
 	var cval = document.getElementById("c-n");
-	if(pval.value != "" || cval.value != "")
+	if(pval.value != 0 || cval.value != 0)
 	{
 	var p = parseFloat(pval.text);
 	var c = parseFloat(cval.text);
 	}
-	else
-	{var p = "p";
-	var c = "c";}
 	
 	var pth = document.getElementById("pth-n");
 	var pthmin = document.getElementById("pthmin-n");
@@ -27,7 +24,7 @@ function nuevo(){
 				{
 					resultado.innerHTML = "<p>Medir Ca y P</p>";
 				}
-				else if(pth.text == "")
+				else if(pth.text == "0")
 				{resultado.innerHTML = "<p> Datos incompletos</p>";}
 				else
 				{
@@ -57,7 +54,7 @@ function nuevo(){
 										}
 									 //fin de a2									
 									}
-								else if (tfge.value == "")
+								else if (tfge.value == 0)
 								{
 									resultado.innerHTML = "<p> Datos incompletos</p>";
 									}
@@ -66,8 +63,8 @@ function nuevo(){
 										resultado.innerHTML = "<p>Validar TFGe</p>";
 										}
 								}
-								else if(va.selected == "")
-								{  }
+								else if(va.selected == "0")
+								{ }
 								else
 								{
 									
@@ -93,7 +90,7 @@ function nuevo(){
 										}
 									}
 									//fin de a3
-								else if (tfge.value == "")
+								else if (tfge.value == 0)
 								{
 									resultado.innerHTML = "<p> Datos incompletos</p>";
 									}
@@ -112,7 +109,7 @@ function nuevo(){
 											pp1 = pthmin.value * 1.5;
 											pp2 = pthmax.value * 1.5;
 											}	
-										else if (tfge.value == "")
+										else if (tfge.value == 0)
 										{
 											resultado.innerHTML = "<p> Datos incompletos</p>";
 											}
@@ -120,7 +117,7 @@ function nuevo(){
 											{
 												resultado.innerHTML = "<p>ASRVD:  1 mcg/día ó 2 mcg/día 3 veces / semana</p><p>Evaluar C y P a las 2-4 semanas y PTHi a las 4 semanas</p>";
 												}
-												else if (pth.value = "")
+												else if (pth.value = 0)
 												{
 													resultado.innerHTML = "<p> Datos incompletos</p>";
 													}
@@ -151,14 +148,11 @@ function nuevo(){
 		var tfge = document.getElementById("tfge-t");
 		var pval = document.getElementById("p-t");
 		var cval = document.getElementById("c-t");
-		if(pval.value != "" || cval.value != "")
+		if(pval.value != 0 || cval.value != 0)
 		{
 		var p = parseFloat(pval.text);
 		var c = parseFloat(cval.text);
 		}
-		else
-		{var p = "p";
-		var c = "c";}
 		var pthi = document.getElementById("pthi-t");
 		var ptha = document.getElementById("ptha-t");
 		var pthmin = document.getElementById("pthmin-t");
@@ -185,7 +179,7 @@ function nuevo(){
 											{resultado.innerHTML = "<p>Omitir, considerar calcimimetrico o PTX</p>";}
 											else if (asrvd.value <= 40)
 											{resultado.innerHTML = "<p>Aumentar ASRVD 25%</p><p>Medir Ca, P, PTHi a las 4 semanas</p>";}
-											else if (asrvd.value == "")
+											else if (asrvd.value == 0)
 											{
 												resultado.innerHTML = "<p> Datos incompletos</p>";
 												}
@@ -218,7 +212,7 @@ function nuevo(){
 		
 			
 			}
-			else if(va.selected == "")
+			else if(va.selected == 0)
 			{
 						
 				}
@@ -267,7 +261,7 @@ function nuevo(){
 					//fin de b2
 					
 					}
-					else if(tfge.value == "")
+					else if(tfge.value == 0)
 					{}
 					else
 					{
