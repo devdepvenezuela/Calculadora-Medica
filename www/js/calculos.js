@@ -1,7 +1,7 @@
 // JavaScript Document
 
 function nuevo(){
-	
+	alert('nuevo');
 	var tfge = document.getElementById("tfge-n");
 	var pval = document.getElementById("p-n");
 	var cval = document.getElementById("c-n");
@@ -147,6 +147,7 @@ function nuevo(){
 	
 	function tratado()
 	{
+		alert('tratado');
 		var tfge = document.getElementById("tfge-t");
 		var pval = document.getElementById("p-t");
 		var cval = document.getElementById("c-t");
@@ -330,6 +331,7 @@ function nuevo(){
 		
 		function clear()
 		{
+			alert('hola');
 			document.getElementById("tfge-n").value = "";
 			document.getElementById("p-n").value = "";
 			document.getElementById("c-n").value = "";
@@ -342,6 +344,7 @@ function nuevo(){
 			
 			function clear1()
 		{
+			alert('hola');
 			document.getElementById("tfge-t").value = "";
 			document.getElementById("p-t").value = "";
 			document.getElementById("c-t").value = "";
