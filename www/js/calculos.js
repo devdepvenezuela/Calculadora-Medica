@@ -63,7 +63,7 @@ function nuevo(){
 									}
 									else
 									{
-										resultado.innerHTML = "<p>Validar TFGe</p>"
+										resultado.innerHTML = "<p>Validar TFGe</p>";
 										}
 								}
 								else if(va.selected == "")
