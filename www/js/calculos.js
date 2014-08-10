@@ -382,14 +382,12 @@ function nuevo(){
 					crk = creat / 0.9;
 					alfa = -0.411;
 					fact= 1;
-					alert(crk);
 					}
 				else if (sexo == 'F')
 				{
 					crk = creat / 0.7;
 					alfa = -0.329;
 					fact= 1.018;
-					alert(crk);
 					}
 					
 					if(crk <= 1)
@@ -402,16 +400,18 @@ function nuevo(){
 						minn = 1;
 						maxx = crk;
 						}
-				etfg = 141 * pow(minn,alfa) * pow(maxx, -1.209) * pow(0.993, edad) * fact;
+					
+				etfg = 141 * Math.pow(minn,alfa) * Math.pow(maxx, -1.209) * Math.pow(0.993, edad) * fact;
 				
-				if(raza == 'N')
+				if(raza == "N")
 				{
 					etfg = etfg * 1.159;
 					}
 					
-				etfg = etfg.toFixed(2);
-					alert(etfg);
+					etfg = etfg.toFixed(2);
 					
+					alert(etfg);
+									
 					if(tipo == 1)
 					{
 						document.getElementById("tfge-n").value = etfg;
