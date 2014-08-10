@@ -323,7 +323,6 @@ function nuevo(){
 			
 			function limpiar()
 		{
-			alert('hola');
 			document.getElementById("tfge-t").value = "0";
 			document.getElementById("p-t").value = "0";
 			document.getElementById("c-t").value = "0";
