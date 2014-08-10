@@ -408,10 +408,7 @@ function nuevo(){
 					etfg = etfg * 1.159;
 					}
 					
-					etfg = etfg.toFixed(2);
-					
-					alert(etfg);
-									
+					etfg = etfg.toFixed(2);							
 					if(tipo == 1)
 					{
 						document.getElementById("tfge-n").value = etfg;
