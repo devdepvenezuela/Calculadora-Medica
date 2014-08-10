@@ -328,33 +328,28 @@ function nuevo(){
 		
 		
 		}
-		
-		function clear()
-		{
-			alert('hola');
-			document.getElementById("tfge-n").value = "";
-			document.getElementById("p-n").value = "";
-			document.getElementById("c-n").value = "";
-			document.getElementById("pth-n").value = "";
-			document.getElementById("pthmin-n").value = "";
-			document.getElementById("pthmax-n").value = "";
-			document.getElementById("va-n").value = "";
-			document.getElementById("resultado").innerHTML = "<p>No se ha realizado ningun calculo.</p>";
-			}
 			
-			function clear1()
+			function limpiar()
 		{
 			alert('hola');
-			document.getElementById("tfge-t").value = "";
-			document.getElementById("p-t").value = "";
-			document.getElementById("c-t").value = "";
-			document.getElementById("pthi-t").value = "";
-			document.getElementById("ptha-t").value = "";
-			document.getElementById("pthmin-t").value = "";
-			document.getElementById("pthmax-t").value = "";
-			document.getElementById("asrvd-t").value = "";
-			document.getElementById("va-t").value = "";
+			document.getElementById("tfge-t").value = "0";
+			document.getElementById("p-t").value = "0";
+			document.getElementById("c-t").value = "0";
+			document.getElementById("pthi-t").value = "0";
+			document.getElementById("ptha-t").value = "0";
+			document.getElementById("pthmin-t").value = "0";
+			document.getElementById("pthmax-t").value = "0";
+			document.getElementById("asrvd-t").value = "0";
+			document.getElementById("va-t").value = "0";
 			document.getElementById("resultado2").innerHTML = "<p>No se ha realizado ningun calculo.</p>";
 			
+			document.getElementById("tfge-n").value = "0";
+			document.getElementById("p-n").value = "0";
+			document.getElementById("c-n").value = "0";
+			document.getElementById("pth-n").value = "0";
+			document.getElementById("pthmin-n").value = "0";
+			document.getElementById("pthmax-n").value = "";
+			document.getElementById("va-n").value = "0";
+			document.getElementById("resultado").innerHTML = "<p>No se ha realizado ningun calculo.</p>";
 			
 			}

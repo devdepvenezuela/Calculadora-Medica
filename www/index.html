@@ -64,7 +64,7 @@
                                                 </select><br/>
                                                 <label for="va-n">Raza:</label>
                                                 <select class="form_select" >
-                                                <option  selected="selected" value="" label="Raza:"></option>
+                                                <option  selected="selected" value="0" label="Raza:"></option>
                                                 <option value="N" label="Negra"></option>
                                                 <option value="O" label="Otra"></option>
                                                 </select><br/>
@@ -72,28 +72,28 @@
                                                 </div>
                                                  
                                                  <label for="tfge-n">TFGe:</label>
-                                                <input id="tfge-n" placeholder="TFGe:"  type="number" class="form_input radius4" /><span class="unidad">ml/min/1.73m2</span><br/>
+                                                <input id="tfge-n" placeholder="TFGe:"  type="number" class="form_input radius4" value="0" /><span class="unidad">ml/min/1.73m2</span><br/>
                                                 <label for="p-n">Fosforo Serico (P):</label>
-                                                <input id="p-n" placeholder="Fosforo Serico (P):"  type="number" class="form_input radius4" /><span class="unidad">mg/dl</span><br/>
+                                                <input id="p-n" placeholder="Fosforo Serico (P):"  type="number" class="form_input radius4" value="0" /><span class="unidad">mg/dl</span><br/>
                                                 <label for="c-n">Calcio Sérico (C):</label>
-                                                <input id="c-n" placeholder="Calcio Sérico (C):"  type="number" class="form_input radius4" /><span class="unidad">mg/dl</span><br/>
+                                                <input id="c-n" placeholder="Calcio Sérico (C):"  type="number" class="form_input radius4" value="0"  /><span class="unidad">mg/dl</span><br/>
                                                 <label for="pth-n">PTH:</label>
-                                                <input id="pth-n" placeholder="PTH:"  type="number" class="form_input radius4" /><span class="unidad">pg/ml</span><br/>
+                                                <input id="pth-n" placeholder="PTH:"  type="number" class="form_input radius4" value="0"  /><span class="unidad">pg/ml</span><br/>
                                                 <h3>Valores normales del ensayo de PTH utilizado</h3>
                                                 <label for="pthmin-n">PTH Mínimo:</label>
-                                                <input id="pthmin-n" placeholder="PTH Mínimo:"  type="number" class="form_input radius4" /><span class="unidad">pg/ml</span><br/>
+                                                <input id="pthmin-n" placeholder="PTH Mínimo:"  type="number" class="form_input radius4" value="0"  /><span class="unidad">pg/ml</span><br/>
                                                 <label for="pthmax-n">PTH Máximo:</label>
-                                                <input id="pthmax-n" placeholder="PTH Máximo:" type="number" class="form_input radius4" /><span class="unidad">pg/ml</span><br/>
+                                                <input id="pthmax-n" placeholder="PTH Máximo:" type="number" class="form_input radius4" value="0"  /><span class="unidad">pg/ml</span><br/>
                                                 <label for="va-n">Vía de admin:</label>
                                                 <select id="va-n" class="form_select" >
-                                                <option  selected="selected" value="" label="Vía de administración:"></option>
+                                                <option  selected="selected" value="0" label="Vía de administración:"></option>
                                                 <option value="O" label="Oral"></option>
                                                 <option value="I" label="Intravenoso"></option>
                                                 </select>
                                                 <br/>
                                                 </fieldset>
                                                 <input  type="button" onclick="nuevo()" class="form_submit radius4 blue blue_borderbottom" value="Calcular" />
-                                                <input  type="button" onclick="clear()" class="form_submit radius4 blue blue_borderbottom" value="Limpiar" />
+                                                <input  type="button" onclick="limpiar()" class="form_submit radius4 blue blue_borderbottom" value="Limpiar" />
                                                 </form>
                                     		</div>
                                    
@@ -133,48 +133,49 @@
                                             	<form action="#">
                                                  <div class="toggle_container_blog">
                                                         <label for="tfge-n">Creatinina:</label>
-                                                <input  placeholder="TFGe:"  type="number" class="form_input radius4" /><span class="unidad">mg/dl</span><br/>
+                                                <input  placeholder="TFGe:"  type="number" class="form_input radius4" value="0"  /><span class="unidad">mg/dl</span><br/>
                                                 <label for="p-n">Edad:</label>
-                                                <input  placeholder="Fosforo Serico (P):"  type="number" class="form_input radius4" /><span class="unidad">años</span><br/>
+                                                <input  placeholder="Fosforo Serico (P):"  type="number" class="form_input radius4" value="0"  /><span class="unidad">años</span><br/>
                                                 <label for="va-n">Sexo:</label>
                                                 <select class="form_select" >
-                                                <option  selected="selected" value="" label="Sexo:"></option>
+                                                <option  selected="selected" value="0" label="Sexo:"></option>
                                                 <option value="F" label="Femenino"></option>
                                                 <option value="M" label="Masculino"></option>
                                                 </select><br/>
                                                 <label for="va-n">Raza:</label>
                                                 <select class="form_select" >
-                                                <option  selected="selected" value="" label="Raza:"></option>
+                                                <option  selected="selected" value="0" label="Raza:"></option>
                                                 <option value="N" label="Negra"></option>
                                                 <option value="O" label="Otra"></option>
                                                 </select><br/>
                                                         </div>
+                                                        
                                                 <label for="tfge-t">TFGe:</label>
-                                                <input id="tfge-t" type="number" placeholder="TFGe:"  class="form_input radius4" /><span class="unidad">ml/min/1.73m2</span><br/>
+                                                <input id="tfge-t" type="number" placeholder="TFGe:"  class="form_input radius4" value="0"  /><span class="unidad">ml/min/1.73m2</span><br/>
                                                 <label for="p-t">Fosforo Sérico (P):</label>
-                                                <input id="p-t" type="number" placeholder="Fosforo Sérico (P):"  class="form_input radius4" /><span class="unidad">mg/dl</span><br/>
+                                                <input id="p-t" type="number" placeholder="Fosforo Sérico (P):"  class="form_input radius4" value="0"  /><span class="unidad">mg/dl</span><br/>
                                                 <label for="c-t">Calcio Sérico (C):</label>
-                                                <input id="c-t"  type="number" placeholder="Calcio Sérico (C):"  class="form_input radius4" /><span class="unidad">mg/dl</span><br/>
+                                                <input id="c-t"  type="number" placeholder="Calcio Sérico (C):"  class="form_input radius4" value="0"  /><span class="unidad">mg/dl</span><br/>
                                                 <label for="pthi-t">PTH Inicio del tratamiento:</label>
-                                                <input id="pthi-t" type="number" placeholder="PTH Inicio del tratamiento:"  class="form_input radius4" /><span class="unidad">pg/ml</span><br/>
+                                                <input id="pthi-t" type="number" placeholder="PTH Inicio del tratamiento:"  class="form_input radius4" value="0"  /><span class="unidad">pg/ml</span><br/>
                                                 <label for="ptha-t">PTH Actual:</label>
-                                                <input id="ptha-t" type="number" placeholder="PTH Actual:"  class="form_input radius4" /><span class="unidad">pg/ml</span><br/>
+                                                <input id="ptha-t" type="number" placeholder="PTH Actual:"  class="form_input radius4" value="0"  /><span class="unidad">pg/ml</span><br/>
                                                 <h3>Valores normales del ensayo de PTH utilizado</h3>
                                                 <label for="pthmax-t">PTH Máximo</label>
-                                                <input id="pthmax-t" type="number" placeholder="PTH Máximo:"  class="form_input radius4" /><span class="unidad">pg/ml</span><br/>
+                                                <input id="pthmax-t" type="number" placeholder="PTH Máximo:"  class="form_input radius4" value="0"  /><span class="unidad">pg/ml</span><br/>
                                                 <label for="pthmin-t">PTH Mínimo</label>
-                                                <input id="pthmin-t" type="number" placeholder="PTH Mínimo:"  class="form_input radius4" /><span class="unidad">pg/ml</span><br/>
+                                                <input id="pthmin-t" type="number" placeholder="PTH Mínimo:"  class="form_input radius4" value="0"  /><span class="unidad">pg/ml</span><br/>
                                                 <label for="asrvd-t">Dosis ASRVD:</label>
-                                                <input id="asrvd-t" type="number" placeholder="Dosis ASRVD:"  class="form_input radius4" /><span class="unidad">mcg</span><br/>
+                                                <input id="asrvd-t" type="number" placeholder="Dosis ASRVD:"  class="form_input radius4" value="0"  /><span class="unidad">mcg</span><br/>
                                                 <label for="va-t">Vía de admin:</label>
                                                 <select id="va-t"  placeholder="Vía de administración:" class="form_select" >
-                                               <option  selected="selected" label="Vía de administración:"></option>
+                                               <option  selected="selected" value="0" label="Vía de administración:"></option>
                                                 <option value="O" label="Oral"></option>
                                                 <option value="I" label="Intravenoso"></option>
                                                 </select>
                                                 <br/>
                                                 <input type="button" onclick="tratado()" class="form_submit radius4 red red_borderbottom" value="Calcular" />
-                                                <input  type="button" onclick="clear1()" class="form_submit radius4 blue blue_borderbottom" value="Limpiar" />
+                                                <input  type="button" onclick="limpiar()" class="form_submit radius4 blue blue_borderbottom" value="Limpiar" />
                                                 </form>
                                                
                                     		</div>
