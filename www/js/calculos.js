@@ -350,14 +350,63 @@ function nuevo(){
 			
 			function tfge(tipo)
 			{
+				//calculado
 				var crk;
 				var etfg;
 				var alfa;
 				var minn;
 				var maxxx;
 				var fact;
+			//captura
+				var creat;
+				var edad;
+				var sexo;
+				var raza;
+				if(tipo == 1)
+				{
+					creat = document.getElementById("creat-n").value;
+					edad = document.getElementById("edad-n").value;
+					sexo = document.getElementById("sexo-n").value;
+					raza = document.getElementById("raza-n").value;
+					
+					}
+					else
+					{
+					creat = document.getElementById("creat-t").value;
+					edad = document.getElementById("edad-t").value;
+					sexo = document.getElementById("sexo-t").value;
+					raza = document.getElementById("raza-t").value;
+						}
+				if (sexo == 'M')
+				{
+					crk = creat / 0.9;
+					alfa = -0.411;
+					fact= 1;
+					alert(crk);
+					}
+				else if (sexo == 'F')
+				{
+					crk = creat / 0.7;
+					alfa = -0.329;
+					fact= 1.018;
+					alert(crk);
+					}
+					
+					if(crk <= 1)
+					{
+						minn = crk;
+						maxx = 1;
+						}
+					else 
+					{
+						minn = 1;
+						maxx = crk;
+						}
+				etfg = 141 * pow(minn,alfa) * pow(maxx, -1.209) * pow(0.993, edad) * fact;
 				
-				alert(tipo);
-				
-				
+				if(raza == 'N')
+				{
+					etfg = etfg * 1.159;
+					}
+					alert(etfg);
 				}
