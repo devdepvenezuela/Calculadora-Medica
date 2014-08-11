@@ -81,7 +81,7 @@ function nuevo(){
 										resultado.innerHTML = "<p>Validar TFGe</p>";
 										}
 								}
-								else if(va.selected == "0")
+								else if(va.value == "0")
 								{ }
 								else
 								{
@@ -141,9 +141,8 @@ function nuevo(){
 													}
 													else
 													{
-													alert('entro aqui');
+														alert('entro aqui');
 														resultado.innerHTML = "<p>PTHi normal para el metodo</p><p>Observar tendencia</p>";
-														
 														}
 										//fin de a4
 										}
@@ -152,9 +151,8 @@ function nuevo(){
 						}
 					else
 					{
-					
-					resultado.innerHTML = "<p>PTHi normal para el metodo</p><p>Observar tendencia</p>";}
-				}
+						resultado.innerHTML = "<p>PTHi normal para el metodo</p><p>Observar tendencia</p>";}
+					}
 	}
 	
 	
@@ -187,7 +185,7 @@ function nuevo(){
 		var resultado = document.getElementById("resultado2");
 		
 		
-		if(va.selected == "I")
+		if(va.value == "I")
 		{
 			//inicio de b1
 				if(c < 8.5 || p < 3.5)
@@ -237,7 +235,7 @@ function nuevo(){
 		
 			
 			}
-			else if(va.selected == 0)
+			else if(va.value == "0")
 			{
 						
 				}
