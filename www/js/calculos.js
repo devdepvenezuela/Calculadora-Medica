@@ -7,15 +7,15 @@ function nuevo(){
 	var c = parseFloat(0);
 	if (tfgein.value != "" && tfgein.value != null)
 	{
-		tfge = parseFloat(tfgein.text);
+		tfge = tfge + parseFloat(tfgein.value);
 	}
 	if (pval.value != "" && pval.value != null)
 	{
-		p = parseFloat(pval.text);
+		p = p + parseFloat(pval.text);
 	}
 	if (cval.value != "" && cval.value != null)
 	{
-		c = parseFloat(cval.text);
+		c = c + parseFloat(cval.text);
 	}
 
 	var pth = document.getElementById("pth-n");
