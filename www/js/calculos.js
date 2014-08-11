@@ -146,8 +146,18 @@ function nuevo(){
 													}
 													else
 													{
-														alert('entro aqui');
-														resultado.innerHTML = "<p>PTHi normal para el metodo</p><p>Observar tendencia</p>";
+													if(pth.value > 500)
+													{
+													resultado.innerHTML = "<p>ASRVD:  ASRVD: 2 mcg/dia o 4 mcg 3 veces / semana</p>";
+													}
+													else if (pth.value == "0")
+												{
+													resultado.innerHTML = "<p> Datos incompletos</p>";
+													}
+													else
+													{
+													resultado.innerHTML = "<p>PTHi normal para el metodo</p><p>Observar tendencia</p>";
+													}
 														}
 										//fin de a4
 										}
@@ -353,24 +363,24 @@ function nuevo(){
 			
 			function limpiar()
 		{
-			document.getElementById("tfge-t").value = "0";
-			document.getElementById("p-t").value = "0";
-			document.getElementById("c-t").value = "0";
-			document.getElementById("pthi-t").value = "0";
-			document.getElementById("ptha-t").value = "0";
-			document.getElementById("pthmin-t").value = "0";
-			document.getElementById("pthmax-t").value = "0";
-			document.getElementById("asrvd-t").value = "0";
-			document.getElementById("va-t").value = "0";
+			document.getElementById("tfge-t").value = "";
+			document.getElementById("p-t").value = "";
+			document.getElementById("c-t").value = "";
+			document.getElementById("pthi-t").value = "";
+			document.getElementById("ptha-t").value = "";
+			document.getElementById("pthmin-t").value = "";
+			document.getElementById("pthmax-t").value = "";
+			document.getElementById("asrvd-t").value = "";
+			document.getElementById("va-t").value = "";
 			document.getElementById("resultado2").innerHTML = "<p>No se ha realizado ningun calculo.</p>";
 			
-			document.getElementById("tfge-n").value = "0";
-			document.getElementById("p-n").value = "0";
-			document.getElementById("c-n").value = "0";
-			document.getElementById("pth-n").value = "0";
-			document.getElementById("pthmin-n").value = "0";
-			document.getElementById("pthmax-n").value = "0";
-			document.getElementById("va-n").value = "0";
+			document.getElementById("tfge-n").value = "";
+			document.getElementById("p-n").value = "";
+			document.getElementById("c-n").value = "";
+			document.getElementById("pth-n").value = "";
+			document.getElementById("pthmin-n").value = "";
+			document.getElementById("pthmax-n").value = "";
+			document.getElementById("va-n").value = "";
 			document.getElementById("resultado").innerHTML = "<p>No se ha realizado ningun calculo.</p>";
 			
 			}
