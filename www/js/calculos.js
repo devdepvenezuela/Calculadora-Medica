@@ -95,12 +95,12 @@ function nuevo(){
 									else if (c >= 8.5 && c <= 10)
 									{
 									var dosis = pth.value / factor;
-										resultado.innerHTML = "<p>Dosis de ASRVD = " + dosis + "</p><p>Medir Calcio y Fósforo a las 2-4 semanas y PTHi a las 4 semanas</p>";
+										resultado.innerHTML = "<p>Dosis de ASRVD = " + dosis + " mcg</p><p>Medir Calcio y Fósforo a las 2-4 semanas y PTHi a las 4 semanas</p>";
 										}
 										else if (p >= 3.5 && p <= 5.5)
 									{
 										var dosis = pth.value / factor;
-										resultado.innerHTML = "<p>Dosis de ASRVD = " + dosis + "</p><p>Medir Calcio y Fósforo a las 2-4 semanas y PTHi a las 4 semanas</p>";
+										resultado.innerHTML = "<p>Dosis de ASRVD = " + dosis + " mcg</p><p>Medir Calcio y Fósforo a las 2-4 semanas y PTHi a las 4 semanas</p>";
 										
 										}
 									else if (c > 10 || p > 5.5)
@@ -122,17 +122,17 @@ function nuevo(){
 										//inicio de a4
 										var pp1;
 										var pp2;
-										 if(tfge>= 30 && tfge <= 60)
+										 if(tfge >= 30 && tfge <= 60)
 											{
 											pp1 = pthmin.value * 1.5;
 											pp2 = pthmax.value * 1.5;
 											}
-											else if (tfge.value >= 15 && tfge.value <= 29)
+											else if (tfge >= 15 && tfge <= 29)
 											{
 											pp1 = pthmin.value * 1.5;
 											pp2 = pthmax.value * 1.5;
 											}	
-										else if (tfge.value == 0.00)
+										else if (tfge == 0.00)
 										{
 											resultado.innerHTML = "<p> Datos incompletos</p>";
 											}
