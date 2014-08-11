@@ -11,11 +11,11 @@ function nuevo(){
 	}
 	if (pval.value != "" && pval.value != null)
 	{
-		p = p + parseFloat(pval.text);
+		p = p + parseFloat(pval.value);
 	}
 	if (cval.value != "" && cval.value != null)
 	{
-		c = c + parseFloat(cval.text);
+		c = c + parseFloat(cval.value);
 	}
 
 	var pth = document.getElementById("pth-n");
