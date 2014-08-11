@@ -7,7 +7,7 @@ function nuevo(){
 	var c = parseFloat(0);
 	if (tfgein.value != "" && tfgein.value != null)
 	{
-		tfge = tfge + parseFloat(tfgein.value);
+		tfge = parseFloat(tfgein.text);
 	}
 	if (pval.value != "" && pval.value != null)
 	{
