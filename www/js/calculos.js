@@ -37,8 +37,6 @@ function nuevo(){
 	//inicio a1
 			var p1 = pthmax.value * 2;
 			var p2 = pthmax.value * 9; 
-			alert("p1: " + p1);
-			alert("p2: " + p2);
 				if( pth.value < p1  )
 				{
 					resultado.innerHTML = "<p>Medir Ca y P</p>";
@@ -51,8 +49,9 @@ function nuevo(){
 					{
 							if(va.selected == "I")
 							{
+							alert("entro en a2");
 								// inicio de a2
-								if(tfge.value <= 15)
+								if(tfge.value <= 15.00)
 								{
 									var factor = 100;									 
 									 if(c < 8.5 || p < 3.5)
