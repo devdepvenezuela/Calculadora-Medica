@@ -48,7 +48,7 @@ function nuevo(){
 					if(pth.value > p2)
 					{
 							alert("entro en pth > p2");
-							if(va.selected == "I")
+							if(va.value == "I")
 							{
 								// inicio de a2
 								if(tfge.value <= 15.00)
