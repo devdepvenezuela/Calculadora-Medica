@@ -51,7 +51,7 @@ function nuevo(){
 							if(va.value == "I")
 							{
 								// inicio de a2
-								if(tfge.value <= 15.0)
+								if(tfge <= 15)
 								{
 									var factor = 100;									 
 									 if(c < 8.5 || p < 3.5)
