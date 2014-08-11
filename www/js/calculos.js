@@ -23,6 +23,13 @@ function nuevo(){
 	var pthmax = document.getElementById("pthmax-n");
 	var va = document.getElementById("va-n");
 	var resultado = document.getElementById("resultado");
+	
+	alert("tfge: " + tfge);
+	alert("p: " + p);
+	alert("c: " + c);
+	alert("Minimo: " + pthmin.value);
+	alert("Maximo: " + pthmax.value);
+	alert("va: " + va.value);
 	//inicio a1
 			var p1 = pthmax.value * 2;
 			var p2 = pthmax.value * 9; 
