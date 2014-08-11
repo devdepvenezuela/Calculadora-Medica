@@ -60,7 +60,9 @@ function nuevo(){
 										}
 									else if (c >= 8.5 && c <= 10 || p >= 3.5 && p <= 5.5)
 									{
-										resultado.innerHTML = "<p>Dosis de ASRVD = " + pth.value + "/" + factor + "</p><p>Medir C y P a las 2-4 semanas y PTHi a las 4 semanas</p>";
+									var dosis = pth.value / factor ;
+									
+										resultado.innerHTML = "<p>Dosis de ASRVD = " + dosis + " mcg </p><p>Medir C y P a las 2-4 semanas y PTHi a las 4 semanas</p>";
 										}
 									else if (c > 10 || p > 5.5)
 									{
