@@ -84,7 +84,7 @@ function nuevo(){
 								{ }
 								else
 								{
-									if(tfge.value <= 15)
+									if(tfge <= 15)
 								{
 									//inicio de a3 
 									var factor = 80;									 
@@ -110,7 +110,7 @@ function nuevo(){
 										}
 									}
 									//fin de a3
-								else if (tfge.value == 0.00)
+								else if (tfge == 0.00)
 								{
 									resultado.innerHTML = "<p> Datos incompletos</p>";
 									}
@@ -119,7 +119,7 @@ function nuevo(){
 										//inicio de a4
 										var pp1;
 										var pp2;
-										 if(tfge.value >= 30 && tfge.value <= 60)
+										 if(tfge>= 30 && tfge <= 60)
 											{
 											pp1 = pthmin.value * 1.5;
 											pp2 = pthmax.value * 1.5;
