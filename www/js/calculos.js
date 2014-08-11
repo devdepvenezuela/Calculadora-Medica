@@ -26,14 +26,6 @@ function nuevo(){
 	var pthmax = document.getElementById("pthmax-n");
 	var va = document.getElementById("va-n");
 	var resultado = document.getElementById("resultado");
-	
-	alert("tfge: " + tfge);
-	alert("p: " + p);
-	alert("c: " + c);
-	alert("pth: " + pth.value);
-	alert("Minimo: " + pthmin.value);
-	alert("Maximo: " + pthmax.value);
-	alert("va: " + va.value);
 	//inicio a1
 			var p1 = pthmax.value * 2;
 			var p2 = pthmax.value * 9; 
@@ -47,7 +39,6 @@ function nuevo(){
 				{
 					if(pth.value > p2)
 					{
-							alert("entro en pth > p2");
 							if(va.value == "I")
 							{
 								// inicio de a2
@@ -56,17 +47,17 @@ function nuevo(){
 									var factor = 100;									 
 									 if(c < 8.5 || p < 3.5)
 									{
-										resultado.innerHTML = "<p>Corregir C y P</p><p>Ajustar Quelante</p><p>Revisar Nutrición</p>";
+										resultado.innerHTML = "<p>Corregir Calcio y Fósforo</p><p>Ajustar Quelante</p><p>Revisar Nutrición</p>";
 										}
 									else if (c >= 8.5 && c <= 10 || p >= 3.5 && p <= 5.5)
 									{
 									var dosis = pth.value / factor ;
 									
-										resultado.innerHTML = "<p>Dosis de ASRVD = " + dosis + " mcg </p><p>Medir C y P a las 2-4 semanas y PTHi a las 4 semanas</p>";
+										resultado.innerHTML = "<p>Dosis de ASRVD = " + dosis + " mcg </p><p>Medir Calcio y Fósforo a las 2-4 semanas y PTHi a las 4 semanas</p>";
 										}
 									else if (c > 10 || p > 5.5)
 									{
-										resultado.innerHTML = "<p>Corregir C y P</p><p>Ajustar o Cambiar Quelante";
+										resultado.innerHTML = "<p>Corregir Calcio y Fósforo</p><p>Ajustar o Cambiar Quelante";
 										}
 									else
 									{
@@ -87,22 +78,25 @@ function nuevo(){
 								{ }
 								else
 								{
-								alert("entro en else pth > p2");
 									if(tfge.value <= 15)
 								{
 									//inicio de a3 
 									var factor = 80;									 
 									 if(c < 8.5 || p < 3.5)
 									{
-										resultado.innerHTML = "<p>Corregir C y P</p><p>Ajustar Quelante</p><p>Revisar Nutrición</p>";
+										resultado.innerHTML = "<p>Corregir Calcio y Fósforo</p><p>Ajustar Quelante</p><p>Revisar Nutrición</p>";
 										}
 									else if (c >= 8.5 && c <= 10 || p >= 3.5 && p <= 5.5)
 									{
-										resultado.innerHTML = "<p>Dosis de ASRVD = " + pth.value + "/" + factor + "</p><p>Medir C y P a las 2-4 semanas y PTHi a las 4 semanas</p>";
+										resultado.innerHTML = "<p>Dosis de ASRVD = " + pth.value + "/" + factor + "</p><p>Medir Calcio y Fósforo a las 2-4 semanas y PTHi a las 4 semanas</p>";
+										}
+										else if (p >= 3.5 && p <= 5.5)
+									{
+										resultado.innerHTML = "<p>Dosis de ASRVD = " + pth.value + "/" + factor + "</p><p>Medir Calcio y Fósforo a las 2-4 semanas y PTHi a las 4 semanas</p>";
 										}
 									else if (c > 10 || p > 5.5)
 									{
-										resultado.innerHTML = "<p>Corregir C y P</p><p>Ajustar o Cambiar Quelante";
+										resultado.innerHTML = "<p>Corregir Calcio y Fósforo</p><p>Ajustar o Cambiar Quelante";
 										}
 									else
 									{
@@ -135,7 +129,7 @@ function nuevo(){
 											}
 											if(pth.value >= p2 && pth.value <= 500)
 											{
-												resultado.innerHTML = "<p>ASRVD:  1 mcg/día ó 2 mcg/día 3 veces / semana</p><p>Evaluar C y P a las 2-4 semanas y PTHi a las 4 semanas</p>";
+												resultado.innerHTML = "<p>ASRVD:  1 mcg/día ó 2 mcg/día 3 veces / semana</p><p>Evaluar Calcio y Fósforo a las 2-4 semanas y PTHi a las 4 semanas</p>";
 												}
 												else if (pth.value == "0")
 												{
