@@ -13,10 +13,12 @@ function nuevo(){
 	if (pval.value != "" && pval.value != null)
 	{
 		p = p + parseFloat(pval.value);
+		p = p.toFixed(2);
 	}
 	if (cval.value != "" && cval.value != null)
 	{
 		c = c + parseFloat(cval.value);
+		c = c.toFixed(2);
 	}
 
 	var pth = document.getElementById("pth-n");
@@ -28,6 +30,7 @@ function nuevo(){
 	alert("tfge: " + tfge);
 	alert("p: " + p);
 	alert("c: " + c);
+	alert("pth: " + pth.value);
 	alert("Minimo: " + pthmin.value);
 	alert("Maximo: " + pthmax.value);
 	alert("va: " + va.value);
