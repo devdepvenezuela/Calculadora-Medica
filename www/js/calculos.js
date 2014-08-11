@@ -148,7 +148,9 @@ function nuevo(){
 									}
 						}
 					else
-					{resultado.innerHTML = "<p>PTHi normal para el metodo</p><p>Observar tendencia</p>";}
+					{
+					alert('enrto aqui');
+					resultado.innerHTML = "<p>PTHi normal para el metodo</p><p>Observar tendencia</p>";}
 				}
 	}
 	
