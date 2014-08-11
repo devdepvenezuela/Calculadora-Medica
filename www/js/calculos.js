@@ -1,29 +1,36 @@
-// JavaScript Document
-
 function nuevo(){
-	var tfge = document.getElementById("tfge-n");
+	var tfgein = document.getElementById("tfge-n");
 	var pval = document.getElementById("p-n");
 	var cval = document.getElementById("c-n");
-	if(pval.value != 0 || cval.value != 0)
+	var tfge = parseFloat(0);
+	var p  = parseFloat(0);
+	var c = parseFloat(0);
+	if (tfgein.value != "" && tfgein.value != null)
 	{
-	var p = parseFloat(pval.text);
-	var c = parseFloat(cval.text);
+		tfge = parseFloat(tfgein.text);
 	}
-	
+	if (pval.value != "" && pval.value != null)
+	{
+		p = parseFloat(pval.text);
+	}
+	if (cval.value != "" && cval.value != null)
+	{
+		c = parseFloat(cval.text);
+	}
+
 	var pth = document.getElementById("pth-n");
 	var pthmin = document.getElementById("pthmin-n");
 	var pthmax = document.getElementById("pthmax-n");
 	var va = document.getElementById("va-n");
 	var resultado = document.getElementById("resultado");
 	//inicio a1
-	
 			var p1 = pthmax.value * 2;
 			var p2 = pthmax.value * 9; 
 				if( pth.value < p1  )
 				{
 					resultado.innerHTML = "<p>Medir Ca y P</p>";
 				}
-				else if(pth.text == "0")
+				else if(pth.value == "" && pth.value == null)
 				{resultado.innerHTML = "<p> Datos incompletos</p>";}
 				else
 				{
@@ -35,14 +42,14 @@ function nuevo(){
 								if(tfge.value <= 15)
 								{
 									var factor = 100;									 
-									 ///////////
 									 if(c < 8.5 || p < 3.5)
 									{
 										resultado.innerHTML = "<p>Corregir C y P</p><p>Ajustar Quelante</p><p>Revisar Nutrición</p>";
 										}
 									else if (c >= 8.5 && c <= 10 || p >= 3.5 && p <= 5.5)
 									{
-										resultado.innerHTML = "<p>Dosis de ASRVD = " + pth.value + "/" + factor + "</p><p>Medir C y P a las 2-4 semanas y PTHi a las 4 semanas</p>";}
+										resultado.innerHTML = "<p>Dosis de ASRVD = " + pth.value + "/" + factor + "</p><p>Medir C y P a las 2-4 semanas y PTHi a las 4 semanas</p>";
+										}
 									else if (c > 10 || p > 5.5)
 									{
 										resultado.innerHTML = "<p>Corregir C y P</p><p>Ajustar o Cambiar Quelante";
@@ -53,7 +60,7 @@ function nuevo(){
 										}
 									 //fin de a2									
 									}
-								else if (tfge.value == 0)
+								else if (tfge.value == 0.00)
 								{
 									resultado.innerHTML = "<p> Datos incompletos</p>";
 									}
@@ -66,7 +73,6 @@ function nuevo(){
 								{ }
 								else
 								{
-									
 									if(tfge.value <= 15)
 								{
 									//inicio de a3 
@@ -89,7 +95,7 @@ function nuevo(){
 										}
 									}
 									//fin de a3
-								else if (tfge.value == 0)
+								else if (tfge.value == 0.00)
 								{
 									resultado.innerHTML = "<p> Datos incompletos</p>";
 									}
@@ -108,7 +114,7 @@ function nuevo(){
 											pp1 = pthmin.value * 1.5;
 											pp2 = pthmax.value * 1.5;
 											}	
-										else if (tfge.value == 0)
+										else if (tfge.value == 0.00)
 										{
 											resultado.innerHTML = "<p> Datos incompletos</p>";
 											}
@@ -116,7 +122,7 @@ function nuevo(){
 											{
 												resultado.innerHTML = "<p>ASRVD:  1 mcg/día ó 2 mcg/día 3 veces / semana</p><p>Evaluar C y P a las 2-4 semanas y PTHi a las 4 semanas</p>";
 												}
-												else if (pth.value = 0)
+												else if (pth.value == "0")
 												{
 													resultado.innerHTML = "<p> Datos incompletos</p>";
 													}
@@ -125,13 +131,8 @@ function nuevo(){
 														resultado.innerHTML = "<p>PTHi normal para el metodo</p><p>Observar tendencia</p>";
 														
 														}
-												
-												
-								
 										//fin de a4
-										
 										}
-									
 									//fin
 									}
 						}
@@ -143,13 +144,23 @@ function nuevo(){
 	
 	function tratado()
 	{
-		var tfge = document.getElementById("tfge-t");
+		var tfgein = document.getElementById("tfge-t");
 		var pval = document.getElementById("p-t");
 		var cval = document.getElementById("c-t");
-		if(pval.value != 0 || cval.value != 0)
+		var tfge = parseFloat(0);
+		var p  = parseFloat(0);
+		var c = parseFloat(0);
+		if (tfgein.value != "" && tfgein.value != null)
 		{
-		var p = parseFloat(pval.text);
-		var c = parseFloat(cval.text);
+			tfge = parseFloat(tfgein.text);
+		}
+		if (pval.value != "" && pval.value != null)
+		{
+			p = parseFloat(pval.text);
+		}
+		if (cval.value != "" && cval.value != null)
+		{
+			c = parseFloat(cval.text);
 		}
 		var pthi = document.getElementById("pthi-t");
 		var ptha = document.getElementById("ptha-t");
