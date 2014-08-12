@@ -252,7 +252,9 @@ function nuevo(){
 										variacion = 100 * variacion / pthi.value;
 										if(variacion < 30)
 										{
-												resultado.innerHTML = "<p>Aumentar dosis de ASRVD "+ asrvd.value * 1 + 1 +"mcg/dia ó "+ asrvd.value * 1 + 2 +"mcg 3 veces por semana</p><p>Medir Calcio, Fósforo, PTHi a las 4 semanas</p>";
+											var dosis1 = asrvd.value * 1 + 1;
+											var dosis2 = dosis1 + 1;
+												resultado.innerHTML = "<p>Aumentar dosis de ASRVD "+ dosis1 +"mcg/dia ó "+ dosis2 +"mcg 3 veces por semana</p><p>Medir Calcio, Fósforo, PTHi a las 4 semanas</p>";
 											}
 											else if (variacion > 30 && variacion <= 60 )
 											{resultado.innerHTML = "<p>Mantener dosis de ASRVD hasta PTH en Rango 2 – 9x valor Normal</p>";}
