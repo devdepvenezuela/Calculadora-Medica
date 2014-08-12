@@ -245,9 +245,10 @@ function nuevo(){
 										variacion = 100 * variacion / pthi.value;
 										if(variacion < 30)
 										{
-												var ndosis = asrvd.value + (asrvd.value * 25/100);
+												var ndosis = asrvd.value * 25/100;
+												ndosis += asrvd.value;
 												resultado.innerHTML = "<p>Aumentar dosis de ASRVD 25% = " + ndosis +"mcg </p><p>Medir Calcio, Fósforo, PTHi a las 4 semanas</p><p>Si las dosis > 40mcg Omitir, considerar calcimimetrico o PTX</p>";}
-										}
+											}
 											else if (variacion > 30 && variacion <= 60 )
 											{resultado.innerHTML = "<p>Mantener dosis de ASRVD hasta PTH en Rango 2 – 9x del valor Normal</p>";}
 											else if (variacion > 60 )
@@ -295,7 +296,8 @@ function nuevo(){
 										variacion = 100 * variacion / pthi.value;
 										if(variacion < 30)
 										{
-												resultado.innerHTML = "<p>Aumentar dosis de ASRVD 1 mcg/dia ó 2 mcg 3 veces por semana</p><p>Medir Calcio, Fósforo, PTHi a las 4 semanas</p>";
+											var dosis = asrvd.value;
+												resultado.innerHTML = "<p>Aumentar dosis de ASRVD "+ dosis + 1 +"mcg/dia ó "+ dosis + 2 +"mcg 3 veces por semana</p><p>Medir Calcio, Fósforo, PTHi a las 4 semanas</p>";
 											}
 											else if (variacion > 30 && variacion <= 60 )
 											{resultado.innerHTML = "<p>Mantener dosis de ASRVD hasta PTH en Rango 2 – 9x del valor Normal</p>";}
@@ -312,7 +314,8 @@ function nuevo(){
 										variacion = 100 * variacion / pthi.value;
 										if(variacion < 30)
 										{
-												resultado.innerHTML = "<p>Aumentar dosis de ASRVD 1 mcg/dia ó 2 mcg 3 veces por semana</p><p>Medir Calcio, Fósforo, PTHi a las 4 semanas</p>";
+										var dosis = asrvd.value;
+												resultado.innerHTML = "<p>Aumentar dosis de ASRVD "+ dosis + 1 +"mcg/dia ó "+ dosis + 2 +"mcg 3 veces por semana</p><p>Medir Calcio, Fósforo, PTHi a las 4 semanas</p>";
 											}
 											else if (variacion > 30 && variacion <= 60 )
 											{resultado.innerHTML = "<p>Mantener ASRVD hasta PTH en Rango 2 – 9x del valor Normal</p>";}
@@ -363,8 +366,10 @@ function nuevo(){
 										variacion = 100 * variacion / pthi.value;
 										if(variacion < 30)
 										{
-											var ndosis25 = asrvd.value + asrvd.value * 25/100;
-											var ndosis50 = asrvd.value + asrvd.value * 50/100;
+											var ndosis25 = asrvd.value * 25/100;
+											ndosis25 += asrvd.value;
+											var ndosis50 = asrvd.value * 50/100;
+											ndosis50 += asrvd.value;
 												resultado.innerHTML = "<p>Aumentar dosis de ASRVD 25%("+ndosis25+"mcg) - 50%("+ndosis50+"mcg)</p><p>Medir Calcio, Fósforo, PTHi a las 4 semanas</p>";
 											}
 											else if (variacion > 30 && variacion <= 60 )
@@ -376,8 +381,8 @@ function nuevo(){
 											{resultado.innerHTML = "<p>ECR4</p><p>Mantener dosis de ASRVD hasta PTH en Rango: 2 * valor Normal</p>";}
 											else if (variacion > 60 )
 											{
-												var ndosis25 = asrvd.value + asrvd.value * 25/100;
-												var ndosis50 = asrvd.value + asrvd.value * 50/100;
+												var ndosis25 = asrvd.value - asrvd.value * 25/100;
+												var ndosis50 = asrvd.value - asrvd.value * 50/100;
 												resultado.innerHTML = "<p>Disminuir dosis de ASRVD 25%("+ndosis25+"mcg) - 50%("+ndosis50+"mcg)</p><p>Medir Calcio, Fósforo, PTHi a las 4 semanas</p>";}
 											else
 											{
@@ -390,8 +395,10 @@ function nuevo(){
 										variacion = 100 * variacion / pthi.value;
 										if(variacion < 30)
 										{
-												var ndosis25 = asrvd.value + asrvd.value * 25/100;
-												var ndosis50 = asrvd.value + asrvd.value * 50/100;
+												var ndosis25 = asrvd.value * 25/100;
+												ndosis25 += asrvd.value;
+												var ndosis50 = asrvd.value * 50/100;
+												ndosis50 += asrvd.value;
 												resultado.innerHTML = "<p>Aumentar dosis de ASRVD 25%("+ndosis25+"mcg) - 50%("+ndosis50+"mcg)</p><p>Medir Calcio, Fósforo, PTHi a las 4 semanas</p>";
 											}
 											else if (variacion > 30 && variacion <= 60)
