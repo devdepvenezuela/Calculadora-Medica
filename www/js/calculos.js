@@ -31,7 +31,7 @@ function nuevo(){
 			var p2 = pthmax.value * 9; 
 				if( pth.value < p1  )
 				{
-					resultado.innerHTML = "<p>Medir Ca y P</p>";
+					resultado.innerHTML = "<p>Medir Calcio y Fósforo</p>";
 				}
 				else if(pth.value == "" && pth.value == null)
 				{resultado.innerHTML = "<p> Datos incompletos</p>";}
@@ -204,7 +204,7 @@ function nuevo(){
 										if(variacion < 30)
 										{
 												var ndosis = asrvd.value * 1 + asrvd.value * 25/100;
-												resultado.innerHTML = "<p>Aumentar dosis de ASRVD 25% = " + ndosis +"</p><p>Medir Calcio, Fósforo, PTHi a las 4 semanas</p><p>Si la dosis > 40mcg Omitir, considerar calcimimetrico o PTX</p>";
+												resultado.innerHTML = "<p>Aumentar dosis de ASRVD 25% = " + ndosis +"mcg</p><p>Medir Calcio, Fósforo, PTHi a las 4 semanas</p><p>Si la dosis > 40mcg Omitir, considerar calcimimetrico o PTX</p>";
 											}
 											else if (variacion > 30 && variacion <= 60 )
 											{resultado.innerHTML = "<p>Mantener dosis de ASRVD hasta PTH en Rango 2 – 9x valor Normal</p>";}
@@ -252,7 +252,7 @@ function nuevo(){
 										variacion = 100 * variacion / pthi.value;
 										if(variacion < 30)
 										{
-												resultado.innerHTML = "<p>Aumentar dosis de ASRVD "+ asrvd.value + 1 +"mcg/dia ó "+ asrvd.value + 2 +"mcg 3 veces por semana</p><p>Medir Calcio, Fósforo, PTHi a las 4 semanas</p>";
+												resultado.innerHTML = "<p>Aumentar dosis de ASRVD "+ asrvd.value * 1 + 1 +"mcg/dia ó "+ asrvd.value * 1 + 2 +"mcg 3 veces por semana</p><p>Medir Calcio, Fósforo, PTHi a las 4 semanas</p>";
 											}
 											else if (variacion > 30 && variacion <= 60 )
 											{resultado.innerHTML = "<p>Mantener dosis de ASRVD hasta PTH en Rango 2 – 9x valor Normal</p>";}
@@ -352,7 +352,7 @@ function nuevo(){
 			document.getElementById("pthmin-t").value = "";
 			document.getElementById("pthmax-t").value = "";
 			document.getElementById("asrvd-t").value = "";
-			document.getElementById("va-t").value = "";
+			document.getElementById("va-t").value = "0";
 			document.getElementById("resultado2").innerHTML = "<p>No se ha realizado ningun calculo.</p>";
 			
 			document.getElementById("tfge-n").value = "";
@@ -361,7 +361,7 @@ function nuevo(){
 			document.getElementById("pth-n").value = "";
 			document.getElementById("pthmin-n").value = "";
 			document.getElementById("pthmax-n").value = "";
-			document.getElementById("va-n").value = "";
+			document.getElementById("va-n").value = "0";
 			document.getElementById("resultado").innerHTML = "<p>No se ha realizado ningun calculo.</p>";
 			
 			}
