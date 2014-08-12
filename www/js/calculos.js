@@ -51,14 +51,12 @@ function nuevo(){
 										}
 									else if (c >= 8.5 && c <= 10)
 									{
-									var dosis = pth.value / factor ;
-									
+										var dosis = pth.value / factor ;
 										resultado.innerHTML = "<p>Dosis de ASRVD = " + dosis + " mcg </p><p>Medir Calcio y Fósforo a las 2-4 semanas y PTHi a las 4 semanas</p>";
 										}
 										else if (p >= 3.5 && p <= 5.5)
 									{
-									var dosis = pth.value / factor ;
-									
+										var dosis = pth.value / factor ;
 										resultado.innerHTML = "<p>Dosis de ASRVD = " + dosis + " mcg </p><p>Medir Calcio y Fósforo a las 2-4 semanas y PTHi a las 4 semanas</p>";
 										}
 									else if (c > 10 || p > 5.5)
@@ -212,14 +210,17 @@ function nuevo(){
 										}
 									else if (c >= 8.5 && c <= 10.3)
 									{
-										var pth30 = ptha.value * 30/100;
-										var pth60 = ptha.value * 60/100;
-										if(ptha.value - pthi.value < pth30)
+										
+										var variacion = pthi.value - ptha.value;
+										variacion = 100 * variacion / pthi.value;
+										if(variacion < 30)
 										{
 											if (asrvd.value > 40)
 											{resultado.innerHTML = "<p>Omitir, considerar calcimimetrico o PTX</p>";}
 											else if (asrvd.value <= 40)
-											{resultado.innerHTML = "<p>Aumentar ASRVD 25%</p><p>Medir Ca, P, PTHi a las 4 semanas</p>";}
+											{
+												var ndosis = asrvd.value + asrvd.value * 25/100;
+												resultado.innerHTML = "<p>Aumentar ASRVD 25% = " + ndosis +"</p><p>Medir Ca, P, PTHi a las 4 semanas</p>";}
 											else if (asrvd.value == 0)
 											{
 												resultado.innerHTML = "<p> Datos incompletos</p>";
@@ -227,26 +228,29 @@ function nuevo(){
 												else
 												{resultado.innerHTML = "<p> Datos incompletos</p>";}
 											}
-											else if (pthi.value > pth30 && pthi.value <= pth60 )
+											else if (variacion > 30 && variacion <= 60 )
 											{resultado.innerHTML = "<p>Mantener ASRVD hasta PTH en Rango 2 – 9x valor Normal</p>";}
-											else if (pthi.value > pth60 )
-											{resultado.innerHTML = "<p>Disminuir ASRVD 50% u Omitir por 4 semanas</p><p>Medir Ca, P, PTHi a las 4 semanas</p>";}
+											else if (variacion > 60 )
+											{
+												var ndosis = asrvd.value - asrvd.value * 50/100;
+												resultado.innerHTML = "<p>Disminuir ASRVD 50% = " + ndosis +" u Omitir por 4 semanas</p><p>Medir Ca, P, PTHi a las 4 semanas</p>";}
 											else
 											{
-												
 												}
 									
 									}
 									else if (p >= 3.5 && p <= 5.5)
 									{
-										var pth30 = ptha.value * 30/100;
-										var pth60 = ptha.value * 60/100;
-										if(pthi.value < pth30)
+										var variacion = pthi.value - ptha.value;
+										variacion = 100 * variacion / pthi.value;
+										if(variacion < 30)
 										{
 											if (asrvd.value > 40)
 											{resultado.innerHTML = "<p>Omitir, considerar calcimimetrico o PTX</p>";}
 											else if (asrvd.value <= 40)
-											{resultado.innerHTML = "<p>Aumentar ASRVD 25%</p><p>Medir Ca, P, PTHi a las 4 semanas</p>";}
+											{
+												var ndosis = asrvd.value + asrvd.value * 25/100;
+												resultado.innerHTML = "<p>Aumentar ASRVD 25% = " + ndosis +"</p><p>Medir Ca, P, PTHi a las 4 semanas</p>";}
 											else if (asrvd.value == 0)
 											{
 												resultado.innerHTML = "<p> Datos incompletos</p>";
@@ -254,10 +258,12 @@ function nuevo(){
 												else
 												{resultado.innerHTML = "<p> Datos incompletos</p>";}
 											}
-											else if (pthi.value > pth30 && pthi.value <= pth60 )
+											else if (variacion > 30 && variacion <= 60 )
 											{resultado.innerHTML = "<p>Mantener ASRVD hasta PTH en Rango 2 – 9x valor Normal</p>";}
-											else if (pthi.value > pth60 )
-											{resultado.innerHTML = "<p>Disminuir ASRVD 50% u Omitir por 4 semanas</p><p>Medir Ca, P, PTHi a las 4 semanas</p>";}
+											else if (variacion > 60 )
+											{
+												var ndosis = asrvd.value - asrvd.value * 50/100;
+												resultado.innerHTML = "<p>Disminuir ASRVD 50% = " + ndosis + " u Omitir por 4 semanas</p><p>Medir Ca, P, PTHi a las 4 semanas</p>";}
 											else
 											{
 												
@@ -268,7 +274,9 @@ function nuevo(){
 										if(c > 11)
 										{resultado.innerHTML = "<p>Omitir ASRVD</p><p>Usar Quelantes no cálcicos";}
 										else
-										{resultado.innerHTML = "<p>Disminuir ASRVD 50%</p><p>Usar Quelantes no cálcicos";}
+										{
+											var ndosis = asrvd.value - asrvd.value * 50/100;
+											resultado.innerHTML = "<p>Disminuir ASRVD 50% = " + ndosis +"</p><p>Usar Quelantes no cálcicos";}
 										
 										}
 									else
@@ -293,31 +301,35 @@ function nuevo(){
 										}
 									else if (c >= 8.5 && c <= 10.3)
 									{
-										var pth30 = ptha.value * 30/100;
-										var pth60 = ptha.value * 60/100;
-										if(pthi.value < pth30)
+										var variacion = pthi.value - ptha.value;
+										variacion = 100 * variacion / pthi.value;
+										if(variacion < 30)
 										{
 												resultado.innerHTML = "<p>Aumentar ASRVD 1 mcg/dia ó 2 mcg 3 veces por semana</p><p>Medir Ca, P, PTHi a las 4 semanas</p>";
 											}
-											else if (pthi.value > pth30 && pthi.value <= pth60 )
+											else if (variacion > 30 && variacion <= 60 )
 											{resultado.innerHTML = "<p>Mantener ASRVD hasta PTH en Rango 2 – 9x valor Normal</p>";}
-											else if (pthi.value > pth60 )
-											{resultado.innerHTML = "<p>Disminuir ASRVD 50% u Omitir por 4 semanas</p><p>Medir Ca, P, PTHi a las 4 semanas</p>";}
+											else if (variacion > 60 )
+											{
+												var ndosis = asrvd.value - asrvd.value * 50/100;
+												resultado.innerHTML = "<p>Disminuir ASRVD 50% = "+ ndosis +"mcg u Omitir por 4 semanas</p><p>Medir Ca, P, PTHi a las 4 semanas</p>";}
 											else
 											{}
 									}
 									else if (p >= 3.5 && p <= 5.5)
 									{
-										var pth30 = ptha.value * 30/100;
-										var pth60 = ptha.value * 60/100;
-										if(pthi.value < pth30)
+										var variacion = pthi.value - ptha.value;
+										variacion = 100 * variacion / pthi.value;
+										if(variacion < 30)
 										{
 												resultado.innerHTML = "<p>Aumentar ASRVD 1 mcg/dia ó 2 mcg 3 veces por semana</p><p>Medir Ca, P, PTHi a las 4 semanas</p>";
 											}
-											else if (pthi.value > pth30 && pthi.value <= pth60 )
+											else if (variacion > 30 && variacion <= 60 )
 											{resultado.innerHTML = "<p>Mantener ASRVD hasta PTH en Rango 2 – 9x valor Normal</p>";}
-											else if (pthi.value > pth60 )
-											{resultado.innerHTML = "<p>Disminuir ASRVD 50% u Omitir por 4 semanas</p><p>Medir Ca, P, PTHi a las 4 semanas</p>";}
+											else if (variacion > 60 )
+											{
+												var ndosis = asrvd.value - asrvd.value * 50/100;
+												resultado.innerHTML = "<p>Disminuir ASRVD 50% = " + ndosis +"mcg u Omitir por 4 semanas</p><p>Medir Ca, P, PTHi a las 4 semanas</p>";}
 											else
 											{}
 									}
@@ -326,7 +338,9 @@ function nuevo(){
 										if(c > 11)
 										{resultado.innerHTML = "<p>Omitir ASRVD</p><p>Usar Quelantes no cálcicos";}
 										else
-										{resultado.innerHTML = "<p>Disminuir ASRVD 50%</p><p>Usar Quelantes no cálcicos";}
+										{
+											var ndosis = asrvd.value - asrvd.value * 50/100;
+											resultado.innerHTML = "<p>Disminuir ASRVD 50% = " + ndosis + "mcg</p><p>Usar Quelantes no cálcicos";}
 										
 										}
 									else
@@ -355,21 +369,26 @@ function nuevo(){
 										}
 									else if (c >= 8.5 && c <= 10.3)
 									{
-										var pth30 = ptha.value * 30/100;
-										var pth60 = ptha.value * 60/100;
-										if(pthi.value < pth30)
+										var variacion = pthi.value - ptha.value;
+										variacion = 100 * variacion / pthi.value;
+										if(variacion < 30)
 										{
-												resultado.innerHTML = "<p>Aumentar ASRVD 25 - 50%</p><p>Medir Ca, P, PTHi a las 4 semanas</p>";
+											var ndosis25 = asrvd.value + asrvd.value * 25/100;
+											var ndosis50 = asrvd.value + asrvd.value * 50/100;
+												resultado.innerHTML = "<p>Aumentar ASRVD 25%("+ndosis25+"mcg) - 50%("+ndosis50+"mcg)</p><p>Medir Ca, P, PTHi a las 4 semanas</p>";
 											}
-											else if (pthi.value > pth30 && pthi.value <= pth60 )
+											else if (variacion > 30 && variacion <= 60 )
 											if(estadio == 3)
 											{
 												resultado.innerHTML = "<p>ECR3</p><p>Mantener ASRVD hasta PTH en Rango: 1,5 * valor Normal</p>";
 												}
 											else if (estadio == 4)
 											{resultado.innerHTML = "<p>ECR4</p><p>Mantener ASRVD hasta PTH en Rango: 2 * valor Normal</p>";}
-											else if (pthi.value > pth60 )
-											{resultado.innerHTML = "<p>Disminuir ASRVD 25%-50%</p><p>Medir Ca, P, PTHi a las 4 semanas</p>";}
+											else if (variacion > 60 )
+											{
+												var ndosis25 = asrvd.value + asrvd.value * 25/100;
+												var ndosis50 = asrvd.value + asrvd.value * 50/100;
+												resultado.innerHTML = "<p>Disminuir ASRVD 25%("+ndosis25+"mcg) - 50%("+ndosis50+"mcg)</p><p>Medir Ca, P, PTHi a las 4 semanas</p>";}
 											else
 											{
 												
@@ -377,21 +396,25 @@ function nuevo(){
 									}
 									else if (p >= 3.5 && p <= 5.5)
 									{
-										var pth30 = ptha.value * 30/100;
-										var pth60 = ptha.value * 60/100;
-										if(pthi.value < pth30)
+										var variacion = pthi.value - ptha.value;
+										variacion = 100 * variacion / pthi.value;
+										if(variacion < 30)
 										{
-												resultado.innerHTML = "<p>Aumentar ASRVD 25 - 50%</p><p>Medir Ca, P, PTHi a las 4 semanas</p>";
+												var ndosis25 = asrvd.value + asrvd.value * 25/100;
+												var ndosis50 = asrvd.value + asrvd.value * 50/100;
+												resultado.innerHTML = "<p>Aumentar ASRVD 25%("+ndosis25+"mcg) - 50%("+ndosis50+"mcg)</p><p>Medir Ca, P, PTHi a las 4 semanas</p>";
 											}
-											else if (pthi.value > pth30 && pthi.value <= pth60 )
+											else if (variacion > 30 && variacion <= 60)
 											if(estadio == 3)
 											{
 												resultado.innerHTML = "<p>ECR3</p><p>Mantener ASRVD hasta PTH en Rango: 1,5 * valor Normal</p>";
 												}
 											else if (estadio == 4)
 											{resultado.innerHTML = "<p>ECR4</p><p>Mantener ASRVD hasta PTH en Rango: 2 * valor Normal</p>";}
-											else if (pthi.value > pth60 )
-											{resultado.innerHTML = "<p>Disminuir ASRVD 25%-50%</p><p>Medir Ca, P, PTHi a las 4 semanas</p>";}
+											else if (variacion > 60 )
+											{	var ndosis25 = asrvd.value - asrvd.value * 25/100;
+												var ndosis50 = asrvd.value - asrvd.value * 50/100;
+												resultado.innerHTML = "<p>Disminuir ASRVD 25%("+ndosis25+"mcg) - 50%("+ndosis50+"mcg)</p><p>Medir Ca, P, PTHi a las 4 semanas</p>";}
 											else
 											{}
 									}
@@ -400,7 +423,9 @@ function nuevo(){
 										if(c > 11)
 										{resultado.innerHTML = "<p>Omitir ASRVD</p><p>Usar Quelantes no cálcicos";}
 										else
-										{resultado.innerHTML = "<p>Disminuir ASRVD 50%</p><p>Usar Quelantes no cálcicos";}
+										{
+											var ndosis = asrvd.value - asrvd.value * 50/100;
+											resultado.innerHTML = "<p>Disminuir ASRVD 50% = "+ ndosis+"mcg</p><p>Usar Quelantes no cálcicos";}
 										}
 									else
 									{
