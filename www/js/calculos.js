@@ -366,6 +366,17 @@ function nuevo(){
 			document.getElementById("va-n").value = "0";
 			document.getElementById("resultado").innerHTML = "<p>No se ha realizado ningun calculo.</p>";
 			
+			//tfge
+			document.getElementById("creat-n").value = "";
+			document.getElementById("edad-n").value = "";
+			document.getElementById("raza-n").value = "0";
+			document.getElementById("sexo-n").value = "0";
+			document.getElementById("creat-t").value = "";
+			document.getElementById("edad-t").value = "";
+			document.getElementById("raza-t").value = "0";
+			document.getElementById("sexo-t").value = "0";
+			
+			
 			}
 			
 			function tfge(tipo)
