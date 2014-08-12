@@ -245,19 +245,9 @@ function nuevo(){
 										variacion = 100 * variacion / pthi.value;
 										if(variacion < 30)
 										{
-											if (asrvd.value > 40)
-											{resultado.innerHTML = "<p>Omitir, considerar calcimimetrico o PTX</p>";}
-											else if (asrvd.value <= 40)
-											{
 												var ndosis = asrvd.value + (asrvd.value * 25/100);
-												resultado.innerHTML = "<p>Aumentar dosis de ASRVD 25% = " + ndosis +"mcg </p><p>Medir Calcio, Fósforo, PTHi a las 4 semanas</p>";}
-											else if (asrvd.value == 0)
-											{
-												resultado.innerHTML = "<p> Datos incompletos</p>";
-												}
-												else
-												{resultado.innerHTML = "<p> Datos incompletos</p>";}
-											}
+												resultado.innerHTML = "<p>Aumentar dosis de ASRVD 25% = " + ndosis +"mcg </p><p>Medir Calcio, Fósforo, PTHi a las 4 semanas</p><p>Si las dosis > 40mcg Omitir, considerar calcimimetrico o PTX</p>";}
+										}
 											else if (variacion > 30 && variacion <= 60 )
 											{resultado.innerHTML = "<p>Mantener dosis de ASRVD hasta PTH en Rango 2 – 9x del valor Normal</p>";}
 											else if (variacion > 60 )
