@@ -51,18 +51,18 @@ function nuevo(){
 									 if(c < 8.5 || p < 3.5)
 									{
 										resultado.innerHTML = "<p>Corregir Calcio y Fósforo</p><p>Ajustar Quelante</p><p>Revisar Nutrición</p>";
-										algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/alg2.1.jpg" class="swipebox view_details" title="Algoritmo 2">Ver algoritmo</a>';
+										algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg2.1.jpg" class="swipebox view_details" title="Algoritmo 2">Ver algoritmo</a>';
 										}
 									else if (c >= 8.5 && c <= 10 && p >= 3.5 && p <= 5.5)
 									{
 										var dosis = pth.value / factor ;
 										resultado.innerHTML = "<p>Dosis de ASRVD = " + dosis + " mcg </p><p>Medir Calcio y Fósforo a las 2-4 semanas y PTHi a las 4 semanas</p>";
-										algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/alg2.2.jpg" class="swipebox view_details" title="Algoritmo 2">Ver algoritmo</a>';
+										algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg2.2.jpg" class="swipebox view_details" title="Algoritmo 2">Ver algoritmo</a>';
 										}
 									else if (c > 10 || p > 5.5)
 									{
 										resultado.innerHTML = "<p>Corregir Calcio y Fósforo</p><p>Ajustar o Cambiar Quelante";
-										algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/alg2.3.jpg" class="swipebox view_details" title="Algoritmo 2">Ver algoritmo</a>';
+										algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg2.3.jpg" class="swipebox view_details" title="Algoritmo 2">Ver algoritmo</a>';
 										}
 									else
 									{
@@ -90,18 +90,18 @@ function nuevo(){
 									 if(c < 8.5 || p < 3.5)
 									{
 										resultado.innerHTML = "<p>Corregir Calcio y Fósforo</p><p>Ajustar Quelante</p><p>Revisar Nutrición</p>";
-										algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/alg3.1.jpg" class="swipebox view_details" title="Algoritmo 3">Ver algoritmo</a>';
+										algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg3.1.jpg" class="swipebox view_details" title="Algoritmo 3">Ver algoritmo</a>';
 										}
 									else if (c >= 8.5 && c <= 10 && p >= 3.5 && p <= 5.5)
 									{
 									var dosis = pth.value / factor;
 										resultado.innerHTML = "<p>Dosis de ASRVD = " + dosis + " mcg</p><p>Medir Calcio y Fósforo a las 2-4 semanas y PTHi a las 4 semanas</p>";
-										algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/alg3.2.jpg" class="swipebox view_details" title="Algoritmo 3">Ver algoritmo</a>';
+										algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg3.2.jpg" class="swipebox view_details" title="Algoritmo 3">Ver algoritmo</a>';
 										}
 									else if (c > 10 || p > 5.5)
 									{
 										resultado.innerHTML = "<p>Corregir Calcio y Fósforo</p><p>Ajustar o Cambiar Quelante";
-										algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/alg3.3.jpg" class="swipebox view_details" title="Algoritmo 3">Ver algoritmo</a>';
+										algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg3.3.jpg" class="swipebox view_details" title="Algoritmo 3">Ver algoritmo</a>';
 										}
 									else
 									{
@@ -135,7 +135,7 @@ function nuevo(){
 											if(pth.value >= p2 && pth.value <= 500)
 											{
 												resultado.innerHTML = "<p>Dosis de ASRVD:  1 mcg/día ó 2 mcg/día 3 veces / semana</p><p>Evaluar Calcio y Fósforo a las 2-4 semanas y PTHi a las 4 semanas</p>";
-												algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/alg4.2.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
+												algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg4.2.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
 												}
 												else if (pth.value == "0")
 												{
@@ -146,7 +146,7 @@ function nuevo(){
 													if(pth.value > 500)
 													{
 													resultado.innerHTML = "<p>Dosis de ASRVD: 2 mcg/dia o 4 mcg 3 veces / semana</p>";
-													algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/alg4.3.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
+													algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg4.3.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
 													}
 													else if (pth.value == "0")
 												{
@@ -155,7 +155,7 @@ function nuevo(){
 													else
 													{
 													resultado.innerHTML = "<p>PTHi normal para el metodo</p><p>Observar tendencia</p>";
-													algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/alg4.1.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
+													algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg4.1.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
 													}
 														}
 										//fin de a4
@@ -215,7 +215,7 @@ function nuevo(){
 				if(c < 8.5 || p < 3.5)
 									{
 										resultado.innerHTML = "<p>Mantener dosis de ASRVD</p><p>Ajustar Quelante y Suplemento de Calcio</p><p>Revisar Nutrición</p>";
-										algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/alg2.4.jpg" class="swipebox view_details" title="Algoritmo 2">Ver algoritmo</a>';
+										algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg2.4.jpg" class="swipebox view_details" title="Algoritmo 2">Ver algoritmo</a>';
 										}
 									else if (c >= 8.5 && c <= 10.3 && p >= 3.5 && p <= 5.5)
 									{
@@ -225,19 +225,19 @@ function nuevo(){
 										{
 												var ndosis = asrvd.value * 1 + asrvd.value * 25/100;
 												resultado.innerHTML = "<p>Aumentar dosis de ASRVD 25% = " + ndosis +" mcg</p><p>Medir Calcio, Fósforo, PTHi a las 4 semanas</p><p>Si la dosis > 40mcg Omitir, considerar calcimimetrico o PTX</p>";
-												algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/alg2.7.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
+												algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg2.7.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
 												
 											}
 											else if (variacion > 30 && variacion <= 60 )
 											{
 												resultado.innerHTML = "<p>Mantener dosis de ASRVD hasta PTH en Rango 2 – 9x valor Normal</p>";
-												algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/alg2.6.jpg" class="swipebox view_details" title="Algoritmo 2">Ver algoritmo</a>';
+												algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg2.6.jpg" class="swipebox view_details" title="Algoritmo 2">Ver algoritmo</a>';
 											}
 											else if (variacion > 60 )
 											{
 												var ndosis = asrvd.value - asrvd.value * 50/100;
 												resultado.innerHTML = "<p>Disminuir dosis de ASRVD 50% = " + ndosis +" mcg u Omitir por 4 semanas</p><p>Medir Calcio, Fósforo, PTHi a las 4 semanas</p>";
-												algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/alg2.4.jpg" class="swipebox view_details" title="Algoritmo 2">Ver algoritmo</a>';
+												algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg2.4.jpg" class="swipebox view_details" title="Algoritmo 2">Ver algoritmo</a>';
 												}
 												
 											else
@@ -248,13 +248,13 @@ function nuevo(){
 									{
 										if(c > 11)
 										{resultado.innerHTML = "<p>Omitir dosis de ASRVD</p><p>Usar Quelantes no cálcicos";
-										algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/alg2.8.jpg" class="swipebox view_details" title="Algoritmo 2">Ver algoritmo</a>';
+										algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg2.8.jpg" class="swipebox view_details" title="Algoritmo 2">Ver algoritmo</a>';
 										}
 										else
 										{
 											var ndosis = asrvd.value - asrvd.value * 50/100;
 											resultado.innerHTML = "<p>Disminuir dosis de ASRVD 50% = " + ndosis +" mcg</p><p>Usar Quelantes no cálcicos";
-											algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/alg3.8.jpg" class="swipebox view_details" title="Algoritmo 3">Ver algoritmo</a>';
+											algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg3.8.jpg" class="swipebox view_details" title="Algoritmo 3">Ver algoritmo</a>';
 											}
 										
 										}
@@ -277,7 +277,7 @@ function nuevo(){
 					if(c < 8.5 || p < 3.5)
 									{
 										resultado.innerHTML = "<p>Mantener dosis de ASRVD</p><p>Ajustar Quelante y Suplemento de Calcio</p><p>Revisar Nutrición</p>";
-										algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/alg4.4.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
+										algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg4.4.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
 										}
 									else if (c >= 8.5 && c <= 10.3 && p >= 3.5 && p <= 5.5)
 									{
@@ -288,18 +288,18 @@ function nuevo(){
 											var dosis1 = asrvd.value * 1 + 1;
 											var dosis2 = dosis1 + 1;
 												resultado.innerHTML = "<p>Aumentar dosis de ASRVD "+ dosis1 +" mcg/dia ó "+ dosis2 +" mcg 3 veces por semana</p><p>Medir Calcio, Fósforo, PTHi a las 4 semanas</p>";
-												algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/alg4.7.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
+												algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg4.7.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
 											}
 											else if (variacion > 30 && variacion <= 60 )
 											{	
 												resultado.innerHTML = "<p>Mantener dosis de ASRVD hasta PTH en Rango 2 – 9x valor Normal</p>";
-												algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/alg4.6.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
+												algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg4.6.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
 											}
 											else if (variacion > 60 )
 											{
 												var ndosis = asrvd.value - asrvd.value * 50/100;
 												resultado.innerHTML = "<p>Disminuir dosis de ASRVD 50% = "+ ndosis +" mcg u Omitir por 4 semanas</p><p>Medir Calcio, Fósforo, PTHi a las 4 semanas</p>";
-												algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/alg4.5.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
+												algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg4.5.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
 												}
 											else
 											{}
@@ -308,13 +308,13 @@ function nuevo(){
 									{
 										if(c > 11)
 										{	resultado.innerHTML = "<p>Omitir ASRVD</p><p>Usar Quelantes no cálcicos";
-											algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/alg4.8.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
+											algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg4.8.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
 										}
 										else
 										{
 											var ndosis = asrvd.value - asrvd.value * 50/100;
 											resultado.innerHTML = "<p>Disminuir dosis de ASRVD 50% = " + ndosis + " mcg</p><p>Usar Quelantes no cálcicos";}
-											algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/alg4.8.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
+											algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg4.8.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
 										}
 									else
 									{
@@ -339,7 +339,7 @@ function nuevo(){
 						if(c < 8.5 || p < 3.5)
 									{
 										resultado.innerHTML = "<p>Mantener dosis de ASRVD</p><p>Ajustar Quelante y Suplemento de Calcio</p><p>Revisar Nutrición</p>";
-										algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/alg4.4.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
+										algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg4.4.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
 										}
 									else if (c >= 8.5 && c <= 10.3 && p >= 3.5 && p <= 5.5)
 									{
@@ -350,25 +350,25 @@ function nuevo(){
 											var ndosis25 = asrvd.value * 1 + asrvd.value * 25/100;
 											var ndosis50 = asrvd.value * 1 + asrvd.value * 50/100;
 												resultado.innerHTML = "<p>Aumentar dosis de ASRVD 25%("+ndosis25+" mcg) - 50%("+ndosis50+" mcg)</p><p>Medir Calcio, Fósforo, PTHi a las 4 semanas</p>";
-												algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/alg4.7.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
+												algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg4.7.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
 											}
 											else if (variacion > 30 && variacion <= 60 )
 											if(estadio == 3)
 											{
 												resultado.innerHTML = "<p>ECR3</p><p>Mantener dosis de ASRVD hasta PTH en Rango: 1,5 * valor Normal</p>";
-												algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/alg4.6.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
+												algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg4.6.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
 												}
 											else if (estadio == 4)
 											{
 											resultado.innerHTML = "<p>ECR4</p><p>Mantener dosis de ASRVD hasta PTH en Rango: 2 * valor Normal</p>";
-											algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/alg4.7.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
+											algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg4.7.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
 											}
 											else if (variacion > 60 )
 											{
 												var ndosis25 = asrvd.value - asrvd.value * 25/100;
 												var ndosis50 = asrvd.value - asrvd.value * 50/100;
 												resultado.innerHTML = "<p>Disminuir dosis de ASRVD 25%("+ndosis25+" mcg) - 50%("+ndosis50+" mcg)</p><p>Medir Calcio, Fósforo, PTHi a las 4 semanas</p>";
-												algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/alg4.6.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
+												algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg4.6.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
 												}
 											else
 											{
@@ -380,13 +380,13 @@ function nuevo(){
 										if(c > 11)
 										{
 											resultado.innerHTML = "<p>Omitir dosis de ASRVD</p><p>Usar Quelantes no cálcicos";
-											algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/alg4.8.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
+											algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg4.8.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
 										}
 										else
 										{
 											var ndosis = asrvd.value - asrvd.value * 50/100;
 											resultado.innerHTML = "<p>Disminuir dosis de ASRVD 50% = "+ ndosis+" mcg</p><p>Usar Quelantes no cálcicos";
-											algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/alg4.8.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
+											algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg4.8.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
 											}
 										}
 									else
