@@ -352,6 +352,8 @@ function nuevo(){
 			}
 			//
 			}
+			else
+			{alert('Todos los campos son obligatorios');}
 		}
 			
 			function limpiar()
