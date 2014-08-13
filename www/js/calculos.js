@@ -26,7 +26,7 @@ function nuevo(){
 	var pthmax = document.getElementById("pthmax-n");
 	var va = document.getElementById("va-n");
 	var resultado = document.getElementById("resultado");
-	var resultado = document.getElementById("algoritmo");
+	var algoritmo = document.getElementById("algoritmo");
 	if(tfgein.value != "" && pval.value != "" && cval.value != "" && pth.value != "" && pthmin.value != "" && pthmax .value != "" && va.value != 0 )
 	{
 	//inicio a1
@@ -253,7 +253,9 @@ function nuevo(){
 										else
 										{
 											var ndosis = asrvd.value - asrvd.value * 50/100;
-											resultado.innerHTML = "<p>Disminuir dosis de ASRVD 50% = " + ndosis +" mcg</p><p>Usar Quelantes no cálcicos";}
+											resultado.innerHTML = "<p>Disminuir dosis de ASRVD 50% = " + ndosis +" mcg</p><p>Usar Quelantes no cálcicos";
+											algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/alg3.8.jpg" class="swipebox view_details" title="Algoritmo 3">Ver algoritmo</a>';
+											}
 										
 										}
 									else
@@ -296,8 +298,9 @@ function nuevo(){
 											else if (variacion > 60 )
 											{
 												var ndosis = asrvd.value - asrvd.value * 50/100;
-												resultado.innerHTML = "<p>Disminuir dosis de ASRVD 50% = "+ ndosis +" mcg u Omitir por 4 semanas</p><p>Medir Calcio, Fósforo, PTHi a las 4 semanas</p>";}
+												resultado.innerHTML = "<p>Disminuir dosis de ASRVD 50% = "+ ndosis +" mcg u Omitir por 4 semanas</p><p>Medir Calcio, Fósforo, PTHi a las 4 semanas</p>";
 												algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/alg4.5.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
+												}
 											else
 											{}
 									}
@@ -375,8 +378,9 @@ function nuevo(){
 									else if (c > 10.3 || p > 5.5)
 									{
 										if(c > 11)
-										{resultado.innerHTML = "<p>Omitir dosis de ASRVD</p><p>Usar Quelantes no cálcicos";
-										algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/alg4.8.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
+										{
+											resultado.innerHTML = "<p>Omitir dosis de ASRVD</p><p>Usar Quelantes no cálcicos";
+											algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/alg4.8.jpg" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
 										}
 										else
 										{
