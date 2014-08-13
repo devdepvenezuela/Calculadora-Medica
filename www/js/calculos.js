@@ -408,9 +408,6 @@ function nuevo(){
 					edad = document.getElementById("edad-n").value;
 					sexo = document.getElementById("sexo-n").value;
 					raza = document.getElementById("raza-n").value;
-					if(creat == "")
-					{alert(creat);}
-					
 					}
 					else
 					{
@@ -419,44 +416,51 @@ function nuevo(){
 					sexo = document.getElementById("sexo-t").value;
 					raza = document.getElementById("raza-t").value;
 						}
-				if (sexo == 'M')
-				{
-					crk = creat / 0.9;
-					alfa = -0.411;
-					fact= 1;
-					}
-				else if (sexo == 'F')
-				{
-					crk = creat / 0.7;
-					alfa = -0.329;
-					fact= 1.018;
-					}
-					
-					if(crk <= 1)
+					if(creat != "" || edad != "" || sexo != "" || raza != "" ||)
 					{
-						minn = crk;
-						maxx = 1;
-						}
-					else 
-					{
-						minn = 1;
-						maxx = crk;
-						}
-					
-				etfg = 141 * Math.pow(minn,alfa) * Math.pow(maxx, -1.209) * Math.pow(0.993, edad) * fact;
-				
-				if(raza == "N")
-				{
-					etfg = etfg * 1.159;
-					}
-					
-					etfg = etfg.toFixed(2);							
-					if(tipo == 1)
-					{
-						document.getElementById("tfge-n").value = etfg;
-						}
-						else
+						if (sexo == 'M')
 						{
-							document.getElementById("tfge-t").value = etfg;
+							crk = creat / 0.9;
+							alfa = -0.411;
+							fact= 1;
+							}
+						else if (sexo == 'F')
+						{
+							crk = creat / 0.7;
+							alfa = -0.329;
+							fact= 1.018;
+							}
+							
+							if(crk <= 1)
+							{
+								minn = crk;
+								maxx = 1;
+								}
+							else 
+							{
+								minn = 1;
+								maxx = crk;
+								}
+							
+						etfg = 141 * Math.pow(minn,alfa) * Math.pow(maxx, -1.209) * Math.pow(0.993, edad) * fact;
+						
+						if(raza == "N")
+						{
+							etfg = etfg * 1.159;
+							}
+							
+							etfg = etfg.toFixed(2);							
+							if(tipo == 1)
+							{
+								document.getElementById("tfge-n").value = etfg;
+								}
+								else
+								{
+									document.getElementById("tfge-t").value = etfg;
+									}
+							}
+							else
+							{
+							alert('Todos los campos son obligatorios');
 							}
 				}
