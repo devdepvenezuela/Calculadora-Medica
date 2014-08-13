@@ -408,7 +408,9 @@ function nuevo(){
 					edad = document.getElementById("edad-n").value;
 					sexo = document.getElementById("sexo-n").value;
 					raza = document.getElementById("raza-n").value;
-					alert(creat);
+					if(creat == "")
+					{alert(creat);}
+					
 					}
 					else
 					{
