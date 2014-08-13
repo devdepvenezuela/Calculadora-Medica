@@ -26,6 +26,8 @@ function nuevo(){
 	var pthmax = document.getElementById("pthmax-n");
 	var va = document.getElementById("va-n");
 	var resultado = document.getElementById("resultado");
+	if(tfgein.value != "" || pval.value != "" || cval.value != "" || pth.value != "" || pthmin.value != "" || pthmax .value != "" || va.value != "0" )
+	{
 	//inicio a1
 			var p1 = pthmax.value * 2;
 			var p2 = pthmax.value * 9; 
@@ -155,6 +157,11 @@ function nuevo(){
 					{
 						resultado.innerHTML = "<p>PTHi normal para el metodo</p><p>Observar tendencia</p>";}
 					}
+					//
+					}
+					else{
+					alert('Todos los campos son obligatorios');
+					}
 	}
 	
 	
@@ -189,6 +196,7 @@ function nuevo(){
 		var va = document.getElementById("va-t");
 		var resultado = document.getElementById("resultado2");
 		
+		if(tfgein.value != "" || pval.value != "" || cval.value != "" || pthi.value != "" || ptha.value != "" || pthmin.value != "" || pthmax .value != ""  || asrvd.value != "" || va.value != "0")
 		
 		if(va.value == "I")
 		{
@@ -342,6 +350,7 @@ function nuevo(){
 						//fin de b3
 						}
 			}
+			//
 		}
 			
 			function limpiar()
@@ -399,7 +408,7 @@ function nuevo(){
 					edad = document.getElementById("edad-n").value;
 					sexo = document.getElementById("sexo-n").value;
 					raza = document.getElementById("raza-n").value;
-					
+					alert(creat);
 					}
 					else
 					{
