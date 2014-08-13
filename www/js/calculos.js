@@ -211,6 +211,10 @@ function nuevo(){
 		{
 		if(va.value == "I")
 		{
+		
+		if(tfge < 15)
+									{
+										
 			//inicio de b1
 				if(c < 8.5 || p < 3.5)
 									{
@@ -261,6 +265,10 @@ function nuevo(){
 									else
 									{
 										resultado.innerHTML = "";
+										}
+										}
+										else{
+										resultado.innerHTML = "<p>Validar TFGe o Vía de administración:</p>";
 										}
 				//fin de b1
 		
