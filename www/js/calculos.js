@@ -197,7 +197,7 @@ function nuevo(){
 		var resultado = document.getElementById("resultado2");
 		
 		if(tfgein.value != "" && pval.value != "" && cval.value != "" && pthi.value != "" && ptha.value != "" && pthmin.value != "" && pthmax .value != ""  && asrvd.value != "" && va.value != 0)
-		
+		{
 		if(va.value == "I")
 		{
 			//inicio de b1
@@ -351,6 +351,7 @@ function nuevo(){
 						}
 			}
 			//
+			}
 		}
 			
 			function limpiar()
