@@ -26,7 +26,7 @@ function nuevo(){
 	var pthmax = document.getElementById("pthmax-n");
 	var va = document.getElementById("va-n");
 	var resultado = document.getElementById("resultado");
-	if(tfgein.value != "" || pval.value != "" || cval.value != "" || pth.value != "" || pthmin.value != "" || pthmax .value != "" || va.value != "0" )
+	if(tfgein.value != "" || pval.value != "" || cval.value != "" || pth.value != "" || pthmin.value != "" || pthmax .value != "" || va.value != 0 )
 	{
 	//inicio a1
 			var p1 = pthmax.value * 2;
@@ -196,7 +196,7 @@ function nuevo(){
 		var va = document.getElementById("va-t");
 		var resultado = document.getElementById("resultado2");
 		
-		if(tfgein.value != "" || pval.value != "" || cval.value != "" || pthi.value != "" || ptha.value != "" || pthmin.value != "" || pthmax .value != ""  || asrvd.value != "" || va.value != "0")
+		if(tfgein.value != "" || pval.value != "" || cval.value != "" || pthi.value != "" || ptha.value != "" || pthmin.value != "" || pthmax .value != ""  || asrvd.value != "" || va.value != 0)
 		
 		if(va.value == "I")
 		{
@@ -384,8 +384,6 @@ function nuevo(){
 			document.getElementById("edad-t").value = "";
 			document.getElementById("raza-t").value = "0";
 			document.getElementById("sexo-t").value = "0";
-			
-			
 			}
 			
 			function tfge(tipo)
@@ -416,7 +414,7 @@ function nuevo(){
 					sexo = document.getElementById("sexo-t").value;
 					raza = document.getElementById("raza-t").value;
 						}
-					if(creat != "" || edad != "" || sexo != "0" || raza != "0" ||)
+					if(creat != "" || edad != "" || sexo != 0 || raza != 0 ||)
 					{
 						if (sexo == 'M')
 						{
