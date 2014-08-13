@@ -15,7 +15,7 @@
 </head>
 <body>
   <div id="header">
-      <div class="gohome radius20"><a href="#"><img src="images/icons/home.png" onclick="limpiar()" alt="" title="" /></a></div>
+      <div class="gohome radius20"><a href="#"><img src="images/icons/home.png" alt="" title="" /></a></div>
   </div>
   <div class="swiper-container swiper-parent">
     <div class="swiper-wrapper">
@@ -27,8 +27,8 @@
                                         <div class="logo"><a href="#"><img src="colors/personal/images/logo.png" alt="" title="" border="0" /></a><br/><br/><br/></div>
                                         <div class="menu">
                                         <ul>
-                                       <li><a href="#" onclick="swiperParent.swipeTo(1);"><img src="images/icons/about.png" alt="" title="" /><span>Inicio</span></a></li>
-                                        <li><a href="#" onclick="swiperParent.swipeTo(2);"><img src="images/icons/clients.png" alt="" title="" /><span>Seguimiento</span></a></li>
+                                       <li><a href="#" onclick="swiperParent.swipeTo(1);"><img src="images/icons/about.png" alt="" title="" /><span>Inicia ASRVD</span></a></li>
+                                        <li><a href="#" onclick="swiperParent.swipeTo(2);"><img src="images/icons/clients.png" alt="" title="" /><span>En Tratamiento</span></a></li>
                                         </ul>
                                         <div class="clearfix"></div>
                                         </div>    
@@ -54,15 +54,15 @@
                                                         <div class="toggle_container_blog">
                                                         <label for="creat-n" style="color: white">Creatinina:</label>
                                                 <input id="creat-n" placeholder="Creatinina:"  type="tel" class="form_input radius4" /><span class="unidad">mg/dl</span><br/>
-                                                <label for="edad-n" style="color: white">Edad:</label>
+                                                <label for="edad-n"  style="color: white">Edad:</label>
                                                 <input id="edad-n" placeholder="Edad:"  type="number" class="form_input radius4" /><span class="unidad">años</span><br/>
-                                                <label for="sexo-n" style="color: white">Sexo:</label>
+                                                <label for="sexo-n"  style="color: white">Sexo:</label>
                                                 <select id="sexo-n" class="form_select" >
                                                 <option  selected="selected" value="0" label="Sexo:"></option>
                                                 <option value="F" label="Femenino"></option>
                                                 <option value="M" label="Masculino"></option>
                                                 </select><br/>
-                                                <label for="raza-n" style="color: white">Raza:</label>
+                                                <label for="raza-n"  style="color: white">Raza:</label>
                                                 <select id="raza-n" class="form_select" >
                                                 <option  selected="selected" value="0" label="Raza:"></option>
                                                 <option value="N" label="Negra"></option>
@@ -82,10 +82,10 @@
                                                 <input id="pth-n" placeholder="PTH:"  type="tel" class="form_input radius4"   /><span class="unidad">pg/ml</span><br/>
                                                 <h3>Valores normales del ensayo de PTH utilizado</h3>
                                                 <label for="pthmin-n">Mínimo:</label>
-                                                <input id="pthmin-n" placeholder="Mínimo:"  type="tel" class="form_input radius4"   /><span class="unidad">pg/ml</span><br/>
+                                                <input id="pthmin-n" placeholder="PTH Mínimo:"  type="tel" class="form_input radius4"   /><span class="unidad">pg/ml</span><br/>
                                                 <label for="pthmax-n">Máximo:</label>
-                                                <input id="pthmax-n" placeholder="Máximo:" type="tel" class="form_input radius4"   /><span class="unidad">pg/ml</span><br/>
-                                                <label for="va-n">Vía de administración:</label>
+                                                <input id="pthmax-n" placeholder="PTH Máximo:" type="tel" class="form_input radius4"   /><span class="unidad">pg/ml</span><br/>
+                                                <label for="va-n">Vía de admin:</label>
                                                 <select id="va-n" class="form_select" >
                                                 <option  selected="selected" value="0" label="Vía de administración:"></option>
                                                 <option value="O" label="Oral"></option>
@@ -106,8 +106,9 @@
                                                      
                                                       <p>No se ha realizado ningun calculo.</p>
                                                       </div>
-                                                
+                                                <div id="algoritmo"> 
                                                  <a rel="gallery-2" href="images/alg1.png" class="swipebox view_details" title="Algoritmo 1">Ver algoritmo</a>
+												 </div>
                                                  </div>
                                         </div>       
                                         <div class="clearfix"></div>
@@ -135,17 +136,17 @@
                                                 <div class="toogle_wrap_blog radius8">
                                                     <div class="trigger_blog"><a href="#">Calcular TFGe</a></div>
                                                         <div class="toggle_container_blog">
-                                                        <label for="creat-t" style="color: white">Creatinina:</label>
+                                                        <label for="creat-t"  style="color: white">Creatinina:</label>
                                                 <input id="creat-t" placeholder="Creatinina:"  type="tel" class="form_input radius4" /><span class="unidad">mg/dl</span><br/>
-                                                <label for="edad-t" style="color: white">Edad:</label>
+                                                <label for="edad-t"  style="color: white">Edad:</label>
                                                 <input id="edad-t" placeholder="Edad:"  type="number" class="form_input radius4" /><span class="unidad">años</span><br/>
-                                                <label for="sexo-t" style="color: white">Sexo:</label>
+                                                <label for="sexo-t"  style="color: white">Sexo:</label>
                                                 <select id="sexo-t" class="form_select" >
                                                 <option  selected="selected" value="0" label="Sexo:"></option>
                                                 <option value="F" label="Femenino"></option>
                                                 <option value="M" label="Masculino"></option>
                                                 </select><br/>
-                                                <label for="raza-t" style="color: white">Raza:</label>
+                                                <label for="raza-t"  style="color: white">Raza:</label>
                                                 <select id="raza-t" class="form_select" >
                                                 <option  selected="selected" value="0"  label="Raza:"></option>
                                                 <option value="N" label="Negra"></option>
@@ -167,12 +168,12 @@
                                                 <input id="ptha-t" type="tel" placeholder="PTH Actual:"  class="form_input radius4"   /><span class="unidad">pg/ml</span><br/>
                                                 <h3>Valores normales del ensayo de PTH utilizado</h3>
 												<label for="pthmin-t">Mínimo:</label>
-                                                <input id="pthmin-t" type="tel" placeholder="Mínimo:"  class="form_input radius4"   /><span class="unidad">pg/ml</span><br/>
+                                                <input id="pthmin-t" type="tel" placeholder="PTH Mínimo:"  class="form_input radius4"   /><span class="unidad">pg/ml</span><br/>
                                                 <label for="pthmax-t">Máximo:</label>
-                                                <input id="pthmax-t" type="tel" placeholder="Máximo:"  class="form_input radius4"   /><span class="unidad">pg/ml</span><br/>
+                                                <input id="pthmax-t" type="tel" placeholder="PTH Máximo:"  class="form_input radius4"   /><span class="unidad">pg/ml</span><br/>
                                                 <label for="asrvd-t">Dosis ASRVD:</label>
                                                 <input id="asrvd-t" type="tel" placeholder="Dosis ASRVD:"  class="form_input radius4"   /><span class="unidad">mcg</span><br/>
-                                                <label for="va-t">Vía de administración:</label>
+                                                <label for="va-t">Vía de admin:</label>
                                                 <select id="va-t"  placeholder="Vía de administración:" class="form_select" >
                                                <option  selected="selected" value="0" label="Vía de administración:"></option>
                                                 <option value="O" label="Oral"></option>
@@ -194,8 +195,9 @@
                                                      
                                                       <p>No se ha realizado ningun calculo.</p>
                                                       </div>
-                                                      
-                                                 <a rel="gallery-2" href="images/alg1.png" class="swipebox view_details" title="Algoritmo 1">Ver algoritmo</a>
+														<div id="algoritmo2"> 
+														 <a rel="gallery-2" href="images/alg1.png" class="swipebox view_details" title="Algoritmo 1">Ver algoritmo</a>
+														</div>
                                                  </div>
                                         </div>       
                                         <div class="clearfix"></div>
