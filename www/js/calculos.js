@@ -237,7 +237,7 @@ function nuevo(){
 											{
 												var ndosis = asrvd.value - asrvd.value * 50/100;
 												resultado.innerHTML = "<p>Disminuir dosis de ASRVD 50% = " + ndosis +" mcg u Omitir por 4 semanas</p><p>Medir Calcio, Fósforo, PTHi a las 4 semanas</p>";
-												algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg2.4.jpg" class="swipebox view_details" title="Algoritmo 2">Ver algoritmo</a>';
+												algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg2.5.jpg" class="swipebox view_details" title="Algoritmo 2">Ver algoritmo</a>';
 												}
 												
 											else
