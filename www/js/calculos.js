@@ -416,7 +416,7 @@ function nuevo(){
 					sexo = document.getElementById("sexo-t").value;
 					raza = document.getElementById("raza-t").value;
 						}
-					if(creat != "" || edad != "" || sexo != "" || raza != "" ||)
+					if(creat != "" || edad != "" || sexo != "0" || raza != "0" ||)
 					{
 						if (sexo == 'M')
 						{
