@@ -29,6 +29,29 @@ function nuevo(){
 	var algoritmo = document.getElementById("algoritmo");
 	if(tfgein.value != "" && pval.value != "" && cval.value != "" && pth.value != "" && pthmin.value != "" && pthmax .value != "" && va.value != 0 )
 	{
+	
+	var opts = {
+  lines: 8, // The number of lines to draw
+  length: 20, // The length of each line
+  width: 5, // The line thickness
+  radius: 15, // The radius of the inner circle
+  corners: 1, // Corner roundness (0..1)
+  rotate: 0, // The rotation offset
+  direction: 1, // 1: clockwise, -1: counterclockwise
+  color: '#000', // #rgb or #rrggbb or array of colors
+  speed: 1, // Rounds per second
+  trail: 60, // Afterglow percentage
+  shadow: true, // Whether to render a shadow
+  hwaccel: false, // Whether to use hardware acceleration
+  className: 'spinner', // The CSS class to assign to the spinner
+  zIndex: 2e9, // The z-index (defaults to 2000000000)
+  top: '50%', // Top position relative to parent
+  left: '50%' // Left position relative to parent
+};
+var target = document.getElementById('inicia');
+var spinner = new Spinner(opts).spin(target);
+setTimeout(function(){spinner.stop()} , 2100);
+	
 	//inicio a1
 			var p1 = pthmax.value * 2;
 			var p2 = pthmax.value * 9; 
@@ -165,13 +188,16 @@ function nuevo(){
 						}
 					else
 					{
-						resultado.innerHTML = "<p>PTHi normal para el metodo</p><p>Observar tendencia</p>";}
+						resultado.innerHTML = "<p>PTHi normal para el metodo</p><p>Observar tendencia</p>";
+						}
+						
 					}
 					//
 					}
 					else{
 					alert('Todos los campos son obligatorios');
 					}
+					
 	}
 	
 	
@@ -209,6 +235,28 @@ function nuevo(){
 		
 		if(tfgein.value != "" && pval.value != "" && cval.value != "" && pthi.value != "" && ptha.value != "" && pthmin.value != "" && pthmax .value != ""  && asrvd.value != "" && va.value != 0)
 		{
+		
+			var opts = {
+  lines: 8, // The number of lines to draw
+  length: 20, // The length of each line
+  width: 5, // The line thickness
+  radius: 15, // The radius of the inner circle
+  corners: 1, // Corner roundness (0..1)
+  rotate: 0, // The rotation offset
+  direction: 1, // 1: clockwise, -1: counterclockwise
+  color: '#000', // #rgb or #rrggbb or array of colors
+  speed: 1, // Rounds per second
+  trail: 60, // Afterglow percentage
+  shadow: true, // Whether to render a shadow
+  hwaccel: false, // Whether to use hardware acceleration
+  className: 'spinner', // The CSS class to assign to the spinner
+  zIndex: 2e9, // The z-index (defaults to 2000000000)
+  top: '50%', // Top position relative to parent
+  left: '50%' // Left position relative to parent
+};
+var target = document.getElementById('inicia');
+var spinner = new Spinner(opts).spin(target);
+setTimeout(function(){spinner.stop()} , 2100);
 		if(va.value == "I")
 		{
 		
@@ -321,8 +369,9 @@ function nuevo(){
 										else
 										{
 											var ndosis = asrvd.value - asrvd.value * 50/100;
-											resultado.innerHTML = "<p>Disminuir dosis de ASRVD 50% = " + ndosis + " mcg</p><p>Usar Quelantes no cálcicos";}
+											resultado.innerHTML = "<p>Disminuir dosis de ASRVD 50% = " + ndosis + " mcg</p><p>Usar Quelantes no cálcicos";
 											algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg4.8.png" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
+											}
 										}
 									else
 									{
@@ -503,7 +552,6 @@ function nuevo(){
 						{
 							etfg = etfg * 1.159;
 							}
-							
 							etfg = etfg.toFixed(2);							
 							if(tipo == 1)
 							{
