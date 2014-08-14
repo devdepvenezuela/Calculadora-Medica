@@ -87,7 +87,7 @@ span.quote_author{ font-style:normal; font-weight:bold; text-decoration:underlin
 ul.listing{ list-style:none; padding:0 0 10px 0;}
 ul.listing li { padding:5px 0 5px 10px; margin:0 0 10px 10px; border-left:2px #ececec solid;}
 ul.listing_detailed{ list-style:none; padding:0 0 10px 0;}
-ul.listing_detailed li { padding:5px 0 5px 40px; margin:0 0 10px 0;}
+ul.listing_detailed li { padding:5px 0 5px 40px; margin:0 0 10px 0; font-size: 11pt;}
 ul.listing_detailed li a{}
 
 /* Toggle
