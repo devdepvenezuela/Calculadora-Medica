@@ -1,4 +1,25 @@
 function nuevo(){
+			/*$('#algoritmo21').css('display', 'none');
+			$('#algoritmo22').css('display', 'none');
+			$('#algoritmo23').css('display', 'none');
+			$('#algoritmo31').css('display', 'none');
+			$('#algoritmo32').css('display', 'none');
+			$('#algoritmo33').css('display', 'none');
+			$('#algoritmo41').css('display', 'none');
+			$('#algoritmo42').css('display', 'none');
+			$('#algoritmo43').css('display', 'none');
+			$('#algoritmo44').css('display', 'none');
+			$('#algoritmo45').css('display', 'none');
+			$('#algoritmo46').css('display', 'none');
+			$('#algoritmo47').css('display', 'none');
+			$('#algoritmo48').css('display', 'none');
+			$('#algoritmo38').css('display', 'none');
+			$('#algoritmo24').css('display', 'none');
+			$('#algoritmo25').css('display', 'none');
+			$('#algoritmo26').css('display', 'none');
+			$('#algoritmo27').css('display', 'none');
+			$('#algoritmo28').css('display', 'none');*/
+			$( ".alg" ).css( "display", "none" );
 	var tfgein = document.getElementById("tfge-n");
 	var pval = document.getElementById("p-n");
 	var cval = document.getElementById("c-n");
@@ -51,7 +72,6 @@ function nuevo(){
 var target = document.getElementById('inicia');
 var spinner = new Spinner(opts).spin(target);
 setTimeout(function(){spinner.stop()} , 2100);
-	var xhReq = new XMLHttpRequest();
 	//inicio a1
 			var p1 = pthmax.value * 2;
 			var p2 = pthmax.value * 9; 
@@ -99,7 +119,7 @@ setTimeout(function(){spinner.stop()} , 2100);
 									}
 									else
 									{
-										resultado.innerHTML = "<p>Validar TFGe o Vía de administración:</p>";
+										resultado.innerHTML = "<p>Validar TFGe o Vía de administración</p>";
 										}
 								}
 								else if(va.value == "0")
@@ -203,6 +223,7 @@ setTimeout(function(){spinner.stop()} , 2100);
 	
 	function tratado()
 	{
+		$( ".alg" ).css( "display", "none" );
 		var tfgein = document.getElementById("tfge-t");
 		var pval = document.getElementById("p-t");
 		var cval = document.getElementById("c-t");
@@ -235,32 +256,31 @@ setTimeout(function(){spinner.stop()} , 2100);
 		
 		if(tfgein.value != "" && pval.value != "" && cval.value != "" && pthi.value != "" && ptha.value != "" && pthmin.value != "" && pthmax .value != ""  && asrvd.value != "" && va.value != 0)
 		{
-		
-			var opts = {
-  lines: 8, // The number of lines to draw
-  length: 20, // The length of each line
-  width: 5, // The line thickness
-  radius: 15, // The radius of the inner circle
-  corners: 1, // Corner roundness (0..1)
-  rotate: 0, // The rotation offset
-  direction: 1, // 1: clockwise, -1: counterclockwise
-  color: '#000', // #rgb or #rrggbb or array of colors
-  speed: 1, // Rounds per second
-  trail: 60, // Afterglow percentage
-  shadow: true, // Whether to render a shadow
-  hwaccel: false, // Whether to use hardware acceleration
-  className: 'spinner', // The CSS class to assign to the spinner
-  zIndex: 2e9, // The z-index (defaults to 2000000000)
-  top: '50%', // Top position relative to parent
-  left: '50%' // Left position relative to parent
-};
-var target = document.getElementById('inicia');
-var spinner = new Spinner(opts).spin(target);
-setTimeout(function(){spinner.stop()} , 2100);
+			var optss = {
+		  lines: 8, // The number of lines to draw
+		  length: 20, // The length of each line
+		  width: 5, // The line thickness
+		  radius: 15, // The radius of the inner circle
+		  corners: 1, // Corner roundness (0..1)
+		  rotate: 0, // The rotation offset
+		  direction: 1, // 1: clockwise, -1: counterclockwise
+		  color: '#000', // #rgb or #rrggbb or array of colors
+		  speed: 1, // Rounds per second
+		  trail: 60, // Afterglow percentage
+		  shadow: true, // Whether to render a shadow
+		  hwaccel: false, // Whether to use hardware acceleration
+		  className: 'spinner', // The CSS class to assign to the spinner
+		  zIndex: 2e9, // The z-index (defaults to 2000000000)
+		  top: '50%', // Top position relative to parent
+		  left: '50%' // Left position relative to parent
+		};
+		var targett = document.getElementById('iniciaa');
+		var spinnerr = new Spinner(optss).spin(targett);
+		setTimeout(function(){spinnerr.stop()} , 2100);
 		if(va.value == "I")
 		{
 		
-		if(tfge < 15)
+		if(tfge <= 15)
 									{
 										
 			//inicio de b1
@@ -316,7 +336,7 @@ setTimeout(function(){spinner.stop()} , 2100);
 										}
 										}
 										else{
-										resultado.innerHTML = "<p>Validar TFGe o Vía de administración:</p>";
+										resultado.innerHTML = "<p>Validar TFGe o Vía de administración</p>";
 										}
 				//fin de b1
 		
@@ -461,7 +481,27 @@ setTimeout(function(){spinner.stop()} , 2100);
 			
 			function limpiar()
 		{
-			$('.alg').css('display', 'none');
+		
+			$('#algoritmo21').css('display', 'none');
+			$('#algoritmo22').css('display', 'none');
+			$('#algoritmo23').css('display', 'none');
+			$('#algoritmo31').css('display', 'none');
+			$('#algoritmo32').css('display', 'none');
+			$('#algoritmo33').css('display', 'none');
+			$('#algoritmo41').css('display', 'none');
+			$('#algoritmo42').css('display', 'none');
+			$('#algoritmo43').css('display', 'none');
+			$('#algoritmo44').css('display', 'none');
+			$('#algoritmo45').css('display', 'none');
+			$('#algoritmo46').css('display', 'none');
+			$('#algoritmo47').css('display', 'none');
+			$('#algoritmo48').css('display', 'none');
+			$('#algoritmo38').css('display', 'none');
+			$('#algoritmo24').css('display', 'none');
+			$('#algoritmo25').css('display', 'none');
+			$('#algoritmo26').css('display', 'none');
+			$('#algoritmo27').css('display', 'none');
+			$('#algoritmo28').css('display', 'none');
 			document.getElementById("tfge-t").value = "";
 			document.getElementById("p-t").value = "";
 			document.getElementById("c-t").value = "";
