@@ -50,7 +50,7 @@ function nuevo(){
 									var factor = 100;									 
 									 if(c < 8.5 || p < 3.5)
 									{
-										resultado.innerHTML = "<p>Corregir Calcio y Fósforo</p><p>Ajustar Quelante</p><p>Revisar Nutrición</p>";
+										resultado.innerHTML = "<p>Corregir Calcio y Fósforo</p><p>Ajustar Quelante</p><p>Revisar Nutrición</p>" + '<a rel="gallery-2" href="images/algoritmos/Alg2.1.png" class="swipebox view_details" title="Algoritmo 2">Ver algoritmo</a>';
 										algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg2.1.png" class="swipebox view_details" title="Algoritmo 2">Ver algoritmo</a>';
 										}
 									else if (c >= 8.5 && c <= 10 && p >= 3.5 && p <= 5.5)
@@ -228,7 +228,7 @@ function nuevo(){
 										if(variacion < 30)
 										{
 												var ndosis = asrvd.value * 1 + asrvd.value * 25/100;
-												resultado.innerHTML = "<p>Aumentar dosis de ASRVD 25% = " + ndosis +" mcg</p><p>Medir Calcio, Fósforo, PTHi a las 4 semanas</p><p>Si la dosis > 40mcg Omitir, considerar calcimimetrico o PTX</p>";
+												resultado.innerHTML = "<p>Aumentar dosis de ASRVD 25% = " + ndosis +" mcg</p><p>Medir Calcio, Fósforo, PTHi a las 4 semanas</p><p>Si la dosis > 40 mcg Omitir, considerar calcimimetrico o PTX</p>";
 												algoritmo.innerHTML = '<a rel="gallery-2" href="images/algoritmos/Alg2.7.png" class="swipebox view_details" title="Algoritmo 4">Ver algoritmo</a>';
 												
 											}
