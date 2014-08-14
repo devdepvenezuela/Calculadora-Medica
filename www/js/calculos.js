@@ -326,7 +326,7 @@ setTimeout(function(){spinner.stop()} , 2100);
 										{
 											var ndosis = asrvd.value - asrvd.value * 50/100;
 											resultado.innerHTML = "<p>Disminuir dosis de ASRVD 50% = " + ndosis +" mcg</p><p>Usar Quelantes no cálcicos";
-											document.getElementById("algoritmo38").style.display = "block";
+											document.getElementById("algoritmo28").style.display = "block";
 											}
 										
 										}
