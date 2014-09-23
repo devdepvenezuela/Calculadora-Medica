@@ -77,7 +77,7 @@ setTimeout(function(){spinner.stop()} , 2100);
 			var p2 = pthmax.value * 9; 
 				if( pth.value < p1  )
 				{
-					resultado.innerHTML = "<p>Medir Calcio y Fósforo</p><p>Observar Tendencia</p><br/><br/><a onclick='aumento()'>PTHi en aumento</a>";
+					resultado.innerHTML = "<p>Medir Calcio y Fósforo</p><p>Observar Tendencia</p><br/><a onclick='aumento()' class='swipebox view_details'>PTHi en aumento</a>";
 				}
 				else if(pth.value == "" && pth.value == null)
 				{resultado.innerHTML = "<p> Datos incompletos</p>";}
@@ -208,7 +208,7 @@ setTimeout(function(){spinner.stop()} , 2100);
 						}
 					else
 					{
-						resultado.innerHTML = "<p>Medir PTHi a los 3 meses</p><p>Observar tendencia</p><br/><br/><a onclick='aumento()'>PTHi en aumento</a>";
+						resultado.innerHTML = "<p>Medir PTHi a los 3 meses</p><p>Observar tendencia</p><br/><a onclick='aumento()' class='swipebox view_details'>PTHi en aumento</a>";
 						}
 						
 					}
