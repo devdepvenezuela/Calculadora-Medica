@@ -77,7 +77,7 @@ setTimeout(function(){spinner.stop()} , 2100);
 			var p2 = pthmax.value * 9; 
 				if( pth.value < p1  )
 				{
-					resultado.innerHTML = "<p>Medir Calcio y Fósforo</p>";
+					resultado.innerHTML = "<p>Medir Calcio y Fósforo</p><p>Observar Tendencia</p>";
 				}
 				else if(pth.value == "" && pth.value == null)
 				{resultado.innerHTML = "<p> Datos incompletos</p>";}
@@ -208,7 +208,7 @@ setTimeout(function(){spinner.stop()} , 2100);
 						}
 					else
 					{
-						resultado.innerHTML = "<p>PTHi normal para el metodo</p><p>Observar tendencia</p>";
+						resultado.innerHTML = "<p>Medir PTHi a los 3 meses</p><p>Observar tendencia</p>";
 						}
 						
 					}
@@ -597,10 +597,12 @@ setTimeout(function(){spinner.stop()} , 2100);
 							if(tipo == 1)
 							{
 								document.getElementById("tfge-n").value = etfg;
+								document.getElementById("cal1").click();
 								}
 								else
 								{
 									document.getElementById("tfge-t").value = etfg;
+									document.getElementById("cal2").click();
 									}
 							}
 							else
