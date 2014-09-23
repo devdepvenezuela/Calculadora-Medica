@@ -77,7 +77,7 @@ setTimeout(function(){spinner.stop()} , 2100);
 			var p2 = pthmax.value * 9; 
 				if( pth.value < p1  )
 				{
-					resultado.innerHTML = "<p>Medir Calcio y Fósforo</p><p>Observar Tendencia</p>";
+					resultado.innerHTML = "<p>Medir Calcio y Fósforo</p><p>Observar Tendencia</p><br/><br/><a onclick='aumento()'>PTHi en aumento</a>";
 				}
 				else if(pth.value == "" && pth.value == null)
 				{resultado.innerHTML = "<p> Datos incompletos</p>";}
@@ -208,7 +208,7 @@ setTimeout(function(){spinner.stop()} , 2100);
 						}
 					else
 					{
-						resultado.innerHTML = "<p>Medir PTHi a los 3 meses</p><p>Observar tendencia</p>";
+						resultado.innerHTML = "<p>Medir PTHi a los 3 meses</p><p>Observar tendencia</p><br/><br/><a onclick='aumento()'>PTHi en aumento</a>";
 						}
 						
 					}
@@ -610,3 +610,180 @@ setTimeout(function(){spinner.stop()} , 2100);
 							alert('Todos los campos son obligatorios');
 							}
 				}
+				
+				
+				function aumento()
+				{
+					
+						var tfgein = document.getElementById("tfge-n");
+	var pval = document.getElementById("p-n");
+	var cval = document.getElementById("c-n");
+	var tfge = parseFloat(0);
+	var p  = parseFloat(0);
+	var c = parseFloat(0);
+	if (tfgein.value != "" && tfgein.value != null)
+	{
+		tfge = parseFloat(tfgein.value);
+		tfge = tfge.toFixed(2);
+	}
+	if (pval.value != "" && pval.value != null)
+	{
+		p = p + parseFloat(pval.value);
+		p = p.toFixed(2);
+	}
+	if (cval.value != "" && cval.value != null)
+	{
+		c = c + parseFloat(cval.value);
+		c = c.toFixed(2);
+	}
+
+	var pth = document.getElementById("pth-n");
+	var pthmin = document.getElementById("pthmin-n");
+	var pthmax = document.getElementById("pthmax-n");
+	var va = document.getElementById("va-n");
+	var resultado = document.getElementById("resultado");
+	var algoritmo = document.getElementById("algoritmo");
+			var optss = {
+		  lines: 8, // The number of lines to draw
+		  length: 20, // The length of each line
+		  width: 5, // The line thickness
+		  radius: 15, // The radius of the inner circle
+		  corners: 1, // Corner roundness (0..1)
+		  rotate: 0, // The rotation offset
+		  direction: 1, // 1: clockwise, -1: counterclockwise
+		  color: '#000', // #rgb or #rrggbb or array of colors
+		  speed: 1, // Rounds per second
+		  trail: 60, // Afterglow percentage
+		  shadow: true, // Whether to render a shadow
+		  hwaccel: false, // Whether to use hardware acceleration
+		  className: 'spinner', // The CSS class to assign to the spinner
+		  zIndex: 2e9, // The z-index (defaults to 2000000000)
+		  top: '50%', // Top position relative to parent
+		  left: '50%' // Left position relative to parent
+		};
+		var targett = document.getElementById('iniciaa');
+		var spinnerr = new Spinner(optss).spin(targett);
+		setTimeout(function(){spinnerr.stop()} , 2100);		
+					if(va.value == "I")
+							{
+								// inicio de a2
+								if(tfge <= 15)
+								{
+									var factor = 100;									 
+									 if(c < 8.5 || p < 3.5)
+									{
+										resultado.innerHTML = "<p>Corregir Calcio y Fósforo</p><p>Ajustar Quelante</p><p>Revisar Nutrición</p>";
+										document.getElementById("algoritmo21").style.display = "block";
+										}
+									else if (c >= 8.5 && c <= 10 && p >= 3.5 && p <= 5.5)
+									{
+										var dosis = pth.value / factor ;
+										resultado.innerHTML = "<p>Dosis de ASRVD = " + dosis + " mcg </p><p>Medir Calcio y Fósforo a las 2-4 semanas y PTHi a las 4 semanas</p>";
+										document.getElementById("algoritmo22").style.display = "block";
+										}
+									else if (c > 10 || p > 5.5)
+									{
+										resultado.innerHTML = "<p>Corregir Calcio y Fósforo</p><p>Ajustar o Cambiar Quelante";
+										document.getElementById("algoritmo23").style.display = "block";
+										}
+									else
+									{
+										resultado.innerHTML = "";
+										}
+									 //fin de a2									
+									}
+								else if (tfge.value == 0.00)
+								{
+									resultado.innerHTML = "<p> Datos incompletos</p>";
+									}
+									else
+									{
+										resultado.innerHTML = "<p>Validar TFGe o Vía de administración</p>";
+										}
+								}
+								else if(va.value == "0")
+								{ }
+								else
+								{
+									if(tfge <= 15)
+								{
+									//inicio de a3 
+									var factor = 80;									 
+									 if(c < 8.5 || p < 3.5)
+									{
+										resultado.innerHTML = "<p>Corregir Calcio y Fósforo</p><p>Ajustar Quelante</p><p>Revisar Nutrición</p>";
+										document.getElementById("algoritmo31").style.display = "block";
+										}
+									else if (c >= 8.5 && c <= 10 && p >= 3.5 && p <= 5.5)
+									{
+									var dosis = pth.value / factor;
+										resultado.innerHTML = "<p>Dosis de ASRVD = " + dosis + " mcg</p><p>Medir Calcio y Fósforo a las 2-4 semanas y PTHi a las 4 semanas</p>";
+										document.getElementById("algoritmo32").style.display = "block";
+										}
+									else if (c > 10 || p > 5.5)
+									{
+										resultado.innerHTML = "<p>Corregir Calcio y Fósforo</p><p>Ajustar o Cambiar Quelante";
+										document.getElementById("algoritmo33").style.display = "block";
+										}
+									else
+									{
+										resultado.innerHTML = "";
+										}
+									}
+									//fin de a3
+								else if (tfge == 0.00)
+								{
+									resultado.innerHTML = "<p> Datos incompletos</p>";
+									}
+									else
+									{
+										//inicio de a4
+										var pp1;
+										var pp2;
+										 if(tfge >= 30 && tfge <= 60)
+											{
+											pp1 = pthmin.value * 1.5;
+											pp2 = pthmax.value * 1.5;
+											}
+											else if (tfge >= 15 && tfge <= 29)
+											{
+											pp1 = pthmin.value * 1.5;
+											pp2 = pthmax.value * 1.5;
+											}	
+										else if (tfge == 0.00)
+										{
+											resultado.innerHTML = "<p> Datos incompletos</p>";
+											}
+											if(pth.value >= p2 && pth.value <= 500)
+											{
+												resultado.innerHTML = "<p>Dosis de ASRVD:  1 mcg/día ó 2 mcg/día 3 veces / semana</p><p>Evaluar Calcio y Fósforo a las 2-4 semanas y PTHi a las 4 semanas</p>";
+												document.getElementById("algoritmo42").style.display = "block";
+												}
+												else if (pth.value == "0")
+												{
+													resultado.innerHTML = "<p> Datos incompletos</p>";
+													}
+													else
+													{
+													if(pth.value > 500)
+													{
+													resultado.innerHTML = "<p>Dosis de ASRVD: 2 mcg/dia o 4 mcg 3 veces / semana</p>";
+													document.getElementById("algoritmo43").style.display = "block";
+													}
+													else if (pth.value == "0")
+												{
+													resultado.innerHTML = "<p> Datos incompletos</p>";
+													}
+													else
+													{
+													resultado.innerHTML = "<p>PTHi normal para el metodo</p><p>Observar tendencia</p>";
+													document.getElementById("algoritmo41").style.display = "block";
+													}
+														}
+										//fin de a4
+										}
+									//fin
+									}
+					
+					
+					}
