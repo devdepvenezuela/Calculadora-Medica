@@ -10,6 +10,23 @@ var app = {
 
     onDeviceReady: function() {
     	// Ejecutamos la funci?n FastClick, que es la que nos elimina esos 300ms de espera al hacer click
-    	alert('hello');
+   localStorage.setItem('clavesis', 'clave');
+    validate();
     }, 
 };
+
+
+function validate()
+{
+	var user = localStorage.getItem("claveuser");
+	var sis = localStorage.getItem("clavesis");
+	if(user = sis)
+	{
+alert('prueba superada');
+		}
+		else
+		{
+			localStorage.setItem('claveuser', 'clave');
+			alert('no ha introducido su clave');
+			}
+	}
