@@ -535,6 +535,13 @@ setTimeout(function(){spinner.stop()} , 2100);
 			
 			function tfge(tipo)
 			{
+				
+				 navigator.notification.alert(
+            'Debe confirmar que el paciente manifest\u00f3 su voluntad de ser contactado por el programa de pacientes antes de registrarlo!' ,
+			 alertDismiss,
+            'Notificaci\u00f3n',            
+            'Aceptar'                  
+        );
 				//calculado
 				var crk;
 				var etfg;
