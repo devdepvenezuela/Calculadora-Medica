@@ -20,7 +20,7 @@ function validate()
 {
 	var user = localStorage.getItem("claveuser");
 	var sis = localStorage.getItem("clavesis");
-	if(user = sis)
+	if(user == sis)
 	{
 alert('prueba superada');
 		}
