@@ -19,7 +19,7 @@ function validate()
 	var sis = localStorage.getItem("clave");
 	if(sis == "1")
 	{
-	"Bievenido a la Calculadora Zemplar."
+	alert("Bievenido a la Calculadora Zemplar.");
 	}
 	else
 	{
