@@ -9,24 +9,37 @@ var app = {
     },
 
     onDeviceReady: function() {
-    	// Ejecutamos la funci?n FastClick, que es la que nos elimina esos 300ms de espera al hacer click
-   localStorage.setItem('clavesis', 'clave');
     validate();
     }, 
 };
 
 
 function validate()
-{
-	var user = localStorage.getItem("claveuser");
-	var sis = localStorage.getItem("clavesis");
-	if(user = sis)
+{	
+	var sis = localStorage.getItem("clave");
+	if(sis == "1")
 	{
-alert('prueba superada');
-		}
-		else
-		{
-			localStorage.setItem('claveuser', 'clave');
-			alert('no ha introducido su clave');
-			}
+	"Bievenido a la Calculadora Zemplar."
+	}
+	else
+	{
+	clave();
+	}
+	}
+	
+	
+	function clave()
+	{
+	var clave = prompt('Ingrese la clave de inicio de la calculadora:');	
+	if(clave == "clave")
+	{
+	localStorage.setItem("clave", "1");	
+	}
+	else
+	{
+		alert('clave incorrecta, intente de nuevo');
+		validate();
+	}	
+		
+		
 	}
