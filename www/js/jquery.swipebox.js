@@ -36,8 +36,6 @@
 				<div id="swipebox-caption"></div>\
 				<div id="swipebox-action">\
 					<a id="swipebox-close"></a>\
-					<a id="swipebox-prev"></a>\
-					<a id="swipebox-next"></a>\
 				</div>\
 		</div>';
 
@@ -262,12 +260,12 @@
 	       				if( distance >= swipMinDistance ){
 	       					
 	       					// swipeLeft
-	       					$this.getPrev();
+	       					//$this.getPrev();
 	       				
 	       				}else if( distance <= - swipMinDistance ){
 	       					
 	       					// swipeRight
-	       					$this.getNext();
+	       					//$this.getNext();
 	       				
 	       				}else{
 	       					// tap
