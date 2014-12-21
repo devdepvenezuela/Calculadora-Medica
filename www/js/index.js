@@ -13,6 +13,10 @@ var app = {
     }, 
 };
 
+function alertDismiss()
+{
+	
+	}
 
 function validate()
 {	
@@ -22,7 +26,7 @@ function validate()
 		navigator.notification.alert(
             'Bievenido a la Calculadora Zemplar.', 
 			alertDismiss,
-            'MIP',            
+            'Calculadora ASRVD',            
             'Aceptar'                  
         );
 	}
@@ -47,7 +51,7 @@ function validate()
 	 function onConfirm(buttonIndex) {
         if(buttonIndex == 1)
 		{
-			var clave = prompt('Ingrese la clave de inicio de la calculadora:');	
+	var clave = prompt('Ingrese la clave de inicio de la calculadora:');	
 	if(clave == "clave")
 	{
 	localStorage.setItem("clave", "1");
@@ -58,7 +62,7 @@ function validate()
 		navigator.notification.alert(
             'Clave incorrecta, intente de nuevo', 
 			alertDismiss,
-            'MIP',            
+            'Calculadora ASRVD',            
             'Aceptar'                  
         );
 		validate();
