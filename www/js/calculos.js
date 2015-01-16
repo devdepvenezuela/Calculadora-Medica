@@ -1,25 +1,5 @@
 function nuevo(){
-			/*$('#algoritmo21').css('display', 'none');
-			$('#algoritmo22').css('display', 'none');
-			$('#algoritmo23').css('display', 'none');
-			$('#algoritmo31').css('display', 'none');
-			$('#algoritmo32').css('display', 'none');
-			$('#algoritmo33').css('display', 'none');
-			$('#algoritmo41').css('display', 'none');
-			$('#algoritmo42').css('display', 'none');
-			$('#algoritmo43').css('display', 'none');
-			$('#algoritmo44').css('display', 'none');
-			$('#algoritmo45').css('display', 'none');
-			$('#algoritmo46').css('display', 'none');
-			$('#algoritmo47').css('display', 'none');
-			$('#algoritmo48').css('display', 'none');
-			$('#algoritmo38').css('display', 'none');
-			$('#algoritmo24').css('display', 'none');
-			$('#algoritmo25').css('display', 'none');
-			$('#algoritmo26').css('display', 'none');
-			$('#algoritmo27').css('display', 'none');
-			$('#algoritmo28').css('display', 'none');*/
-			$( ".alg" ).css( "display", "none" );
+	$( ".alg" ).css( "display", "none" );
 	var tfgein = document.getElementById("tfge-n");
 	var pval = document.getElementById("p-n");
 	var cval = document.getElementById("c-n");
@@ -408,6 +388,7 @@ setTimeout(function(){spinner.stop()} , 2100);
 						if(tfge >=30 && tfge <=60 )
 						{
 							estadio = 3;
+							
 							}
 						else if(tfge >=15 && tfge  <=29)
 						{
@@ -430,6 +411,7 @@ setTimeout(function(){spinner.stop()} , 2100);
 												document.getElementById("algoritmo47").style.display = "block";
 											}
 											else if (variacion > 30 && variacion <= 60 )
+											{
 											if(estadio == 3)
 											{
 												resultado.innerHTML = "<p>ECR3</p><p>Mantener dosis de ASRVD hasta PTH en Rango: 1,5 * valor Normal</p>";
@@ -439,6 +421,7 @@ setTimeout(function(){spinner.stop()} , 2100);
 											{
 											resultado.innerHTML = "<p>ECR4</p><p>Mantener dosis de ASRVD hasta PTH en Rango: 2 * valor Normal</p>";
 											document.getElementById("algoritmo46").style.display = "block";
+											}
 											}
 											else if (variacion > 60 )
 											{
@@ -621,8 +604,8 @@ setTimeout(function(){spinner.stop()} , 2100);
 				
 				function aumento()
 				{
-					
-						var tfgein = document.getElementById("tfge-n");
+				
+	var tfgein = document.getElementById("tfge-n");
 	var pval = document.getElementById("p-n");
 	var cval = document.getElementById("c-n");
 	var tfge = parseFloat(0);
@@ -684,7 +667,7 @@ setTimeout(function(){spinner.stop()} , 2100);
 										}
 									else if (c >= 8.5 && c <= 10 && p >= 3.5 && p <= 5.5)
 									{
-										var dosis = pth.value / factor ;
+										var dosis = pth.value / factor;
 										resultado.innerHTML = "<p>Dosis de ASRVD = " + dosis + " mcg </p><p>Medir Calcio y Fósforo a las 2-4 semanas y PTHi a las 4 semanas</p>";
 										document.getElementById("algoritmo22").style.display = "block";
 										}
@@ -761,7 +744,7 @@ setTimeout(function(){spinner.stop()} , 2100);
 										{
 											resultado.innerHTML = "<p> Datos incompletos</p>";
 											}
-											if(pth.value >= p2 && pth.value <= 500)
+											if(pth.value >= pp2 && pth.value <= 500)
 											{
 												resultado.innerHTML = "<p>Dosis de ASRVD:  1 mcg/día ó 2 mcg/día 3 veces / semana</p><p>Evaluar Calcio y Fósforo a las 2-4 semanas y PTHi a las 4 semanas</p>";
 												document.getElementById("algoritmo42").style.display = "block";
