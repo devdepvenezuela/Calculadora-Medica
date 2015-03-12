@@ -52,9 +52,27 @@ function validate()
         if(buttonIndex == 1)
 		{
 		
-	if(confirm('Ingrese la clave de inicio de la calculadora:'))
+	if(confirm('¿Es Ud. un médico apto para prescribir?'))
 	{
 	localStorage.setItem("clave", "1");
+	navigator.notification.alert(
+            'Esta aplicación no ha sido probada en las versiones posteriores a su publicación. \n Version actual: 1.0', 
+			alertDismiss,
+            'Calculadora ASRVD',            
+            'Aceptar'                  
+        );
+        navigator.notification.alert(
+            'Espacio para info. sucinta 1', 
+			alertDismiss,
+            'Calculadora ASRVD',            
+            'Aceptar'                  
+        );
+        navigator.notification.alert(
+            'Espacio para info. sucinta 2', 
+			alertDismiss,
+            'Calculadora ASRVD',            
+            'Aceptar'                  
+        );
 	validate();
 	}
 	else
