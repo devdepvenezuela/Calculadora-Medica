@@ -189,8 +189,8 @@ li.table_row{width:100%; float:left; clear:both; line-height:30px;padding:0px; l
 
 .form{padding:0 0 15px 0;}
 .form label{padding:0 0 5px 2%; display:block; font-size:16px;font-weight:normal;}
-.form label.error{padding:10px 0 0 0; width:100%; text-align:left; font-size:18px;}
-.form_input{padding:3%; width:60%; margin:0 2% 16px 5%}
+.form label.error{padding:10px 0 0 0; width:100%; text-align:left; font-size:14px;}
+.form_input{padding:3%; width:60%; height:150px ; margin:0 2% 16px 5%;font-size:14pt;}
 .form_textarea{padding:3%; width:93%; height:50px; margin:0 0 5px 0;font-size:18px;}
 .unidad{ color:#198bbd; font-size:10px;font-weight: bold }
 .form_submit{ -webkit-appearance: none; -moz-appearance: none;
