@@ -23,12 +23,12 @@ function validate()
 	var sis = localStorage.getItem("clave");
 	if(sis == "1")
 	{
-		navigator.notification.alert(
+	/*	navigator.notification.alert(
             'Bievenido a la Calculadora Zemplar.', 
 			alertDismiss,
             'Calculadora ASRVD',            
             'Aceptar'                  
-        );
+        );*/
 	}
 	else
 	{
@@ -51,25 +51,25 @@ function validate()
 	 function onConfirm(buttonIndex) {
         if(buttonIndex == 1)
 		{
-	var clave = prompt('Ingrese la clave de inicio de la calculadora:');	
-	if(clave == "CZa$r54")
+		
+	if(confirm('Ingrese la clave de inicio de la calculadora:'))
 	{
 	localStorage.setItem("clave", "1");
 	validate();
 	}
 	else
 	{
-		navigator.notification.alert(
-            'Clave incorrecta, intente de nuevo', 
-			alertDismiss,
-            'Calculadora ASRVD',            
-            'Aceptar'                  
-        );
-		validate();
+	cerrar();
 	}
 		}
 		else
 		{ 
-		 navigator.app.exitApp();
+		 cerrar();
 		}
+    }
+    
+    function cerrar(){
+    	
+    		 navigator.app.exitApp();
+    	
     }
