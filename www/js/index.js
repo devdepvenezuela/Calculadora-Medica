@@ -61,14 +61,19 @@ function onConfirm(buttonIndex) {
             'Calculadora ASRVD',            
             'Aceptar'                  
         );
-       
-       window.open('https://docs.google.com/document/d/1KWzsco9j2bJnL8jaez72JwEbh_LcSvsNmVf3Rxix2Ac/edit?usp=sharing', '_blank');
-       /* navigator.notification.alert(
-            'Espacio para info. sucinta 2', 
+       if (confirm('¿Info Sucinta?'))
+       {
+       	window.open('https://drive.google.com/file/d/0B2qFa03QCD-lOVBQcVI5X1h3ZWs/view?usp=sharing', '_blank');
+       }
+       else
+       {
+       	 navigator.notification.alert(
+            'Podra verlo mas adelante cuando lo desee.', 
 			alertDismiss,
             'Calculadora ASRVD',            
             'Aceptar'                  
-        );*/
+        );
+       }
 	validate();
 	}
 	else
