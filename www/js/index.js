@@ -62,13 +62,13 @@ function onConfirm(buttonIndex) {
             'Aceptar'                  
         );
        
-       window.open('https://drive.google.com/file/d/0B2qFa03QCD-lV210RVc3RzE3MFU/view?usp=sharing', '_blank');
-        navigator.notification.alert(
+       window.open('https://docs.google.com/document/d/1KWzsco9j2bJnL8jaez72JwEbh_LcSvsNmVf3Rxix2Ac/edit?usp=sharing', '_blank');
+       /* navigator.notification.alert(
             'Espacio para info. sucinta 2', 
 			alertDismiss,
             'Calculadora ASRVD',            
             'Aceptar'                  
-        );
+        );*/
 	validate();
 	}
 	else
