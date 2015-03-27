@@ -48,7 +48,7 @@ function validate()
 		}
 	
 	
-	 function onConfirm(buttonIndex) {
+function onConfirm(buttonIndex) {
         if(buttonIndex == 1)
 		{
 		
@@ -61,11 +61,10 @@ function validate()
             'Calculadora ASRVD',            
             'Aceptar'                  
         );
-       if(confirm('¿Es Ud. un médico apto para prescribir?'))
-	{
-	localStorage.setItem("clave", "1");
-	navigator.notification.alert(
-            'Esta aplicación no ha sido probada en las versiones posteriores a su publicación. \n Version actual: 1.0', 
+       
+       window.open('https://drive.google.com/file/d/0B2qFa03QCD-lV210RVc3RzE3MFU/view?usp=sharing', '_blank');
+        navigator.notification.alert(
+            'Espacio para info. sucinta 2', 
 			alertDismiss,
             'Calculadora ASRVD',            
             'Aceptar'                  
