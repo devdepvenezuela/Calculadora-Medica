@@ -61,6 +61,7 @@ function validate()
             'Calculadora ASRVD',            
             'Aceptar'                  
         );
+        window.open('zcmw_ret_st.pdf', '_blank');
         navigator.notification.alert(
             'Espacio para info. sucinta 1', 
 			alertDismiss,
