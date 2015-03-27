@@ -58,11 +58,12 @@ function onConfirm(buttonIndex) {
         if (confirm('Esta aplicación no ha sido probada en las versiones posteriores a su publicación. \n Version actual: 1.0'))
         {
                if (confirm('¿Desea ver ahora la Información Sucinta de Zemplar Capsulas y Zemplar IV?'))
-       {
-       	window.open('https://drive.google.com/file/d/0B2qFa03QCD-lOVBQcVI5X1h3ZWs/view?usp=sharing', '_blank');
-       }
+       {window.open('https://drive.google.com/file/d/0B2qFa03QCD-lOVBQcVI5X1h3ZWs/view?usp=sharing', '_blank');}
+       else{}
 	validate();	
         }
+        else
+        {}
         }
 
 	}
