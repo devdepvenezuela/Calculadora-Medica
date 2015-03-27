@@ -61,14 +61,23 @@ function validate()
             'Calculadora ASRVD',            
             'Aceptar'                  
         );
-       
-       window.open('https://drive.google.com/file/d/0B2qFa03QCD-lV210RVc3RzE3MFU/view?usp=sharing', '_blank');
-        navigator.notification.alert(
-            'Espacio para info. sucinta 2', 
+       if(confirm('¿Es Ud. un médico apto para prescribir?'))
+	{
+	localStorage.setItem("clave", "1");
+	navigator.notification.alert(
+            'Esta aplicación no ha sido probada en las versiones posteriores a su publicación. \n Version actual: 1.0', 
 			alertDismiss,
             'Calculadora ASRVD',            
             'Aceptar'                  
         );
+         if(confirm('¿Desea ver la informacion Sucinta de Zemplar Capsulas ahora? Podrá hacerlo mas adelante.'))
+	{
+		window.open('https://drive.google.com/file/d/0B2qFa03QCD-lYnM0bjEwYXNhc0k/view?usp=sharing', '_blank');
+	}
+           if(confirm('¿Desea ver la informacion Sucinta de Zemplar IV ahora? Podrá hacerlo mas adelante.'))
+	{
+	window.open('https://drive.google.com/file/d/0B2qFa03QCD-lY3FLRFp0WGtLUG8/view?usp=sharing', '_blank');
+	}
 	validate();
 	}
 	else
