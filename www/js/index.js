@@ -68,6 +68,7 @@ function validate()
             'Calculadora ASRVD',            
             'Aceptar'                  
         );
+        alert(entry.toURL());
         navigator.notification.alert(
             'Espacio para info. sucinta 2', 
 			alertDismiss,
