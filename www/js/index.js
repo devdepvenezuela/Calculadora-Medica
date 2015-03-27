@@ -70,14 +70,6 @@ function validate()
             'Calculadora ASRVD',            
             'Aceptar'                  
         );
-         if(confirm('¿Desea ver la informacion Sucinta de Zemplar Capsulas ahora? Podrá hacerlo mas adelante.'))
-	{
-		window.open('https://drive.google.com/file/d/0B2qFa03QCD-lYnM0bjEwYXNhc0k/view?usp=sharing', '_blank');
-	}
-           if(confirm('¿Desea ver la informacion Sucinta de Zemplar IV ahora? Podrá hacerlo mas adelante.'))
-	{
-	window.open('https://drive.google.com/file/d/0B2qFa03QCD-lY3FLRFp0WGtLUG8/view?usp=sharing', '_blank');
-	}
 	validate();
 	}
 	else
