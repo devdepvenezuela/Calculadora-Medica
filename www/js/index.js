@@ -48,6 +48,7 @@ function validate()
 		}
 	
 	
+    
 function onConfirm(buttonIndex) {
         if(buttonIndex == 1)
 		{
@@ -55,17 +56,26 @@ function onConfirm(buttonIndex) {
 	if(confirm('¿Es Ud. un médico apto para prescribir?'))
 	{
 	localStorage.setItem("clave", "1");
-        if (confirm('Esta aplicación no ha sido probada en las versiones posteriores a su publicación. \n Version actual: 1.0'))
-        {
-               if (confirm('¿Desea ver ahora la Información Sucinta de Zemplar Capsulas y Zemplar IV?'))
-       {window.open('https://drive.google.com/file/d/0B2qFa03QCD-lOVBQcVI5X1h3ZWs/view?usp=sharing', '_blank');}
-       else{}
-	validate();	
-        }
-        else
-        {}
-        }
-
+       if (confirm('¿Desea ver ahora la Información Sucinta de Zemplar Capsulas y Zemplar IV?'))
+       {
+       	window.open('https://drive.google.com/file/d/0B2qFa03QCD-lOVBQcVI5X1h3ZWs/view?usp=sharing', '_blank');
+       		navigator.notification.alert(
+            'Esta aplicación no ha sido probada en las versiones posteriores a su publicación. \n Version actual: 1.0', 
+			alertDismiss,
+            'Calculadora ASRVD',            
+            'Aceptar'                  
+        );
+       }
+       else
+       {
+      	navigator.notification.alert(
+            'Esta aplicación no ha sido probada en las versiones posteriores a su publicación. \n Version actual: 1.0', 
+			alertDismiss,
+            'Calculadora ASRVD',            
+            'Aceptar'                  
+        );
+       }
+	validate();
 	}
 	else
 	{
