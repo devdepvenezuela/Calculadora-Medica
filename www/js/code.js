@@ -8,6 +8,8 @@ var swiperParent = new Swiper('.swiper-parent',{
 pagination: '.pagination',
 paginationClickable: true,
 noSwiping: false,
+allowSwipeToPrev: false,
+allowSwipeToNext: false,
 onSlideChangeEnd : function() {
   //Do something when you touch the slide
   if (swiperParent.activeIndex != 0){
