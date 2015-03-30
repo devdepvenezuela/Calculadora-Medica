@@ -56,7 +56,7 @@ function onConfirm(buttonIndex) {
 	if(confirm('¿Es Ud. un médico apto para prescribir?'))
 	{
 	localStorage.setItem("clave", "1");
-       if (confirm('¿Desea ver ahora la Información Sucinta de Zemplar Capsulas y Zemplar IV?'))
+       if (confirm('¿Desea realizar un paseo por la aplicación?'))
        {
       /* 	window.open('https://drive.google.com/file/d/0B2qFa03QCD-lOVBQcVI5X1h3ZWs/view?usp=sharing', '_blank');
        		navigator.notification.alert(
@@ -72,9 +72,8 @@ function onConfirm(buttonIndex) {
 // build items array
 var items = [
     {
-        src: 'https://placekitten.com/600/400',
-        w: 600,
-        h: 400
+        src: '../images/portfolio_thumb.jpg',
+
     },
     {
         src: 'https://placekitten.com/1200/900',
