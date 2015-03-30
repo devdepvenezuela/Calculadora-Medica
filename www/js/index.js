@@ -72,15 +72,14 @@ function onConfirm(buttonIndex) {
 // build items array
 var items = [
     {
-        src: 'http://www.vidadigitalradio.com/wp-content/uploads/2014/02/Windows-Phone.jpg',
-          w: 1433,
-        h: 1074
-
+        src: 'https://placekitten.com/1200/900',
+        w: 1200,
+        h: 900
     },
-       src: 'http://i-cdn.phonearena.com/images/phones/42885-xlarge/Apple-iPhone-5s.jpg',
-          w: 1634,
-        h: 2126
-
+      {
+        src: 'https://placekitten.com/1200/900',
+        w: 1200,
+        h: 900
     }/*,
     {
         src: 'https://placekitten.com/1200/900',
