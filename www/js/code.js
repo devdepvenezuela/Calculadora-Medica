@@ -6,7 +6,7 @@ $(function(){
 })
 var swiperParent = new Swiper('.swiper-parent',{
 pagination: '.pagination',
-paginationClickable: true,
+paginationClickable: false,
 onSlideChangeEnd : function() {
   //Do something when you touch the slide
   if (swiperParent.activeIndex != 0){
