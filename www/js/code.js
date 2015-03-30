@@ -17,7 +17,7 @@ onSlideChangeEnd : function() {
   }  
 }
 })
-var swiperNested = new Swiper('.swiper-nested', {
+/*var swiperNested = new Swiper('.swiper-nested', {
 scrollContainer:true,
 mousewheelControl : true,
 mode:'vertical',
@@ -28,7 +28,7 @@ scrollbar: {
   draggable: false  
 }
 })
-/*var swiperNested1 = new Swiper('.swiper-nested1', {
+var swiperNested1 = new Swiper('.swiper-nested1', {
 scrollContainer:true,
 mousewheelControl : true,
 mode:'vertical',
