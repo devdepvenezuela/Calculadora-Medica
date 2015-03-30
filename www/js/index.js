@@ -99,7 +99,22 @@ var options = {
 var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
 gallery.init();
 
-gallery.listen('close', function() {   });
+gallery.listen('close', function() {  
+	
+	var swiperParent = new Swiper('.swiper-parent',{
+pagination: '.pagination',
+paginationClickable: true,
+onSlideChangeEnd : function() {
+  //Do something when you touch the slide
+  if (swiperParent.activeIndex != 0){
+  $('#header').animate({'top':'0px'},400);
+  }
+  if (swiperParent.activeIndex == 0){
+  $('#header').animate({'top':'-100px'},400);
+  }  
+}
+	
+});
 ///finnnnnnnnnnnnnnnnnn
        }
        else
