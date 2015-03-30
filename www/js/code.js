@@ -7,9 +7,6 @@ $(function(){
 var swiperParent = new Swiper('.swiper-parent',{
 pagination: '.pagination',
 paginationClickable: true,
-noSwiping: false,
-allowSwipeToPrev: false,
-allowSwipeToNext: false,
 onSlideChangeEnd : function() {
   //Do something when you touch the slide
   if (swiperParent.activeIndex != 0){
@@ -24,9 +21,6 @@ var swiperNested = new Swiper('.swiper-nested', {
 scrollContainer:true,
 mousewheelControl : true,
 mode:'vertical',
-noSwiping: false,
-allowSwipeToPrev: false,
-allowSwipeToNext: false,
 //Enable Scrollbar
 scrollbar: {
   container :'.swiper-scrollbar',
@@ -38,9 +32,6 @@ var swiperNested1 = new Swiper('.swiper-nested1', {
 scrollContainer:true,
 mousewheelControl : true,
 mode:'vertical',
-noSwiping: false,
-allowSwipeToPrev: false,
-allowSwipeToNext: false,
 //Enable Scrollbar
 scrollbar: {
   container :'.swiper-scrollbar1',
@@ -52,9 +43,6 @@ var swiperNested2 = new Swiper('.swiper-nested2', {
 scrollContainer:true,
 mousewheelControl : true,
 mode:'vertical',
-noSwiping: false,
-allowSwipeToPrev: false,
-allowSwipeToNext: false,
 //Enable Scrollbar
 scrollbar: {
   container :'.swiper-scrollbar2',
