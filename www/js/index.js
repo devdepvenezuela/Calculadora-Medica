@@ -72,9 +72,14 @@ function onConfirm(buttonIndex) {
 // build items array
 var items = [
     {
-        src: 'https://github.com/devdepvenezuela/Zemplar/blob/master/www/images/portfolio_thumb.jpg',
-          w: 310,
-        h: 310
+        src: 'http://www.vidadigitalradio.com/wp-content/uploads/2014/02/Windows-Phone.jpg',
+          w: 1433,
+        h: 1074
+
+    },
+       src: 'http://i-cdn.phonearena.com/images/phones/42885-xlarge/Apple-iPhone-5s.jpg',
+          w: 1634,
+        h: 2126
 
     },
     {
