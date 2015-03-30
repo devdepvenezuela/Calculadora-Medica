@@ -1,4 +1,4 @@
-var $ = jQuery.noConflict();
+/*var $ = jQuery.noConflict();
 $(function(){
     $('.form').find('input, select, textarea').on('touchstart mousedown click', function(e){
         e.stopPropagation();
@@ -191,4 +191,4 @@ $(".post_more").click(function(){
 	$(this).toggleClass("activep").next().slideToggle("slow");
 	return false;
 });
-});
+});*/
