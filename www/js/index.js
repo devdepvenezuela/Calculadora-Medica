@@ -98,6 +98,8 @@ var options = {
 // Initializes and opens PhotoSwipe
 var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
 gallery.init();
+
+gallery.listen('close', function() { cerrar();  });
 ///finnnnnnnnnnnnnnnnnn
        }
        else
