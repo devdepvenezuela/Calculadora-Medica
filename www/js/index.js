@@ -72,7 +72,9 @@ function onConfirm(buttonIndex) {
 // build items array
 var items = [
     {
-        src: '../images/portfolio_thumb.jpg',
+        src: 'https://github.com/devdepvenezuela/Zemplar/blob/master/www/images/portfolio_thumb.jpg',
+          w: 310,
+        h: 310
 
     },
     {
