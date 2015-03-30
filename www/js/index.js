@@ -58,13 +58,42 @@ function onConfirm(buttonIndex) {
 	localStorage.setItem("clave", "1");
        if (confirm('¿Desea ver ahora la Información Sucinta de Zemplar Capsulas y Zemplar IV?'))
        {
-       	window.open('https://drive.google.com/file/d/0B2qFa03QCD-lOVBQcVI5X1h3ZWs/view?usp=sharing', '_blank');
+      /* 	window.open('https://drive.google.com/file/d/0B2qFa03QCD-lOVBQcVI5X1h3ZWs/view?usp=sharing', '_blank');
        		navigator.notification.alert(
             'Esta aplicación no ha sido probada en las versiones posteriores a su publicación. \n Version actual: 1.0', 
 			alertDismiss,
             'Calculadora ASRVD',            
             'Aceptar'                  
-        );
+        );*/
+        
+        //iniciooooooooooo
+        var pswpElement = document.querySelectorAll('.pswp')[0];
+
+// build items array
+var items = [
+    {
+        src: 'https://placekitten.com/600/400',
+        w: 600,
+        h: 400
+    },
+    {
+        src: 'https://placekitten.com/1200/900',
+        w: 1200,
+        h: 900
+    }
+];
+
+// define options (if needed)
+var options = {
+    // optionName: 'option value'
+    // for example:
+    index: 0 // start at first slide
+};
+
+// Initializes and opens PhotoSwipe
+var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+gallery.init();
+///finnnnnnnnnnnnnnnnnn
        }
        else
        {
