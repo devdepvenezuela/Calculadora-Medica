@@ -17,7 +17,7 @@ onSlideChangeEnd : function() {
   }  
 }
 })
-/*var swiperNested = new Swiper('.swiper-nested', {
+var swiperNested = new Swiper('.swiper-nested', {
 scrollContainer:true,
 mousewheelControl : true,
 mode:'vertical',
@@ -49,7 +49,7 @@ scrollbar: {
   hide: true,
   draggable: false  
 }
-})*/
+})
 var swiperNested3 = new Swiper('.swiper-nested3', {
 scrollContainer:true,
 mousewheelControl : true,
@@ -171,9 +171,9 @@ $('.scrolltopsingle').click(function(){
 $('.gohome').click(function(){
  swiperParent.swipeTo(0);
 });
-jQuery(function($) {
+/*jQuery(function($) {
 $(".swipebox").swipebox();
-});
+});*/
 $(function() {
 $('#tabsmenu').tabify();
 $(".videocontainer").fitVids();
