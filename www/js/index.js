@@ -80,12 +80,17 @@ var items = [
         src: 'https://placekitten.com/1200/900',
         w: 1200,
         h: 900
-    }/*,
-    {
+    },
+      {
         src: 'https://placekitten.com/1200/900',
         w: 1200,
         h: 900
-    }*/
+    },
+      {
+        src: 'https://placekitten.com/1200/900',
+        w: 1200,
+        h: 900
+    }
 ];
 
 // define options (if needed)
