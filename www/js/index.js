@@ -111,6 +111,7 @@ myElement.style.display = "block";
 var myElements = document.querySelectorAll(".swiper-slide");
 for (var i = 0; i < myElements.length; i++) {
     myElements[i].style.display = "block";
+    location.reload();
 }
 });
 ///finnnnnnnnnnnnnnnnnn
