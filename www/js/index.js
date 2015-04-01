@@ -23,12 +23,12 @@ function validate()
 	var sis = localStorage.getItem("clave");
 	if(sis == "1")
 	{
-	/*	navigator.notification.alert(
-            'Bievenido a la Calculadora Zemplar.', 
-			alertDismiss,
-            'Calculadora ASRVD',            
-            'Aceptar'                  
-        );*/
+	var myElement = document.querySelector("#header");
+myElement.style.display = "block";
+var myElements = document.querySelectorAll(".swiper-slide");
+for (var i = 0; i < myElements.length; i++) {
+    myElements[i].style.display = "block";
+    window.location.reload();
 	}
 	else
 	{
@@ -111,7 +111,7 @@ myElement.style.display = "block";
 var myElements = document.querySelectorAll(".swiper-slide");
 for (var i = 0; i < myElements.length; i++) {
     myElements[i].style.display = "block";
-    location.reload();
+    window.location.reload();
 }
 });
 ///finnnnnnnnnnnnnnnnnn
