@@ -105,8 +105,12 @@ var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options)
 gallery.init();
 
 gallery.listen('close', function() {  
-/*document.getElementById("header").style.display = "block";
-document.getElementById("inicia").style.display = "block";*/
+	
+var myElement = document.querySelector("#header");
+myElement.style.display = "block";
+var myElements = document.querySelectorAll(".swiper-slide sliderbg");
+for (var i = 0; i < myElements.length; i++) {
+    myElements[i].style.display = "block";
 }
 });
 ///finnnnnnnnnnnnnnnnnn
