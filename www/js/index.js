@@ -23,12 +23,11 @@ function validate()
 	var sis = localStorage.getItem("clave");
 	if(sis == "1")
 	{
-	/*	navigator.notification.alert(
-            'Bievenido a la Calculadora Zemplar.', 
-			alertDismiss,
-            'Calculadora ASRVD',            
-            'Aceptar'                  
-        );*/
+	var myElemen = document.querySelector("#header");
+	myElemen.style.display = "block";
+	var myElemens = document.querySelectorAll(".swiper-slide");
+	for (var i = 0; i < myElements.length; i++) {
+	myElemens[i].style.display = "block";
 	}
 	else
 	{
