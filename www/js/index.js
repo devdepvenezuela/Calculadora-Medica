@@ -105,8 +105,8 @@ var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options)
 gallery.init();
 
 gallery.listen('close', function() {  
-document.getElementById("header").style.display = "block";
-document.getElementById("inicia").style.display = "block";
+/*document.getElementById("header").style.display = "block";
+document.getElementById("inicia").style.display = "block";*/
 }
 });
 ///finnnnnnnnnnnnnnnnnn
