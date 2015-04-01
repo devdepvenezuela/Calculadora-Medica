@@ -23,11 +23,6 @@ function validate()
 	var sis = localStorage.getItem("clave");
 	if(sis == "1")
 	{
-	var myElemen = document.querySelector("#header");
-	myElemen.style.display = "block";
-	var myElemens = document.querySelectorAll(".swiper-slide");
-	for (var i = 0; i < myElements.length; i++) {
-	myElemens[i].style.display = "block";
 	}
 	else
 	{
