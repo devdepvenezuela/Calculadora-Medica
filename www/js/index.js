@@ -2,7 +2,6 @@ var app = {
     // Constructor de la app
     initialize: function() {
         this.bindEvents();
-        
     },
 
     bindEvents: function() {
@@ -10,8 +9,7 @@ var app = {
     },
 
     onDeviceReady: function() {
-	validate();
-    
+    validate();
     }, 
 };
 
@@ -22,23 +20,19 @@ function alertDismiss()
 
 function validate()
 {	
+	var sis = localStorage.getItem("clave");
 	if(sis == "1")
 	{
-	var myElement = document.querySelector("#header");
-	myElement.style.display = "block";
-	var myElements = document.querySelectorAll(".swiper-slide");
-	for (var i = 0; i < myElements.length; i++) {
-    	myElements[i].style.display = "block";
+	/*	navigator.notification.alert(
+            'Bievenido a la Calculadora Zemplar.', 
+			alertDismiss,
+            'Calculadora ASRVD',            
+            'Aceptar'                  
+        );*/
 	}
 	else
 	{
 	clave();
-	var myElement = document.querySelector("#header");
-	myElement.style.display = "none";
-	var myElements = document.querySelectorAll(".swiper-slide");
-	for (var i = 0; i < myElements.length; i++) {
-    	myElements[i].style.display = "none";
-	var sis = localStorage.getItem("clave");
 	}
 	}
 	
@@ -113,11 +107,10 @@ gallery.init();
 gallery.listen('close', function() {  
 	
 var myElement = document.querySelector("#header");
-myElement.style.visibility = "visible";
+myElement.style.display = "block";
 var myElements = document.querySelectorAll(".swiper-slide");
 for (var i = 0; i < myElements.length; i++) {
-    myElements[i].style.visibility = "visible";
-    window.location.reload(true);
+    myElements[i].style.display = "block";
 }
 });
 ///finnnnnnnnnnnnnnnnnn
