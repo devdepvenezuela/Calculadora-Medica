@@ -101,10 +101,10 @@ gallery.init();
 gallery.listen('close', function() {  
 	
 var myElement = document.querySelector("#header");
-myElement.style.display = "block";
+myElement.style.display = "inline-block";
 var myElements = document.querySelectorAll(".swiper-slide");
 for (var i = 0; i < myElements.length; i++) {
-    myElements[i].style.display = "block";
+    myElements[i].style.display = "inline-block";
 }
 });
 ///finnnnnnnnnnnnnnnnnn
