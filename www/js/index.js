@@ -2,6 +2,7 @@ var app = {
     // Constructor de la app
     initialize: function() {
         this.bindEvents();
+        
     },
 
     bindEvents: function() {
@@ -9,7 +10,13 @@ var app = {
     },
 
     onDeviceReady: function() {
-    validate();
+    	var myElement = document.querySelector("#header");
+	myElement.style.visibility = "hidden";
+	var myElements = document.querySelectorAll(".swiper-slide");
+	for (var i = 0; i < myElements.length; i++) {
+    	myElements[i].style.visibility = "hidden";
+	validate();
+    
     }, 
 };
 
@@ -111,6 +118,7 @@ myElement.style.visibility = "visible";
 var myElements = document.querySelectorAll(".swiper-slide");
 for (var i = 0; i < myElements.length; i++) {
     myElements[i].style.visibility = "visible";
+    location.reload();
 }
 });
 ///finnnnnnnnnnnnnnnnnn
