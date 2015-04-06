@@ -139,7 +139,7 @@ for (var i = 0; i < myElements.length; i++) {
 	
 	  function sucinta(producto){
     	
-    	if(producto == "1")
+    	if(producto == 1)
 		{
 			var pswpElement = document.querySelectorAll('.pswp')[0];
 
@@ -165,7 +165,7 @@ for (var i = 0; i < myElements.length; i++) {
 			};
 		
 		}
-		else
+		else if(producto == 2)
 		{
 			var pswpElement = document.querySelectorAll('.pswp')[0];
 
@@ -191,6 +191,8 @@ for (var i = 0; i < myElements.length; i++) {
 			};
 		
 		}
+		else {alert ('Algo malo ha sucedido en la aplicación');}
+		
 		var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
 		
     	
