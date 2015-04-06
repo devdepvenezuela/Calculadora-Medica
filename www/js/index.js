@@ -141,6 +141,7 @@ for (var i = 0; i < myElements.length; i++) {
     	
     	if(producto == 1)
 		{
+		/*
 			var pswpElement1 = document.querySelectorAll('.pswp')[0];
 
 			// build items array
@@ -160,11 +161,13 @@ for (var i = 0; i < myElements.length; i++) {
 			};
 			
 			var gallery1 = new PhotoSwipe( pswpElement1, PhotoSwipeUI_Default, items, options);
-		
+		*/
+		alert('opcion 1');
 		}
 		else if(producto == 2)
 		{
-			var pswpElement2 = document.querySelectorAll('.pswp')[0];
+			alert('opcion 2');
+			/*var pswpElement2 = document.querySelectorAll('.pswp')[0];
 
 			// build items array
 			var items = [
@@ -183,7 +186,7 @@ for (var i = 0; i < myElements.length; i++) {
 			};
 			
 			var gallery2 = new PhotoSwipe( pswpElement2, PhotoSwipeUI_Default, items, options);
-		
+		*/
 		}
 		else {alert ('Algo malo ha sucedido en la aplicación');}
 		
@@ -191,6 +194,3 @@ for (var i = 0; i < myElements.length; i++) {
 		
     	
     }
-	
-	
-
