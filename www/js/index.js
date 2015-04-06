@@ -141,16 +141,11 @@ for (var i = 0; i < myElements.length; i++) {
     	
     	if(producto == 1)
 		{
-			var pswpElement = document.querySelectorAll('.pswp')[0];
+			var pswpElement1 = document.querySelectorAll('.pswp')[0];
 
 			// build items array
 			var items = [
 				{
-					src: 'https://placekitten.com/1200/900',
-					w: 1200,
-					h: 900
-				},
-				  {
 					src: 'https://placekitten.com/1200/900',
 					w: 1200,
 					h: 900
@@ -163,20 +158,17 @@ for (var i = 0; i < myElements.length; i++) {
 				// for example:
 				index: 0 // start at first slide
 			};
+			
+			var gallery1 = new PhotoSwipe( pswpElement1, PhotoSwipeUI_Default, items, options);
 		
 		}
 		else if(producto == 2)
 		{
-			var pswpElement = document.querySelectorAll('.pswp')[0];
+			var pswpElement2 = document.querySelectorAll('.pswp')[0];
 
 			// build items array
 			var items = [
 				{
-					src: 'https://placekitten.com/1200/900',
-					w: 1200,
-					h: 900
-				},
-				  {
 					src: 'https://placekitten.com/1200/900',
 					w: 1200,
 					h: 900
@@ -189,11 +181,13 @@ for (var i = 0; i < myElements.length; i++) {
 				// for example:
 				index: 0 // start at first slide
 			};
+			
+			var gallery2 = new PhotoSwipe( pswpElement2, PhotoSwipeUI_Default, items, options);
 		
 		}
 		else {alert ('Algo malo ha sucedido en la aplicación');}
 		
-		var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+		
 		
     	
     }
