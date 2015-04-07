@@ -138,7 +138,7 @@ for (var i = 0; i < myElements.length; i++) {
     }
 	
 	    function paseo(){
-		if(confirm('¿Desea realziar un paseo por la aplicación?'))
+		if(confirm('¿Desea realizar un paseo por la aplicación?'))
 		{
 							var pswpElement4 = document.querySelectorAll('.pswp')[0];
 
@@ -209,7 +209,6 @@ for (var i = 0; i < myElements.length; i++) {
 		}
 		else if(producto == 2)
 		{
-			alert('opcion 2');
 			var pswpElement2 = document.querySelectorAll('.pswp')[0];
 
 			// build items array
