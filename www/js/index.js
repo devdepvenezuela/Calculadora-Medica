@@ -65,33 +65,48 @@ function onConfirm(buttonIndex) {
 // build items array
 var items = [
     {
-        src: 'https://placekitten.com/1200/900',
-        w: 1200,
-        h: 900
+        src: 'http://farm8.staticflickr.com/7714/16445249304_861c6ccd19_z.jpg',
+        w: 1080,
+        h: 1920
     },
       {
-        src: 'https://placekitten.com/1200/900',
-        w: 1200,
-        h: 900
+        src: 'http://farm9.staticflickr.com/8694/16860287887_10a7b49191_z.jpg',
+		w: 1080,
+        h: 1920
     },
       {
-        src: 'https://placekitten.com/1200/900',
-        w: 1200,
-        h: 900
+        src: 'http://farm9.staticflickr.com/8737/16445249444_4c22f30b2d_z.jpg',
+        w: 1080,
+        h: 1920
     },
       {
         src: 'http://farm8.staticflickr.com/7607/16445249134_43316f397b_z.jpg',
         w: 1080,
+        h: 1920
+    },
+      {
+        src: 'http://farm9.staticflickr.com/8827/16447551473_3d8ed2a5b4_z.jpg',
+        w: 1080,
+        h: 1920
+    },
+      {
+        src: 'http://farm8.staticflickr.com/7664/16860284477_31e255d793_z.jpg',
+        w: 1080,
         h: 1920,
-        title: 'Deslice hacia arriba o pellizque para salir del paseo.'
+		title: 'deslice hacia arriba o pellizque la pantalla para salir del paseo.'
     }
+	
+	
+	
+	
 ];
 
 // define options (if needed)
 var options = {
     // optionName: 'option value'
     // for example:
-    index: 0 // start at first slide
+    index: 0,	// start at first slide
+	loop: false
 };
 
 // Initializes and opens PhotoSwipe
@@ -146,33 +161,49 @@ document.location = "index.html";
 
 			// build items array
 			var items4 = [
-				{
-					src: 'https://placekitten.com/1200/900',
-					w: 1200,
-					h: 900
-				},
-				  {
-					src: 'https://placekitten.com/1200/900',
-					w: 1200,
-					h: 900
-				},
-				  {
-					src: 'https://placekitten.com/1200/900',
-					w: 1200,
-					h: 900
-				},
-				  {
-					src: 'https://placekitten.com/1200/900',
-					w: 1200,
-					h: 900
-				}
-			];
+    {
+        src: 'http://farm8.staticflickr.com/7714/16445249304_861c6ccd19_z.jpg',
+        w: 1080,
+        h: 1920
+    },
+      {
+        src: 'http://farm9.staticflickr.com/8694/16860287887_10a7b49191_z.jpg',
+		w: 1080,
+        h: 1920
+    },
+      {
+        src: 'http://farm9.staticflickr.com/8737/16445249444_4c22f30b2d_z.jpg',
+        w: 1080,
+        h: 1920
+    },
+      {
+        src: 'http://farm8.staticflickr.com/7607/16445249134_43316f397b_z.jpg',
+        w: 1080,
+        h: 1920
+    },
+      {
+        src: 'http://farm9.staticflickr.com/8827/16447551473_3d8ed2a5b4_z.jpg',
+        w: 1080,
+        h: 1920
+    },
+      {
+        src: 'http://farm8.staticflickr.com/7664/16860284477_31e255d793_z.jpg',
+        w: 1080,
+        h: 1920,
+		title: 'deslice hacia arriba o pellizque la pantalla para salir del paseo.'
+    }
+	
+	
+	
+	
+];
 
 			// define options (if needed)
 			var options4 = {
 				// optionName: 'option value'
 				// for example:
-				index: 0 // start at first slide
+				index: 0,
+				loop: false
 			};
 
 			// Initializes and opens PhotoSwipe
@@ -193,9 +224,20 @@ document.location = "index.html";
 			// build items array
 			var items1 = [
 				{
-					src: 'https://placekitten.com/1200/900',
-					w: 1200,
-					h: 900
+					src: 'http://farm8.staticflickr.com/7614/17069073431_a9408002cc_z.jpg',
+					w: 623,
+					h: 645
+				},
+				{
+					src: 'http://farm8.staticflickr.com/7615/17069817245_f8cd20c8e7_z.jpg',
+					w: 623,
+					h: 645
+				},
+				{
+					src: 'http://farm9.staticflickr.com/8711/17068343872_d6a4632f64_z.jpg',
+					w: 623,
+					h: 645,
+					title: 'deslice hacia arriba o pellizque la pantalla para salir de la informacion sucinta.'
 				}
 			];
 
@@ -216,9 +258,26 @@ document.location = "index.html";
 			// build items array
 			var items2 = [
 				{
-					src: 'https://placekitten.com/1200/900',
-					w: 1200,
-					h: 900
+					src: 'http://farm9.staticflickr.com/8737/16447375274_4d4df053cc_z.jpg',
+					w: 623,
+					h: 645
+				},
+				{
+					src: 'http://farm9.staticflickr.com/8730/16449675513_67689eddde_z.jpg',
+					w: 623,
+					h: 645
+				},
+				{
+					src: 'http://farm8.staticflickr.com/7590/17068343372_5000785129_z.jpg',
+					w: 623,
+					h: 645
+				},
+				{
+					src: 'http://farm9.staticflickr.com/8818/16883607669_e7a2f13352_z.jpg',
+					w: 623,
+					h: 645,
+					title: 'deslice hacia arriba o pellizque la pantalla para salir de la informacion sucinta.'
+					
 				}
 			];
 
@@ -226,7 +285,8 @@ document.location = "index.html";
 			var options2 = {
 				// optionName: 'option value'
 				// for example:
-				index: 0 // start at first slide
+				index: 0,
+				loop: false
 			};
 			
 			var gallery2 = new PhotoSwipe( pswpElement2, PhotoSwipeUI_Default, items2, options2);
