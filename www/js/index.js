@@ -80,9 +80,9 @@ var items = [
         h: 900
     },
       {
-        src: 'https://placekitten.com/1200/900',
-        w: 1200,
-        h: 900
+        src: rootContext + '/images/alg1.png',
+        w: 819,
+        h: 459
     }
 ];
 
