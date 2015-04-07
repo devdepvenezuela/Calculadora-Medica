@@ -171,9 +171,9 @@ $('.scrolltopsingle').click(function(){
 $('.gohome').click(function(){
  swiperParent.swipeTo(0);
 });
-/*jQuery(function($) {
+jQuery(function($) {
 $(".swipebox").swipebox();
-});*/
+});
 $(function() {
 $('#tabsmenu').tabify();
 $(".videocontainer").fitVids();
