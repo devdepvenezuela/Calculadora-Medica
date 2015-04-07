@@ -23,6 +23,12 @@ function validate()
 	var sis = localStorage.getItem("clave");
 	if(sis == "1")
 	{
+	var myElement1 = document.querySelector("#header");
+	myElement1.style.display = "inline-block";
+	var myElements1 = document.querySelectorAll(".swiper-slide");
+	for (var i = 0; i < myElements1.length; i++) {
+    myElements1[i].style.display = "inline-block";
+}
 	}
 	else
 	{
@@ -52,14 +58,7 @@ function onConfirm(buttonIndex) {
 	localStorage.setItem("clave", "1");
        if (confirm('¿Desea realizar un paseo por la aplicación?'))
        {
-      /* 	window.open('https://drive.google.com/file/d/0B2qFa03QCD-lOVBQcVI5X1h3ZWs/view?usp=sharing', '_blank');
-       		navigator.notification.alert(
-            'Esta aplicación no ha sido probada en las versiones posteriores a su publicación. \n Version actual: 1.0', 
-			alertDismiss,
-            'Calculadora ASRVD',            
-            'Aceptar'                  
-        );*/
-        
+       
         //iniciooooooooooo
         var pswpElement = document.querySelectorAll('.pswp')[0];
 
@@ -106,7 +105,9 @@ var myElements = document.querySelectorAll(".swiper-slide");
 for (var i = 0; i < myElements.length; i++) {
     myElements[i].style.display = "inline-block";
 }
-});
+document.location = "index.html";
+}
+);
 ///finnnnnnnnnnnnnnnnnn
        }
        else
