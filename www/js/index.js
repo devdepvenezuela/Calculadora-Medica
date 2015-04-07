@@ -80,9 +80,9 @@ var items = [
         h: 900
     },
       {
-        src: rootContext + '/images/alg1.png',
-        w: 819,
-        h: 459
+        src: 'http://farm8.staticflickr.com/7607/16445249134_43316f397b_z.jpg',
+        w: 1080,
+        h: 1092
     }
 ];
 
