@@ -137,15 +137,59 @@ for (var i = 0; i < myElements.length; i++) {
     	
     }
 	
+	    function paseo(){
+		if(confirm('¿Desea realziar un paseo por la aplicación?'))
+		{
+							var pswpElement4 = document.querySelectorAll('.pswp')[0];
+
+			// build items array
+			var items4 = [
+				{
+					src: 'https://placekitten.com/1200/900',
+					w: 1200,
+					h: 900
+				},
+				  {
+					src: 'https://placekitten.com/1200/900',
+					w: 1200,
+					h: 900
+				},
+				  {
+					src: 'https://placekitten.com/1200/900',
+					w: 1200,
+					h: 900
+				},
+				  {
+					src: 'https://placekitten.com/1200/900',
+					w: 1200,
+					h: 900
+				}
+			];
+
+			// define options (if needed)
+			var options4 = {
+				// optionName: 'option value'
+				// for example:
+				index: 0 // start at first slide
+			};
+
+			// Initializes and opens PhotoSwipe
+			var gallery4 = new PhotoSwipe( pswpElement4, PhotoSwipeUI_Default, items4, options4);
+			gallery4.init();
+    		} 
+    	
+    }
+	
+	
 	  function sucinta(producto){
     	
     	if(producto == 1)
 		{
-		/*
+		
 			var pswpElement1 = document.querySelectorAll('.pswp')[0];
 
 			// build items array
-			var items = [
+			var items1 = [
 				{
 					src: 'https://placekitten.com/1200/900',
 					w: 1200,
@@ -154,23 +198,22 @@ for (var i = 0; i < myElements.length; i++) {
 			];
 
 			// define options (if needed)
-			var options = {
+			var options1 = {
 				// optionName: 'option value'
 				// for example:
 				index: 0 // start at first slide
 			};
 			
-			var gallery1 = new PhotoSwipe( pswpElement1, PhotoSwipeUI_Default, items, options);
-		*/
-		alert('opcion 1');
+			var gallery1 = new PhotoSwipe( pswpElement1, PhotoSwipeUI_Default, items1, options1);
+			gallery1.init();
 		}
 		else if(producto == 2)
 		{
 			alert('opcion 2');
-			/*var pswpElement2 = document.querySelectorAll('.pswp')[0];
+			var pswpElement2 = document.querySelectorAll('.pswp')[0];
 
 			// build items array
-			var items = [
+			var items2 = [
 				{
 					src: 'https://placekitten.com/1200/900',
 					w: 1200,
@@ -179,14 +222,14 @@ for (var i = 0; i < myElements.length; i++) {
 			];
 
 			// define options (if needed)
-			var options = {
+			var options2 = {
 				// optionName: 'option value'
 				// for example:
 				index: 0 // start at first slide
 			};
 			
-			var gallery2 = new PhotoSwipe( pswpElement2, PhotoSwipeUI_Default, items, options);
-		*/
+			var gallery2 = new PhotoSwipe( pswpElement2, PhotoSwipeUI_Default, items2, options2);
+			gallery2.init();
 		}
 		else {alert ('Algo malo ha sucedido en la aplicación');}
 		
@@ -194,3 +237,6 @@ for (var i = 0; i < myElements.length; i++) {
 		
     	
     }
+	
+	
+
