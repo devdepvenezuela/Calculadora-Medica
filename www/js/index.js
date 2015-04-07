@@ -21,7 +21,7 @@ function alertDismiss()
 function validate()
 {	
 	var sis = localStorage.getItem("clave");
-	if(sis == "1")
+	if(sis == 1)
 	{
 	var myElement1 = document.querySelector("#header");
 	myElement1.style.display = "inline-block";
