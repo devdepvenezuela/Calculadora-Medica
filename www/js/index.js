@@ -245,7 +245,8 @@ document.location = "index.html";
 			var options1 = {
 				// optionName: 'option value'
 				// for example:
-				index: 0 // start at first slide
+				index: 0, // start at first slide
+				loop: false
 			};
 			
 			var gallery1 = new PhotoSwipe( pswpElement1, PhotoSwipeUI_Default, items1, options1);
