@@ -24,10 +24,10 @@ function validate()
 	if(sis == 1)
 	{
 	var myElement1 = document.querySelector("#header");
-	myElement1.style.display = "inline-block";
+	myElement1.style.visibility = "visible";
 	var myElements1 = document.querySelectorAll(".swiper-slide");
 	for (var i = 0; i < myElements1.length; i++) {
-    myElements1[i].style.display = "inline-block";
+    myElements1[i].style.visibility = "visible";
 }
 	}
 	else
@@ -100,10 +100,10 @@ gallery.init();
 gallery.listen('close', function() {  
 	
 var myElement = document.querySelector("#header");
-myElement.style.display = "inline-block";
+myElement.style.visibility = "visible";
 var myElements = document.querySelectorAll(".swiper-slide");
 for (var i = 0; i < myElements.length; i++) {
-    myElements[i].style.display = "inline-block";
+    myElements[i].style.visibility = "visible";
 }
 document.location = "index.html";
 }
