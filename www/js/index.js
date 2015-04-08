@@ -65,40 +65,41 @@ function onConfirm(buttonIndex) {
 // build items array
 var items = [
     {
-        src: 'http://farm8.staticflickr.com/7714/16445249304_861c6ccd19_z.jpg',
+        src: 'http://farm9.staticflickr.com/8746/17055865276_f68687c50e_z.jpg',
         w: 1080,
         h: 1920
     },
       {
-        src: 'http://farm9.staticflickr.com/8694/16860287887_10a7b49191_z.jpg',
+        src: 'http://farm9.staticflickr.com/8728/16894048368_c5f9ecedf8_z.jpg',
 		w: 1080,
         h: 1920
     },
       {
-        src: 'http://farm9.staticflickr.com/8737/16445249444_4c22f30b2d_z.jpg',
+        src: 'http://farm8.staticflickr.com/7626/17055863146_15ddff9829_z.jpg',
         w: 1080,
         h: 1920
     },
       {
-        src: 'http://farm8.staticflickr.com/7607/16445249134_43316f397b_z.jpg',
+        src: 'http://farm9.staticflickr.com/8771/17081106551_271057cf6b_z.jpg',
         w: 1080,
         h: 1920
     },
       {
-        src: 'http://farm9.staticflickr.com/8827/16447551473_3d8ed2a5b4_z.jpg',
+        src: 'http://farm8.staticflickr.com/7659/16894050268_e2c294110f_z.jpg',
         w: 1080,
         h: 1920
     },
       {
-        src: 'http://farm8.staticflickr.com/7664/16860284477_31e255d793_z.jpg',
+        src: 'http://farm9.staticflickr.com/8784/17081843465_4858ab4707_z.jpg',
+        w: 1080,
+        h: 1920
+    },
+      {
+        src: 'http://farm8.staticflickr.com/7597/17081841765_7b350e6ee2_z.jpg',
         w: 1080,
         h: 1920,
 		title: 'deslice hacia arriba o pellizque la pantalla para salir del paseo.'
     }
-	
-	
-	
-	
 ];
 
 // define options (if needed)
@@ -162,40 +163,41 @@ document.location = "index.html";
 			// build items array
 			var items4 = [
     {
-        src: 'http://farm8.staticflickr.com/7714/16445249304_861c6ccd19_z.jpg',
+        src: 'http://farm9.staticflickr.com/8746/17055865276_f68687c50e_z.jpg',
         w: 1080,
         h: 1920
     },
       {
-        src: 'http://farm9.staticflickr.com/8694/16860287887_10a7b49191_z.jpg',
+        src: 'http://farm9.staticflickr.com/8728/16894048368_c5f9ecedf8_z.jpg',
 		w: 1080,
         h: 1920
     },
       {
-        src: 'http://farm9.staticflickr.com/8737/16445249444_4c22f30b2d_z.jpg',
+        src: 'http://farm8.staticflickr.com/7626/17055863146_15ddff9829_z.jpg',
         w: 1080,
         h: 1920
     },
       {
-        src: 'http://farm8.staticflickr.com/7607/16445249134_43316f397b_z.jpg',
+        src: 'http://farm9.staticflickr.com/8771/17081106551_271057cf6b_z.jpg',
         w: 1080,
         h: 1920
     },
       {
-        src: 'http://farm9.staticflickr.com/8827/16447551473_3d8ed2a5b4_z.jpg',
+        src: 'http://farm8.staticflickr.com/7659/16894050268_e2c294110f_z.jpg',
         w: 1080,
         h: 1920
     },
       {
-        src: 'http://farm8.staticflickr.com/7664/16860284477_31e255d793_z.jpg',
+        src: 'http://farm9.staticflickr.com/8784/17081843465_4858ab4707_z.jpg',
+        w: 1080,
+        h: 1920
+    },
+      {
+        src: 'http://farm8.staticflickr.com/7597/17081841765_7b350e6ee2_z.jpg',
         w: 1080,
         h: 1920,
 		title: 'deslice hacia arriba o pellizque la pantalla para salir del paseo.'
     }
-	
-	
-	
-	
 ];
 
 			// define options (if needed)
@@ -264,17 +266,17 @@ document.location = "index.html";
 					h: 645
 				},
 				{
-					src: 'http://farm9.staticflickr.com/8730/16449675513_67689eddde_z.jpg',
+					src: 'http://farm8.staticflickr.com/7602/17081104591_455e4c43fd_z.jpg',
 					w: 623,
 					h: 645
 				},
 				{
-					src: 'http://farm8.staticflickr.com/7590/17068343372_5000785129_z.jpg',
+					src: 'http://farm8.staticflickr.com/7663/16874428547_0bac530ecc_z.jpg',
 					w: 623,
 					h: 645
 				},
 				{
-					src: 'http://farm9.staticflickr.com/8818/16883607669_e7a2f13352_z.jpg',
+					src: 'http://farm8.staticflickr.com/7721/16895614499_f9be6bdf59_z.jpg',
 					w: 623,
 					h: 645,
 					title: 'deslice hacia arriba o pellizque la pantalla para salir de la informacion sucinta.'
