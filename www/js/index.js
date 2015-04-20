@@ -52,8 +52,8 @@ function validate()
 function onConfirm(buttonIndex) {
         if(buttonIndex == 1)
 		{
-		
-	if(confirm('¿Es Ud. un médico apto para prescribir?'))
+	var pass = prompt('Ingrese la clave para utilizar la Calculadora ASRVD');	
+	if(pass == "abbvie")
 	{
 	localStorage.setItem("clave", "1");
        if (confirm('¿Desea realizar un paseo por la aplicación?'))
