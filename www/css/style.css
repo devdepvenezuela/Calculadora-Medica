@@ -196,7 +196,7 @@ li.table_row{width:100%; float:left; clear:both; line-height:30px;padding:0px; l
 .form_submit{ -webkit-appearance: none; -moz-appearance: none;
  display: block;
  margin: 1.5em 0;
- font-size: 2.5em; line-height: 2.5em;
+ font-size: 2em; line-height: 2.5em;
  color: #5e5e5e;
  font-weight: bold;
  height: 5em; width: 100%;
