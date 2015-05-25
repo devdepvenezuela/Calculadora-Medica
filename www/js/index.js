@@ -53,7 +53,7 @@ function onConfirm(buttonIndex) {
         if(buttonIndex == 1)
 		{
 	var pass = prompt('Ingrese la clave para utilizar la Calculadora ASRVD');	
-	if(pass == "abbvie")
+	if(pass == "kidney")
 	{
 	localStorage.setItem("clave", "1");
        if (confirm('¿Desea realizar un paseo por la aplicación?'))
@@ -130,7 +130,7 @@ document.location = "index.html";
        else
        {
       	navigator.notification.alert(
-            'Esta aplicación no ha sido probada en las versiones posteriores a su publicación. \n Version actual: 1.0', 
+            'Esta aplicación no ha sido probada en las versiones posteriores a su publicación. \n Android: x.x \n iOS : 8.3', 
 			alertDismiss,
             'Calculadora ASRVD',            
             'Aceptar'                  
