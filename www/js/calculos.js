@@ -168,7 +168,7 @@ setTimeout(function(){spinner.stop()} , 2100);
 													{
 													if(pth.value > 500)
 													{
-													resultado.innerHTML = "<p>Dosis de ASRVD: 2 mcg/dia o 4 mcg 3 veces / semana</p>";
+													resultado.innerHTML = "<p>Dosis de ASRVD: 2 mcg/día o 4 mcg 3 veces / semana</p>";
 													document.getElementById("algoritmo43").style.display = "block";
 													}
 													else if (pth.value == "0")
@@ -276,7 +276,7 @@ setTimeout(function(){spinner.stop()} , 2100);
 										if(variacion < 30)
 										{
 												var ndosis = asrvd.value * 1 + asrvd.value * 25/100;
-												resultado.innerHTML = "<p>Aumentar dosis de ASRVD 25% = " + ndosis +" mcg</p><p>Medir Calcio, Fósforo, PTHi a las 4 semanas</p><p>Si la dosis > 40 mcg Omitir, considerar calcimimetrico o PTX</p>";
+												resultado.innerHTML = "<p>Aumentar dosis de ASRVD 25% = " + ndosis +" mcg</p><p>Medir Calcio, Fósforo, PTHi a las 4 semanas</p><p>Si la dosis > 40 mcg Omitir, considerar Calcimimético o PTX</p>";
 												document.getElementById("algoritmo27").style.display = "block";
 												
 											}
@@ -343,7 +343,7 @@ setTimeout(function(){spinner.stop()} , 2100);
 										{
 											var dosis1 = asrvd.value * 1 + 1;
 											var dosis2 = dosis1 + 1;
-												resultado.innerHTML = "<p>Aumentar dosis de ASRVD "+ dosis1 +" mcg/dia ó "+ dosis2 +" mcg 3 veces por semana</p><p>Medir Calcio, Fósforo, PTHi a las 4 semanas</p>";
+												resultado.innerHTML = "<p>Aumentar dosis de ASRVD "+ dosis1 +" mcg/día ó "+ dosis2 +" mcg 3 veces por semana</p><p>Medir Calcio, Fósforo, PTHi a las 4 semanas</p>";
 												document.getElementById("algoritmo47").style.display = "block";
 											}
 											else if (variacion > 30 && variacion <= 60 )
@@ -494,7 +494,7 @@ setTimeout(function(){spinner.stop()} , 2100);
 			document.getElementById("pthmax-t").value = "";
 			document.getElementById("asrvd-t").value = "";
 			document.getElementById("va-t").value = "0";
-			document.getElementById("resultado2").innerHTML = "<p>No se ha realizado ningun calculo.</p>";
+			document.getElementById("resultado2").innerHTML = "<p>No se ha realizado ningún cálculo.</p>";
 			
 			document.getElementById("tfge-n").value = "";
 			document.getElementById("p-n").value = "";
@@ -503,7 +503,7 @@ setTimeout(function(){spinner.stop()} , 2100);
 			document.getElementById("pthmin-n").value = "";
 			document.getElementById("pthmax-n").value = "";
 			document.getElementById("va-n").value = "0";
-			document.getElementById("resultado").innerHTML = "<p>No se ha realizado ningun calculo.</p>";
+			document.getElementById("resultado").innerHTML = "<p>No se ha realizado ningún cálculo.</p>";
 			
 			//tfge
 			document.getElementById("creat-n").value = "";
@@ -758,7 +758,7 @@ setTimeout(function(){spinner.stop()} , 2100);
 													{
 													if(pth.value > 500)
 													{
-													resultado.innerHTML = "<p>Dosis de ASRVD: 2 mcg/dia o 4 mcg 3 veces / semana</p>";
+													resultado.innerHTML = "<p>Dosis de ASRVD: 2 mcg/día o 4 mcg 3 veces / semana</p>";
 													document.getElementById("algoritmo43").style.display = "block";
 													}
 													else if (pth.value == "0")
