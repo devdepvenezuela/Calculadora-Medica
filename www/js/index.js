@@ -70,7 +70,7 @@ var items = [
         h: 1920
     },
       {
-        src: 'https://c2.staticflickr.com/4/3936/18753693068_7742842a51_z.jpg',
+        src: 'https://c1.staticflickr.com/1/325/18844303589_f93a17c5f7_z.jpg',
 		w: 1080,
         h: 1920
     },
